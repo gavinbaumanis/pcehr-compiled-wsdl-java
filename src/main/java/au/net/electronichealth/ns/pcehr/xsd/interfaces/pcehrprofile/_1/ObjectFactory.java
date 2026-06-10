@@ -36,6 +36,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DoesPCEHRExistResponse }
      * 
+     * @return newly created instance
      */
     public DoesPCEHRExistResponse createDoesPCEHRExistResponse() {
         return new DoesPCEHRExistResponse();
@@ -44,6 +45,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GainPCEHRAccess }
      * 
+     * @return newly created instance
      */
     public GainPCEHRAccess createGainPCEHRAccess() {
         return new GainPCEHRAccess();
@@ -52,6 +54,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GainPCEHRAccess.PCEHRRecord }
      * 
+     * @return newly created instance
      */
     public GainPCEHRAccess.PCEHRRecord createGainPCEHRAccessPCEHRRecord() {
         return new GainPCEHRAccess.PCEHRRecord();
@@ -60,6 +63,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GainPCEHRAccess.PCEHRRecord.AuthorisationDetails }
      * 
+     * @return newly created instance
      */
     public GainPCEHRAccess.PCEHRRecord.AuthorisationDetails createGainPCEHRAccessPCEHRRecordAuthorisationDetails() {
         return new GainPCEHRAccess.PCEHRRecord.AuthorisationDetails();
@@ -68,6 +72,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GainPCEHRAccessResponse }
      * 
+     * @return newly created instance
      */
     public GainPCEHRAccessResponse createGainPCEHRAccessResponse() {
         return new GainPCEHRAccessResponse();
@@ -76,6 +81,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GainPCEHRAccessResponse.Individual }
      * 
+     * @return newly created instance
      */
     public GainPCEHRAccessResponse.Individual createGainPCEHRAccessResponseIndividual() {
         return new GainPCEHRAccessResponse.Individual();
@@ -84,14 +90,17 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GainPCEHRAccess.PCEHRRecord.Individual }
      * 
+     * @return newly created instance
      */
     public GainPCEHRAccess.PCEHRRecord.Individual createGainPCEHRAccessPCEHRRecordIndividual() {
         return new GainPCEHRAccess.PCEHRRecord.Individual();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Object }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/interfaces/PCEHRProfile/1.0", name = "doesPCEHRExist")
     public JAXBElement<Object> createDoesPCEHRExist(Object value) {

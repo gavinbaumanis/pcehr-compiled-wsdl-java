@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link HealthCheckScheduleView }
      * 
+     * @return newly created instance
      */
     public HealthCheckScheduleView createHealthCheckScheduleView() {
         return new HealthCheckScheduleView();

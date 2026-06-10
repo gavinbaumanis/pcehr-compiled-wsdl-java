@@ -10,34 +10,33 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for StandardErrorCodeType.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="StandardErrorCodeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="servicePermanentUnavailable"/>
- *     &lt;enumeration value="serviceTemporaryUnavailable"/>
- *     &lt;enumeration value="certificateSkiMissing"/>
- *     &lt;enumeration value="certificateKeyUsage"/>
- *     &lt;enumeration value="invalidCredentials"/>
- *     &lt;enumeration value="notAuthenticated"/>
- *     &lt;enumeration value="notAuthorised"/>
- *     &lt;enumeration value="badParam"/>
- *     &lt;enumeration value="badlyFormedMsg"/>
- *     &lt;enumeration value="badTimestamp"/>
- *     &lt;enumeration value="badSignature"/>
- *     &lt;enumeration value="badEncryption"/>
- *     &lt;enumeration value="badSigEncOrder"/>
- *     &lt;enumeration value="badCertificateTransmitted"/>
- *     &lt;enumeration value="badWsaAction"/>
- *     &lt;enumeration value="badWsaMessageId"/>
- *     &lt;enumeration value="badWsaTo"/>
- *     &lt;enumeration value="badAlgorithmDataEncryption"/>
- *     &lt;enumeration value="badAlgorithmKeyEncryption"/>
- *     &lt;enumeration value="badAlgorithmC14N"/>
- *     &lt;enumeration value="badAlgorithmDigest"/>
- *     &lt;enumeration value="badAlgorithmSignature"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="StandardErrorCodeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="servicePermanentUnavailable"/&gt;
+ *     &lt;enumeration value="serviceTemporaryUnavailable"/&gt;
+ *     &lt;enumeration value="certificateSkiMissing"/&gt;
+ *     &lt;enumeration value="certificateKeyUsage"/&gt;
+ *     &lt;enumeration value="invalidCredentials"/&gt;
+ *     &lt;enumeration value="notAuthenticated"/&gt;
+ *     &lt;enumeration value="notAuthorised"/&gt;
+ *     &lt;enumeration value="badParam"/&gt;
+ *     &lt;enumeration value="badlyFormedMsg"/&gt;
+ *     &lt;enumeration value="badTimestamp"/&gt;
+ *     &lt;enumeration value="badSignature"/&gt;
+ *     &lt;enumeration value="badEncryption"/&gt;
+ *     &lt;enumeration value="badSigEncOrder"/&gt;
+ *     &lt;enumeration value="badCertificateTransmitted"/&gt;
+ *     &lt;enumeration value="badWsaAction"/&gt;
+ *     &lt;enumeration value="badWsaMessageId"/&gt;
+ *     &lt;enumeration value="badWsaTo"/&gt;
+ *     &lt;enumeration value="badAlgorithmDataEncryption"/&gt;
+ *     &lt;enumeration value="badAlgorithmKeyEncryption"/&gt;
+ *     &lt;enumeration value="badAlgorithmC14N"/&gt;
+ *     &lt;enumeration value="badAlgorithmDigest"/&gt;
+ *     &lt;enumeration value="badAlgorithmSignature"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

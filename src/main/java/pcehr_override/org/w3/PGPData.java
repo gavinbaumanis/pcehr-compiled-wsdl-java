@@ -18,23 +18,23 @@ import org.w3c.dom.Element;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="PGPDataType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;sequence>
- *           &lt;element name="PGPKeyID" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
- *           &lt;element name="PGPKeyPacket" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/>
- *           &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;/sequence>
- *         &lt;sequence>
- *           &lt;element name="PGPKeyPacket" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
- *           &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;/sequence>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="PGPDataType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice&gt;
+ *         &lt;sequence&gt;
+ *           &lt;element name="PGPKeyID" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/&gt;
+ *           &lt;element name="PGPKeyPacket" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/&gt;
+ *           &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;/sequence&gt;
+ *         &lt;sequence&gt;
+ *           &lt;element name="PGPKeyPacket" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/&gt;
+ *           &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -58,7 +58,7 @@ public class PGPData {
     /**
      * Gets the value of the pgpKeyID property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -69,7 +69,7 @@ public class PGPData {
     /**
      * Sets the value of the pgpKeyID property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -80,7 +80,7 @@ public class PGPData {
     /**
      * Gets the value of the pgpKeyPacket property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -91,7 +91,7 @@ public class PGPData {
     /**
      * Sets the value of the pgpKeyPacket property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -102,24 +102,22 @@ public class PGPData {
     /**
      * Gets the value of the anies property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the anies property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getAnies().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link Element }
      * 
      * 
+     * @return field value
      */
     public List<Element> getAnies() {
         if (anies == null) {

@@ -17,24 +17,24 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CompoundFilterType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType">
- *       &lt;sequence>
- *         &lt;element name="LeftFilter" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType"/>
- *         &lt;element name="RightFilter" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType"/>
- *       &lt;/sequence>
- *       &lt;attribute name="logicalOperator" use="required">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NCName">
- *             &lt;enumeration value="AND"/>
- *             &lt;enumeration value="OR"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CompoundFilterType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="LeftFilter" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType"/&gt;
+ *         &lt;element name="RightFilter" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="logicalOperator" use="required"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NCName"&gt;
+ *             &lt;enumeration value="AND"/&gt;
+ *             &lt;enumeration value="OR"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -60,7 +60,7 @@ public class CompoundFilter
     /**
      * Gets the value of the leftFilter property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link FilterType }
      *     
@@ -72,7 +72,7 @@ public class CompoundFilter
     /**
      * Sets the value of the leftFilter property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link FilterType }
      *     
@@ -84,7 +84,7 @@ public class CompoundFilter
     /**
      * Gets the value of the rightFilter property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link FilterType }
      *     
@@ -96,7 +96,7 @@ public class CompoundFilter
     /**
      * Sets the value of the rightFilter property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link FilterType }
      *     
@@ -108,7 +108,7 @@ public class CompoundFilter
     /**
      * Gets the value of the logicalOperator property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -120,7 +120,7 @@ public class CompoundFilter
     /**
      * Sets the value of the logicalOperator property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

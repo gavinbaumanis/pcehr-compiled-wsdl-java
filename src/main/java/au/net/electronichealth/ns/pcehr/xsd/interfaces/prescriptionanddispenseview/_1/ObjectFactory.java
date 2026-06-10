@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PrescriptionAndDispenseView }
      * 
+     * @return newly created instance
      */
     public PrescriptionAndDispenseView createPrescriptionAndDispenseView() {
         return new PrescriptionAndDispenseView();

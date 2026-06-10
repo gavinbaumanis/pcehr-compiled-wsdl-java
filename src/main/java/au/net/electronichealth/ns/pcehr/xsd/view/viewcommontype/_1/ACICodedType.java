@@ -13,20 +13,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ACICodedType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="displayName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="originalText" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="codeSystem" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="codeSystemName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="codeSystemVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ACICodedType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="displayName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="originalText" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="codeSystem" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="codeSystemName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="codeSystemVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -56,7 +56,7 @@ public class ACICodedType {
     /**
      * Gets the value of the displayName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -68,7 +68,7 @@ public class ACICodedType {
     /**
      * Sets the value of the displayName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -80,7 +80,7 @@ public class ACICodedType {
     /**
      * Gets the value of the originalText property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -92,7 +92,7 @@ public class ACICodedType {
     /**
      * Sets the value of the originalText property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -104,7 +104,7 @@ public class ACICodedType {
     /**
      * Gets the value of the code property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -116,7 +116,7 @@ public class ACICodedType {
     /**
      * Sets the value of the code property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -128,7 +128,7 @@ public class ACICodedType {
     /**
      * Gets the value of the codeSystem property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -140,7 +140,7 @@ public class ACICodedType {
     /**
      * Sets the value of the codeSystem property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -152,7 +152,7 @@ public class ACICodedType {
     /**
      * Gets the value of the codeSystemName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -164,7 +164,7 @@ public class ACICodedType {
     /**
      * Sets the value of the codeSystemName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -176,7 +176,7 @@ public class ACICodedType {
     /**
      * Gets the value of the codeSystemVersion property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -188,7 +188,7 @@ public class ACICodedType {
     /**
      * Sets the value of the codeSystemVersion property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

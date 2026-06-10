@@ -17,18 +17,18 @@ import oasis.names.tc.ebxml_regrep.xsd.rim._3.SlotList;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RegistryResponseType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ResponseSlotList" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}SlotListType" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryErrorList" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="status" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="requestId" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RegistryResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ResponseSlotList" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}SlotListType" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryErrorList" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="status" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="requestId" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -56,7 +56,7 @@ public class RegistryResponseType {
     /**
      * Gets the value of the responseSlotList property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link SlotList }
      *     
@@ -68,7 +68,7 @@ public class RegistryResponseType {
     /**
      * Sets the value of the responseSlotList property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link SlotList }
      *     
@@ -80,7 +80,7 @@ public class RegistryResponseType {
     /**
      * Gets the value of the registryErrorList property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegistryErrorList }
      *     
@@ -92,7 +92,7 @@ public class RegistryResponseType {
     /**
      * Sets the value of the registryErrorList property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegistryErrorList }
      *     
@@ -104,7 +104,7 @@ public class RegistryResponseType {
     /**
      * Gets the value of the status property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -116,7 +116,7 @@ public class RegistryResponseType {
     /**
      * Sets the value of the status property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -128,7 +128,7 @@ public class RegistryResponseType {
     /**
      * Gets the value of the requestId property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -140,7 +140,7 @@ public class RegistryResponseType {
     /**
      * Sets the value of the requestId property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

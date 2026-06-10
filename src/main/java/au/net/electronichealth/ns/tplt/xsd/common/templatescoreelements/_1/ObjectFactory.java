@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TemplateMetadataType }
      * 
+     * @return newly created instance
      */
     public TemplateMetadataType createTemplateMetadataType() {
         return new TemplateMetadataType();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TemplateUsageMetadataType }
      * 
+     * @return newly created instance
      */
     public TemplateUsageMetadataType createTemplateUsageMetadataType() {
         return new TemplateUsageMetadataType();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TemplateMetadataType.Metadata }
      * 
+     * @return newly created instance
      */
     public TemplateMetadataType.Metadata createTemplateMetadataTypeMetadata() {
         return new TemplateMetadataType.Metadata();

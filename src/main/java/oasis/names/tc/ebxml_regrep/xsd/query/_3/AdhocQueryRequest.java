@@ -19,20 +19,20 @@ import oasis.names.tc.ebxml_regrep.xsd.rs._3.RegistryRequestType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryRequestType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ResponseOption"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}AdhocQuery"/>
- *       &lt;/sequence>
- *       &lt;attribute name="federated" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" />
- *       &lt;attribute name="federation" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="startIndex" type="{http://www.w3.org/2001/XMLSchema}integer" default="0" />
- *       &lt;attribute name="maxResults" type="{http://www.w3.org/2001/XMLSchema}integer" default="-1" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryRequestType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ResponseOption"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}AdhocQuery"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="federated" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" /&gt;
+ *       &lt;attribute name="federation" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="startIndex" type="{http://www.w3.org/2001/XMLSchema}integer" default="0" /&gt;
+ *       &lt;attribute name="maxResults" type="{http://www.w3.org/2001/XMLSchema}integer" default="-1" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -64,7 +64,7 @@ public class AdhocQueryRequest
     /**
      * Gets the value of the responseOption property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseOption }
      *     
@@ -76,7 +76,7 @@ public class AdhocQueryRequest
     /**
      * Sets the value of the responseOption property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseOption }
      *     
@@ -88,7 +88,7 @@ public class AdhocQueryRequest
     /**
      * Gets the value of the adhocQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AdhocQueryType }
      *     
@@ -100,7 +100,7 @@ public class AdhocQueryRequest
     /**
      * Sets the value of the adhocQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AdhocQueryType }
      *     
@@ -112,7 +112,7 @@ public class AdhocQueryRequest
     /**
      * Gets the value of the federated property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Boolean }
      *     
@@ -128,7 +128,7 @@ public class AdhocQueryRequest
     /**
      * Sets the value of the federated property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Boolean }
      *     
@@ -140,7 +140,7 @@ public class AdhocQueryRequest
     /**
      * Gets the value of the federation property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -152,7 +152,7 @@ public class AdhocQueryRequest
     /**
      * Sets the value of the federation property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -164,7 +164,7 @@ public class AdhocQueryRequest
     /**
      * Gets the value of the startIndex property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link BigInteger }
      *     
@@ -180,7 +180,7 @@ public class AdhocQueryRequest
     /**
      * Sets the value of the startIndex property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link BigInteger }
      *     
@@ -192,7 +192,7 @@ public class AdhocQueryRequest
     /**
      * Gets the value of the maxResults property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link BigInteger }
      *     
@@ -208,7 +208,7 @@ public class AdhocQueryRequest
     /**
      * Sets the value of the maxResults property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link BigInteger }
      *     

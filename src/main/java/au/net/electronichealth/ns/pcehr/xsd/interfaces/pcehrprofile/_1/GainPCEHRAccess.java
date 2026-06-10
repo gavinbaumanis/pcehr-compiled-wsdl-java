@@ -23,60 +23,60 @@ import au.net.electronichealth.ns.pcehr.xsd.common.commoncoreelements._1.Sex;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="PCEHRRecord">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="authorisationDetails" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="accessType">
- *                               &lt;simpleType>
- *                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                                   &lt;enumeration value="AccessCode"/>
- *                                   &lt;enumeration value="EmergencyAccess"/>
- *                                 &lt;/restriction>
- *                               &lt;/simpleType>
- *                             &lt;/element>
- *                             &lt;element name="accessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="individual" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
- *                             &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/>
- *                             &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="PCEHRRecord"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="authorisationDetails" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="accessType"&gt;
+ *                               &lt;simpleType&gt;
+ *                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                                   &lt;enumeration value="AccessCode"/&gt;
+ *                                   &lt;enumeration value="EmergencyAccess"/&gt;
+ *                                 &lt;/restriction&gt;
+ *                               &lt;/simpleType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="accessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="individual" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+ *                             &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/&gt;
+ *                             &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -94,7 +94,7 @@ public class GainPCEHRAccess {
     /**
      * Gets the value of the pcehrRecord property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link GainPCEHRAccess.PCEHRRecord }
      *     
@@ -106,7 +106,7 @@ public class GainPCEHRAccess {
     /**
      * Sets the value of the pcehrRecord property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link GainPCEHRAccess.PCEHRRecord }
      *     
@@ -122,50 +122,50 @@ public class GainPCEHRAccess {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="authorisationDetails" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="accessType">
-     *                     &lt;simpleType>
-     *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *                         &lt;enumeration value="AccessCode"/>
-     *                         &lt;enumeration value="EmergencyAccess"/>
-     *                       &lt;/restriction>
-     *                     &lt;/simpleType>
-     *                   &lt;/element>
-     *                   &lt;element name="accessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="individual" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
-     *                   &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/>
-     *                   &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="authorisationDetails" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="accessType"&gt;
+     *                     &lt;simpleType&gt;
+     *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *                         &lt;enumeration value="AccessCode"/&gt;
+     *                         &lt;enumeration value="EmergencyAccess"/&gt;
+     *                       &lt;/restriction&gt;
+     *                     &lt;/simpleType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="accessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="individual" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+     *                   &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/&gt;
+     *                   &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -183,7 +183,7 @@ public class GainPCEHRAccess {
         /**
          * Gets the value of the authorisationDetails property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link GainPCEHRAccess.PCEHRRecord.AuthorisationDetails }
          *     
@@ -195,7 +195,7 @@ public class GainPCEHRAccess {
         /**
          * Sets the value of the authorisationDetails property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link GainPCEHRAccess.PCEHRRecord.AuthorisationDetails }
          *     
@@ -207,7 +207,7 @@ public class GainPCEHRAccess {
         /**
          * Gets the value of the individual property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link GainPCEHRAccess.PCEHRRecord.Individual }
          *     
@@ -219,7 +219,7 @@ public class GainPCEHRAccess {
         /**
          * Sets the value of the individual property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link GainPCEHRAccess.PCEHRRecord.Individual }
          *     
@@ -235,23 +235,23 @@ public class GainPCEHRAccess {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="accessType">
-         *           &lt;simpleType>
-         *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-         *               &lt;enumeration value="AccessCode"/>
-         *               &lt;enumeration value="EmergencyAccess"/>
-         *             &lt;/restriction>
-         *           &lt;/simpleType>
-         *         &lt;/element>
-         *         &lt;element name="accessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="accessType"&gt;
+         *           &lt;simpleType&gt;
+         *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+         *               &lt;enumeration value="AccessCode"/&gt;
+         *               &lt;enumeration value="EmergencyAccess"/&gt;
+         *             &lt;/restriction&gt;
+         *           &lt;/simpleType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="accessCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -270,7 +270,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the accessType property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link GainPCEHRAccess.PCEHRRecord.AuthorisationDetails.AccessType }
              *     
@@ -282,7 +282,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the accessType property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link GainPCEHRAccess.PCEHRRecord.AuthorisationDetails.AccessType }
              *     
@@ -294,7 +294,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the accessCode property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -306,7 +306,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the accessCode property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -320,14 +320,13 @@ public class GainPCEHRAccess {
              * <p>Java class for null.
              * 
              * <p>The following schema fragment specifies the expected content contained within this class.
-             * <p>
              * <pre>
-             * &lt;simpleType>
-             *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-             *     &lt;enumeration value="AccessCode"/>
-             *     &lt;enumeration value="EmergencyAccess"/>
-             *   &lt;/restriction>
-             * &lt;/simpleType>
+             * &lt;simpleType&gt;
+             *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+             *     &lt;enumeration value="AccessCode"/&gt;
+             *     &lt;enumeration value="EmergencyAccess"/&gt;
+             *   &lt;/restriction&gt;
+             * &lt;/simpleType&gt;
              * </pre>
              * 
              */
@@ -369,21 +368,21 @@ public class GainPCEHRAccess {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
-         *         &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/>
-         *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+         *         &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/&gt;
+         *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -422,7 +421,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the medicareCardNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -434,7 +433,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the medicareCardNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -446,7 +445,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the medicareIRN property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link Integer }
              *     
@@ -458,7 +457,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the medicareIRN property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link Integer }
              *     
@@ -470,7 +469,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the dvaFileNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -482,7 +481,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the dvaFileNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -494,7 +493,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the militaryHealthNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -506,7 +505,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the militaryHealthNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -518,7 +517,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the dateOfBirth property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -530,7 +529,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the dateOfBirth property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -542,7 +541,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the sex property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link Sex }
              *     
@@ -554,7 +553,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the sex property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link Sex }
              *     
@@ -566,7 +565,7 @@ public class GainPCEHRAccess {
             /**
              * Gets the value of the name property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link NameType }
              *     
@@ -578,7 +577,7 @@ public class GainPCEHRAccess {
             /**
              * Sets the value of the name property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link NameType }
              *     

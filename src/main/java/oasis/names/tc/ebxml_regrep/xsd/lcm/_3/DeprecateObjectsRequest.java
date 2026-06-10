@@ -17,16 +17,16 @@ import oasis.names.tc.ebxml_regrep.xsd.rs._3.RegistryRequestType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryRequestType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}AdhocQuery" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefList" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryRequestType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}AdhocQuery" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefList" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -49,7 +49,7 @@ public class DeprecateObjectsRequest
     /**
      * Gets the value of the adhocQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AdhocQueryType }
      *     
@@ -61,7 +61,7 @@ public class DeprecateObjectsRequest
     /**
      * Sets the value of the adhocQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AdhocQueryType }
      *     
@@ -73,7 +73,7 @@ public class DeprecateObjectsRequest
     /**
      * Gets the value of the objectRefList property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ObjectRefList }
      *     
@@ -85,7 +85,7 @@ public class DeprecateObjectsRequest
     /**
      * Sets the value of the objectRefList property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ObjectRefList }
      *     

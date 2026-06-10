@@ -36,11 +36,11 @@ public interface DocumentRepositoryPortType {
 
     /**
      * 
-     * @param pcehrHeader
-     * @param timestampHeader
-     * @param parameters
-     * @param signatureHeader
-     * @return
+     * @param pcehrHeader PCEHR request header
+     * @param timestampHeader timestamp SOAP header
+     * @param parameters request payload
+     * @param signatureHeader signature SOAP header holder
+     * @return the result
      *     returns oasis.names.tc.ebxml_regrep.xsd.rs._3.RegistryResponseType
      */
     @WebMethod(operationName = "DocumentRepository_ProvideAndRegisterDocumentSet-b")
@@ -57,11 +57,11 @@ public interface DocumentRepositoryPortType {
 
     /**
      * 
-     * @param pcehrHeader
-     * @param timestampHeader
-     * @param parameters
-     * @param signatureHeader
-     * @return
+     * @param pcehrHeader PCEHR request header
+     * @param timestampHeader timestamp SOAP header
+     * @param parameters request payload
+     * @param signatureHeader signature SOAP header holder
+     * @return the result
      *     returns ihe.iti.xds_b._2007.RetrieveDocumentSetResponse
      */
     @WebMethod(operationName = "DocumentRepository_RetrieveDocumentSet")

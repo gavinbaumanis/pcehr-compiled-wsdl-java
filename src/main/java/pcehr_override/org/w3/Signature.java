@@ -21,19 +21,19 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SignatureType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}SignedInfo"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}SignatureValue"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyInfo" minOccurs="0"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}Object" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SignatureType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}SignedInfo"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}SignatureValue"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyInfo" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}Object" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -65,7 +65,7 @@ public class Signature {
     /**
      * Gets the value of the signedInfo property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link SignedInfo }
      *     
@@ -77,7 +77,7 @@ public class Signature {
     /**
      * Sets the value of the signedInfo property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link SignedInfo }
      *     
@@ -89,7 +89,7 @@ public class Signature {
     /**
      * Gets the value of the signatureValue property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link SignatureValue }
      *     
@@ -101,7 +101,7 @@ public class Signature {
     /**
      * Sets the value of the signatureValue property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link SignatureValue }
      *     
@@ -113,7 +113,7 @@ public class Signature {
     /**
      * Gets the value of the keyInfo property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link KeyInfo }
      *     
@@ -125,7 +125,7 @@ public class Signature {
     /**
      * Sets the value of the keyInfo property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link KeyInfo }
      *     
@@ -137,24 +137,22 @@ public class Signature {
     /**
      * Gets the value of the objects property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the objects property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getObjects().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link Object }
      * 
      * 
+     * @return field value
      */
     public List<Object> getObjects() {
         if (objects == null) {
@@ -166,7 +164,7 @@ public class Signature {
     /**
      * Gets the value of the id property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -178,7 +176,7 @@ public class Signature {
     /**
      * Sets the value of the id property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

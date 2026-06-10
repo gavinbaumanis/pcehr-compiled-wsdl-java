@@ -44,6 +44,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PCEHRHeader }
      * 
+     * @return newly created instance
      */
     public PCEHRHeader createPCEHRHeader() {
         return new PCEHRHeader();
@@ -52,6 +53,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AccessConditionsType }
      * 
+     * @return newly created instance
      */
     public AccessConditionsType createAccessConditionsType() {
         return new AccessConditionsType();
@@ -60,6 +62,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddressType }
      * 
+     * @return newly created instance
      */
     public AddressType createAddressType() {
         return new AddressType();
@@ -68,6 +71,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganisationServiceType }
      * 
+     * @return newly created instance
      */
     public OrganisationServiceType createOrganisationServiceType() {
         return new OrganisationServiceType();
@@ -76,6 +80,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganisationServiceType.ComplexDate }
      * 
+     * @return newly created instance
      */
     public OrganisationServiceType.ComplexDate createOrganisationServiceTypeComplexDate() {
         return new OrganisationServiceType.ComplexDate();
@@ -84,6 +89,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ParticipantActionType }
      * 
+     * @return newly created instance
      */
     public ParticipantActionType createParticipantActionType() {
         return new ParticipantActionType();
@@ -92,6 +98,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PCEHRHeader.User }
      * 
+     * @return newly created instance
      */
     public PCEHRHeader.User createPCEHRHeaderUser() {
         return new PCEHRHeader.User();
@@ -100,6 +107,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganisationType }
      * 
+     * @return newly created instance
      */
     public OrganisationType createOrganisationType() {
         return new OrganisationType();
@@ -108,6 +116,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PCEHRHeader.ProductType }
      * 
+     * @return newly created instance
      */
     public PCEHRHeader.ProductType createPCEHRHeaderProductType() {
         return new PCEHRHeader.ProductType();
@@ -116,6 +125,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PCEHRHeader.AccessingOrganisation }
      * 
+     * @return newly created instance
      */
     public PCEHRHeader.AccessingOrganisation createPCEHRHeaderAccessingOrganisation() {
         return new PCEHRHeader.AccessingOrganisation();
@@ -124,6 +134,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Timestamp }
      * 
+     * @return newly created instance
      */
     public Timestamp createTimestamp() {
         return new Timestamp();
@@ -132,6 +143,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PCEHRMobileHeader }
      * 
+     * @return newly created instance
      */
     public PCEHRMobileHeader createPCEHRMobileHeader() {
         return new PCEHRMobileHeader();
@@ -140,6 +152,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Signature }
      * 
+     * @return newly created instance
      */
     public Signature createSignature() {
         return new Signature();
@@ -148,6 +161,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NameType }
      * 
+     * @return newly created instance
      */
     public NameType createNameType() {
         return new NameType();
@@ -156,6 +170,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AccessedEntityType }
      * 
+     * @return newly created instance
      */
     public AccessedEntityType createAccessedEntityType() {
         return new AccessedEntityType();
@@ -164,6 +179,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ParticipantDetailsType }
      * 
+     * @return newly created instance
      */
     public ParticipantDetailsType createParticipantDetailsType() {
         return new ParticipantDetailsType();
@@ -172,6 +188,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResponseStatusType }
      * 
+     * @return newly created instance
      */
     public ResponseStatusType createResponseStatusType() {
         return new ResponseStatusType();
@@ -180,6 +197,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddressType.PostalDeliveryGroup }
      * 
+     * @return newly created instance
      */
     public AddressType.PostalDeliveryGroup createAddressTypePostalDeliveryGroup() {
         return new AddressType.PostalDeliveryGroup();
@@ -188,6 +206,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddressType.UnitGroup }
      * 
+     * @return newly created instance
      */
     public AddressType.UnitGroup createAddressTypeUnitGroup() {
         return new AddressType.UnitGroup();
@@ -196,6 +215,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddressType.LevelGroup }
      * 
+     * @return newly created instance
      */
     public AddressType.LevelGroup createAddressTypeLevelGroup() {
         return new AddressType.LevelGroup();
@@ -204,14 +224,17 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganisationType.ParticipatingOrganisation }
      * 
+     * @return newly created instance
      */
     public OrganisationType.ParticipatingOrganisation createOrganisationTypeParticipatingOrganisation() {
         return new OrganisationType.ParticipatingOrganisation();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "dvaFileNumber")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
@@ -220,8 +243,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Sex }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Sex }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "sex")
     public JAXBElement<Sex> createSex(Sex value) {
@@ -229,8 +254,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "ihiNumber")
     public JAXBElement<String> createIhiNumber(String value) {
@@ -238,8 +265,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "medicareCardNumber")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
@@ -248,8 +277,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DateAccuracyIndicatorType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link DateAccuracyIndicatorType }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "dateAccuracyIndicatorType")
     public JAXBElement<DateAccuracyIndicatorType> createDateAccuracyIndicatorType(DateAccuracyIndicatorType value) {
@@ -257,8 +288,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "medicareIRN")
     public JAXBElement<Integer> createMedicareIRN(Integer value) {
@@ -266,8 +299,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0", name = "militaryHealthNumber")
     public JAXBElement<String> createMilitaryHealthNumber(String value) {

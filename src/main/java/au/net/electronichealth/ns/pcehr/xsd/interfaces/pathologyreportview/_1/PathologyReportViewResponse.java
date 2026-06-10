@@ -25,79 +25,79 @@ import au.net.electronichealth.ns.pcehr.xsd.view.viewcommontype._1.RequesterInfo
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="pathologyReportViewResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="viewMetadata">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="individualProfile">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
- *                             &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="viewParameters">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                             &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                             &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="pathologyReport" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}pathologyReportInformationDT"/>
- *                   &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
- *                   &lt;element name="reportingPathologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
- *                   &lt;element name="testRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/>
- *                   &lt;element name="pathologyTestResult" maxOccurs="unbounded">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="specimenCollectionDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="pathologyDiscipline" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *                             &lt;element name="testResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *                             &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="pathologyReportViewResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="viewMetadata"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="individualProfile"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+ *                             &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="viewParameters"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                             &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                             &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="pathologyReport" maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}pathologyReportInformationDT"/&gt;
+ *                   &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+ *                   &lt;element name="reportingPathologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+ *                   &lt;element name="testRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/&gt;
+ *                   &lt;element name="pathologyTestResult" maxOccurs="unbounded"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="specimenCollectionDate" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                             &lt;element name="pathologyDiscipline" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *                             &lt;element name="testResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *                             &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -118,7 +118,7 @@ public class PathologyReportViewResponse {
     /**
      * Gets the value of the viewMetadata property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PathologyReportViewResponse.ViewMetadata }
      *     
@@ -130,7 +130,7 @@ public class PathologyReportViewResponse {
     /**
      * Sets the value of the viewMetadata property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PathologyReportViewResponse.ViewMetadata }
      *     
@@ -142,24 +142,22 @@ public class PathologyReportViewResponse {
     /**
      * Gets the value of the pathologyReports property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the pathologyReports property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getPathologyReports().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link PathologyReportViewResponse.PathologyReport }
      * 
      * 
+     * @return field value
      */
     public List<PathologyReportViewResponse.PathologyReport> getPathologyReports() {
         if (pathologyReports == null) {
@@ -175,33 +173,33 @@ public class PathologyReportViewResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}pathologyReportInformationDT"/>
-     *         &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
-     *         &lt;element name="reportingPathologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
-     *         &lt;element name="testRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/>
-     *         &lt;element name="pathologyTestResult" maxOccurs="unbounded">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="specimenCollectionDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="pathologyDiscipline" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-     *                   &lt;element name="testResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-     *                   &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}pathologyReportInformationDT"/&gt;
+     *         &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+     *         &lt;element name="reportingPathologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+     *         &lt;element name="testRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/&gt;
+     *         &lt;element name="pathologyTestResult" maxOccurs="unbounded"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="specimenCollectionDate" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *                   &lt;element name="pathologyDiscipline" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+     *                   &lt;element name="testResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+     *                   &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -233,7 +231,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the dateAvailableToConsumer property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -245,7 +243,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the dateAvailableToConsumer property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -257,7 +255,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the reportInformation property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link PathologyReportInformationDT }
          *     
@@ -269,7 +267,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the reportInformation property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link PathologyReportInformationDT }
          *     
@@ -281,7 +279,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the clinicalDocumentAuthor property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link ProviderInformationDT }
          *     
@@ -293,7 +291,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the clinicalDocumentAuthor property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link ProviderInformationDT }
          *     
@@ -305,7 +303,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the reportingPathologistInformation property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link ProviderInformationDT }
          *     
@@ -317,7 +315,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the reportingPathologistInformation property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link ProviderInformationDT }
          *     
@@ -329,7 +327,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the testRequesterInformation property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link RequesterInformationDT }
          *     
@@ -341,7 +339,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the testRequesterInformation property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link RequesterInformationDT }
          *     
@@ -353,24 +351,22 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the pathologyTestResults property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
+         * <p>This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
          * This is why there is not a <CODE>set</CODE> method for the pathologyTestResults property.
          * 
-         * <p>
-         * For example, to add a new item, do as follows:
+         * <p>For example, to add a new item, do as follows:
          * <pre>
          *    getPathologyTestResults().add(newItem);
          * </pre>
          * 
          * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
+         * <p>Objects of the following type(s) are allowed in the list
          * {@link PathologyReportViewResponse.PathologyReport.PathologyTestResult }
          * 
          * 
+         * @return field value
          */
         public List<PathologyReportViewResponse.PathologyReport.PathologyTestResult> getPathologyTestResults() {
             if (pathologyTestResults == null) {
@@ -386,18 +382,18 @@ public class PathologyReportViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="specimenCollectionDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="pathologyDiscipline" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-         *         &lt;element name="testResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-         *         &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="specimenCollectionDate" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+         *         &lt;element name="pathologyDiscipline" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+         *         &lt;element name="testResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+         *         &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -423,7 +419,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the specimenCollectionDate property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -435,7 +431,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the specimenCollectionDate property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -447,7 +443,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the pathologyDiscipline property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link CodedType }
              *     
@@ -459,7 +455,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the pathologyDiscipline property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link CodedType }
              *     
@@ -471,7 +467,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the testResultName property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link CodedType }
              *     
@@ -483,7 +479,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the testResultName property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link CodedType }
              *     
@@ -495,7 +491,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the overallTestResultStatus property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link CodedType }
              *     
@@ -507,7 +503,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the overallTestResultStatus property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link CodedType }
              *     
@@ -527,40 +523,40 @@ public class PathologyReportViewResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="individualProfile">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
-     *                   &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="viewParameters">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *                   &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *                   &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="individualProfile"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+     *                   &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="viewParameters"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *                   &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *                   &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -582,7 +578,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the individualProfile property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link PathologyReportViewResponse.ViewMetadata.IndividualProfile }
          *     
@@ -594,7 +590,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the individualProfile property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link PathologyReportViewResponse.ViewMetadata.IndividualProfile }
          *     
@@ -606,7 +602,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the viewParameters property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link PathologyReportViewResponse.ViewMetadata.ViewParameters }
          *     
@@ -618,7 +614,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the viewParameters property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link PathologyReportViewResponse.ViewMetadata.ViewParameters }
          *     
@@ -630,6 +626,7 @@ public class PathologyReportViewResponse {
         /**
          * Gets the value of the informationAvailable property.
          * 
+         * @return field value
          */
         public boolean isInformationAvailable() {
             return informationAvailable;
@@ -638,6 +635,7 @@ public class PathologyReportViewResponse {
         /**
          * Sets the value of the informationAvailable property.
          * 
+         * @param value field value
          */
         public void setInformationAvailable(boolean value) {
             this.informationAvailable = value;
@@ -650,16 +648,16 @@ public class PathologyReportViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
-         *         &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+         *         &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -679,7 +677,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the ihiNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -691,7 +689,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the ihiNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -703,7 +701,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the individual property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link IndividualTypeSupp }
              *     
@@ -715,7 +713,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the individual property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link IndividualTypeSupp }
              *     
@@ -733,17 +731,17 @@ public class PathologyReportViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-         *         &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-         *         &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+         *         &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+         *         &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -770,7 +768,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the dateFromFilter property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -782,7 +780,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the dateFromFilter property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -794,7 +792,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the dateToFilter property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -806,7 +804,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the dateToFilter property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -818,7 +816,7 @@ public class PathologyReportViewResponse {
             /**
              * Gets the value of the viewVersionNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -830,7 +828,7 @@ public class PathologyReportViewResponse {
             /**
              * Sets the value of the viewVersionNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     

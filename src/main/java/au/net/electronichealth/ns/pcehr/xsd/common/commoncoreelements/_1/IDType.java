@@ -9,16 +9,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for IDType.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="IDType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;length value="3"/>
- *     &lt;enumeration value="IHI"/>
- *     &lt;enumeration value="MCA"/>
- *     &lt;enumeration value="DVA"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="IDType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;length value="3"/&gt;
+ *     &lt;enumeration value="IHI"/&gt;
+ *     &lt;enumeration value="MCA"/&gt;
+ *     &lt;enumeration value="DVA"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -16,18 +16,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="PostalAddressType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="city" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" />
- *       &lt;attribute name="country" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" />
- *       &lt;attribute name="postalCode" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" />
- *       &lt;attribute name="stateOrProvince" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" />
- *       &lt;attribute name="street" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" />
- *       &lt;attribute name="streetNumber" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}String32" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="PostalAddressType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;attribute name="city" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" /&gt;
+ *       &lt;attribute name="country" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" /&gt;
+ *       &lt;attribute name="postalCode" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" /&gt;
+ *       &lt;attribute name="stateOrProvince" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" /&gt;
+ *       &lt;attribute name="street" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ShortName" /&gt;
+ *       &lt;attribute name="streetNumber" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}String32" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,7 +52,7 @@ public class PostalAddressType {
     /**
      * Gets the value of the city property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -64,7 +64,7 @@ public class PostalAddressType {
     /**
      * Sets the value of the city property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -76,7 +76,7 @@ public class PostalAddressType {
     /**
      * Gets the value of the country property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -88,7 +88,7 @@ public class PostalAddressType {
     /**
      * Sets the value of the country property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -100,7 +100,7 @@ public class PostalAddressType {
     /**
      * Gets the value of the postalCode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -112,7 +112,7 @@ public class PostalAddressType {
     /**
      * Sets the value of the postalCode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -124,7 +124,7 @@ public class PostalAddressType {
     /**
      * Gets the value of the stateOrProvince property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -136,7 +136,7 @@ public class PostalAddressType {
     /**
      * Sets the value of the stateOrProvince property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -148,7 +148,7 @@ public class PostalAddressType {
     /**
      * Gets the value of the street property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -160,7 +160,7 @@ public class PostalAddressType {
     /**
      * Sets the value of the street property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -172,7 +172,7 @@ public class PostalAddressType {
     /**
      * Gets the value of the streetNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -184,7 +184,7 @@ public class PostalAddressType {
     /**
      * Sets the value of the streetNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

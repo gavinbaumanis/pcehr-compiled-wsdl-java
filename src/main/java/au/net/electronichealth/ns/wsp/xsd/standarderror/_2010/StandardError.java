@@ -14,16 +14,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="StandardErrorType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="errorCode" type="{http://ns.electronichealth.net.au/wsp/xsd/StandardError/2010}StandardErrorCodeType"/>
- *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="StandardErrorType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="errorCode" type="{http://ns.electronichealth.net.au/wsp/xsd/StandardError/2010}StandardErrorCodeType"/&gt;
+ *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -44,7 +44,7 @@ public class StandardError {
     /**
      * Gets the value of the errorCode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link StandardErrorCodeType }
      *     
@@ -56,7 +56,7 @@ public class StandardError {
     /**
      * Sets the value of the errorCode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link StandardErrorCodeType }
      *     
@@ -68,7 +68,7 @@ public class StandardError {
     /**
      * Gets the value of the message property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -80,7 +80,7 @@ public class StandardError {
     /**
      * Sets the value of the message property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

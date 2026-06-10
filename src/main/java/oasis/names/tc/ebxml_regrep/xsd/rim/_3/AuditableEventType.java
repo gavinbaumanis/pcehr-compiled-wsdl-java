@@ -19,19 +19,19 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AuditableEventType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType">
- *       &lt;sequence>
- *         &lt;element name="affectedObjects" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefListType"/>
- *       &lt;/sequence>
- *       &lt;attribute name="eventType" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" />
- *       &lt;attribute name="timestamp" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *       &lt;attribute name="user" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" />
- *       &lt;attribute name="requestId" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AuditableEventType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="affectedObjects" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefListType"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="eventType" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" /&gt;
+ *       &lt;attribute name="timestamp" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *       &lt;attribute name="user" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" /&gt;
+ *       &lt;attribute name="requestId" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -59,7 +59,7 @@ public class AuditableEventType
     /**
      * Gets the value of the affectedObjects property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ObjectRefList }
      *     
@@ -71,7 +71,7 @@ public class AuditableEventType
     /**
      * Sets the value of the affectedObjects property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ObjectRefList }
      *     
@@ -83,7 +83,7 @@ public class AuditableEventType
     /**
      * Gets the value of the eventType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -95,7 +95,7 @@ public class AuditableEventType
     /**
      * Sets the value of the eventType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -107,7 +107,7 @@ public class AuditableEventType
     /**
      * Gets the value of the timestamp property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -119,7 +119,7 @@ public class AuditableEventType
     /**
      * Sets the value of the timestamp property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -131,7 +131,7 @@ public class AuditableEventType
     /**
      * Gets the value of the user property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -143,7 +143,7 @@ public class AuditableEventType
     /**
      * Sets the value of the user property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -155,7 +155,7 @@ public class AuditableEventType
     /**
      * Gets the value of the requestId property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -167,7 +167,7 @@ public class AuditableEventType
     /**
      * Sets the value of the requestId property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

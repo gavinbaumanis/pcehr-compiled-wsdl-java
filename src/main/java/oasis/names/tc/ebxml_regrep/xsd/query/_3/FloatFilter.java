@@ -14,13 +14,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="FloatFilterType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}SimpleFilterType">
- *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}float" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="FloatFilterType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}SimpleFilterType"&gt;
+ *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}float" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -38,6 +38,7 @@ public class FloatFilter
     /**
      * Gets the value of the value property.
      * 
+     * @return field value
      */
     public float getValue() {
         return value;
@@ -46,6 +47,7 @@ public class FloatFilter
     /**
      * Sets the value of the value property.
      * 
+     * @param value field value
      */
     public void setValue(float value) {
         this.value = value;

@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse createDiagnosticImagingReportViewResponse() {
         return new DiagnosticImagingReportViewResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.DiagnosticImagingReport createDiagnosticImagingReportViewResponseDiagnosticImagingReport() {
         return new DiagnosticImagingReportViewResponse.DiagnosticImagingReport();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult createDiagnosticImagingReportViewResponseDiagnosticImagingReportImagingExaminationResult() {
         return new DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails createDiagnosticImagingReportViewResponseDiagnosticImagingReportImagingExaminationResultAnatomicalSiteDetails() {
         return new DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.ViewMetadata }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.ViewMetadata createDiagnosticImagingReportViewResponseViewMetadata() {
         return new DiagnosticImagingReportViewResponse.ViewMetadata();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportView }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportView createDiagnosticImagingReportView() {
         return new DiagnosticImagingReportView();
@@ -80,6 +86,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails.AnatomicalLocation }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails.AnatomicalLocation createDiagnosticImagingReportViewResponseDiagnosticImagingReportImagingExaminationResultAnatomicalSiteDetailsAnatomicalLocation() {
         return new DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails.AnatomicalLocation();
@@ -88,6 +95,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.ViewMetadata.IndividualProfile }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.ViewMetadata.IndividualProfile createDiagnosticImagingReportViewResponseViewMetadataIndividualProfile() {
         return new DiagnosticImagingReportViewResponse.ViewMetadata.IndividualProfile();
@@ -96,6 +104,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticImagingReportViewResponse.ViewMetadata.ViewParameters }
      * 
+     * @return newly created instance
      */
     public DiagnosticImagingReportViewResponse.ViewMetadata.ViewParameters createDiagnosticImagingReportViewResponseViewMetadataViewParameters() {
         return new DiagnosticImagingReportViewResponse.ViewMetadata.ViewParameters();

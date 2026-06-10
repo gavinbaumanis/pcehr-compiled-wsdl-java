@@ -25,36 +25,36 @@ import au.net.electronichealth.ns.pcehr.xsd.common.commoncoreelements._1.StatusT
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *         &lt;element name="individual" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
- *                   &lt;element name="ihiRecordStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}recordStatusType"/>
- *                   &lt;element name="ihiStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}statusType"/>
- *                   &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dateAccuracyIndicatorType"/>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/>
- *                   &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *         &lt;element name="individual" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+ *                   &lt;element name="ihiRecordStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}recordStatusType"/&gt;
+ *                   &lt;element name="ihiStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}statusType"/&gt;
+ *                   &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dateAccuracyIndicatorType"/&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/&gt;
+ *                   &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -74,7 +74,7 @@ public class GainPCEHRAccessResponse {
     /**
      * Gets the value of the responseStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseStatusType }
      *     
@@ -86,7 +86,7 @@ public class GainPCEHRAccessResponse {
     /**
      * Sets the value of the responseStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseStatusType }
      *     
@@ -98,7 +98,7 @@ public class GainPCEHRAccessResponse {
     /**
      * Gets the value of the individual property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link GainPCEHRAccessResponse.Individual }
      *     
@@ -110,7 +110,7 @@ public class GainPCEHRAccessResponse {
     /**
      * Sets the value of the individual property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link GainPCEHRAccessResponse.Individual }
      *     
@@ -126,25 +126,25 @@ public class GainPCEHRAccessResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
-     *         &lt;element name="ihiRecordStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}recordStatusType"/>
-     *         &lt;element name="ihiStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}statusType"/>
-     *         &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dateAccuracyIndicatorType"/>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/>
-     *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+     *         &lt;element name="ihiRecordStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}recordStatusType"/&gt;
+     *         &lt;element name="ihiStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}statusType"/&gt;
+     *         &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dateAccuracyIndicatorType"/&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/&gt;
+     *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameType"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -195,7 +195,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the ihiNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -207,7 +207,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the ihiNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -219,7 +219,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the medicareCardNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -231,7 +231,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the medicareCardNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -243,7 +243,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the medicareIRN property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link Integer }
          *     
@@ -255,7 +255,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the medicareIRN property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link Integer }
          *     
@@ -267,7 +267,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the dvaFileNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -279,7 +279,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the dvaFileNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -291,7 +291,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the militaryHealthNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -303,7 +303,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the militaryHealthNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -315,7 +315,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the ihiRecordStatus property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link RecordStatusType }
          *     
@@ -327,7 +327,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the ihiRecordStatus property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link RecordStatusType }
          *     
@@ -339,7 +339,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the ihiStatus property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link StatusType }
          *     
@@ -351,7 +351,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the ihiStatus property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link StatusType }
          *     
@@ -363,7 +363,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the dateOfBirth property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -375,7 +375,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the dateOfBirth property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -387,7 +387,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the dateAccuracyIndicatorType property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link DateAccuracyIndicatorType }
          *     
@@ -399,7 +399,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the dateAccuracyIndicatorType property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link DateAccuracyIndicatorType }
          *     
@@ -411,7 +411,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the sex property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link Sex }
          *     
@@ -423,7 +423,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the sex property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link Sex }
          *     
@@ -435,7 +435,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Gets the value of the name property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link NameType }
          *     
@@ -447,7 +447,7 @@ public class GainPCEHRAccessResponse {
         /**
          * Sets the value of the name property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link NameType }
          *     

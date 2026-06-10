@@ -18,17 +18,17 @@ import au.gov.nehta.schema.DateAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="medicareOverview">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="versionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fromDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *         &lt;element name="toDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="medicareOverview"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="versionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="fromDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *         &lt;element name="toDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -56,7 +56,7 @@ public class MedicareOverview {
     /**
      * Gets the value of the versionNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -68,7 +68,7 @@ public class MedicareOverview {
     /**
      * Sets the value of the versionNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -80,7 +80,7 @@ public class MedicareOverview {
     /**
      * Gets the value of the fromDate property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -92,7 +92,7 @@ public class MedicareOverview {
     /**
      * Sets the value of the fromDate property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -104,7 +104,7 @@ public class MedicareOverview {
     /**
      * Gets the value of the toDate property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -116,7 +116,7 @@ public class MedicareOverview {
     /**
      * Sets the value of the toDate property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

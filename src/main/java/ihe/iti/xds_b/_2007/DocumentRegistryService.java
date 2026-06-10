@@ -60,7 +60,7 @@ public class DocumentRegistryService
 
     /**
      * 
-     * @return
+     * @return the result
      *     returns DocumentRegistryPortType
      */
     @WebEndpoint(name = "DocumentRegistry_Port_Soap12")
@@ -70,9 +70,9 @@ public class DocumentRegistryService
 
     /**
      * 
-     * @param features
+     * @param features web service features
      *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
-     * @return
+     * @return the result
      *     returns DocumentRegistryPortType
      */
     @WebEndpoint(name = "DocumentRegistry_Port_Soap12")

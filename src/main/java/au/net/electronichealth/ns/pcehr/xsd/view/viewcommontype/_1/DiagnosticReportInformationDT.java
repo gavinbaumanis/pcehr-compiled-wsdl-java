@@ -14,22 +14,22 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="diagnosticReportInformationDT">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CDAeffectiveTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="dateTimeReportAuthored" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="dateTimeAuthorisation" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="accessionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="reportDescription" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="reportStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *         &lt;element name="documentId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="documentLink" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="diagnosticReportInformationDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CDAeffectiveTime" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="dateTimeReportAuthored" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="dateTimeAuthorisation" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="accessionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="reportDescription" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="reportStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *         &lt;element name="documentId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="documentLink" type="{http://www.w3.org/2001/XMLSchema}anyURI"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -68,7 +68,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the cdAeffectiveTime property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -80,7 +80,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the cdAeffectiveTime property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -92,7 +92,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the dateTimeReportAuthored property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -104,7 +104,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the dateTimeReportAuthored property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -116,7 +116,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the dateTimeAuthorisation property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -128,7 +128,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the dateTimeAuthorisation property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -140,7 +140,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the accessionNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -152,7 +152,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the accessionNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -164,7 +164,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the reportDescription property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -176,7 +176,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the reportDescription property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -188,7 +188,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the reportStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link CodedType }
      *     
@@ -200,7 +200,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the reportStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link CodedType }
      *     
@@ -212,7 +212,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the documentId property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -224,7 +224,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the documentId property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -236,7 +236,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Gets the value of the documentLink property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -248,7 +248,7 @@ public class DiagnosticReportInformationDT {
     /**
      * Sets the value of the documentLink property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

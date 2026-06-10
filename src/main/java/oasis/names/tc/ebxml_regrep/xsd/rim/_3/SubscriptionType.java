@@ -23,19 +23,19 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SubscriptionType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}Action" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="selector" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" />
- *       &lt;attribute name="startTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *       &lt;attribute name="endTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *       &lt;attribute name="notificationInterval" type="{http://www.w3.org/2001/XMLSchema}duration" default="P1D" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SubscriptionType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}Action" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="selector" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" /&gt;
+ *       &lt;attribute name="startTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *       &lt;attribute name="endTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *       &lt;attribute name="notificationInterval" type="{http://www.w3.org/2001/XMLSchema}duration" default="P1D" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -64,25 +64,23 @@ public class SubscriptionType
     /**
      * Gets the value of the actions property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the actions property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getActions().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link NotifyActionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link ActionType }{@code >}
+     * <p>Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link NotifyActionType }&gt;
+     * {@link JAXBElement }{@code <}{@link ActionType }&gt;
      * 
      * 
+     * @return field value
      */
     public List<JAXBElement<? extends ActionType>> getActions() {
         if (actions == null) {
@@ -94,7 +92,7 @@ public class SubscriptionType
     /**
      * Gets the value of the selector property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -106,7 +104,7 @@ public class SubscriptionType
     /**
      * Sets the value of the selector property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -118,7 +116,7 @@ public class SubscriptionType
     /**
      * Gets the value of the startTime property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -130,7 +128,7 @@ public class SubscriptionType
     /**
      * Sets the value of the startTime property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -142,7 +140,7 @@ public class SubscriptionType
     /**
      * Gets the value of the endTime property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -154,7 +152,7 @@ public class SubscriptionType
     /**
      * Sets the value of the endTime property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -166,7 +164,7 @@ public class SubscriptionType
     /**
      * Gets the value of the notificationInterval property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Duration }
      *     
@@ -178,7 +176,7 @@ public class SubscriptionType
     /**
      * Sets the value of the notificationInterval property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Duration }
      *     

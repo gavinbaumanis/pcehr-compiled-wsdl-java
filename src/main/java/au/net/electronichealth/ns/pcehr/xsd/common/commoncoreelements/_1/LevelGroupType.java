@@ -13,16 +13,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="levelGroupType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="levelType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}levelType"/>
- *         &lt;element name="levelNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}levelNumberType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="levelGroupType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="levelType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}levelType"/&gt;
+ *         &lt;element name="levelNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}levelNumberType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class LevelGroupType {
     /**
      * Gets the value of the levelType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link LevelType }
      *     
@@ -53,7 +53,7 @@ public class LevelGroupType {
     /**
      * Sets the value of the levelType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link LevelType }
      *     
@@ -65,7 +65,7 @@ public class LevelGroupType {
     /**
      * Gets the value of the levelNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -77,7 +77,7 @@ public class LevelGroupType {
     /**
      * Sets the value of the levelNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

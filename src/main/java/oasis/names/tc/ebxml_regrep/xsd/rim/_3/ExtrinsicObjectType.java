@@ -17,17 +17,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ExtrinsicObjectType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType">
- *       &lt;sequence>
- *         &lt;element name="ContentVersionInfo" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}VersionInfoType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="mimeType" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName" default="application/octet-stream" />
- *       &lt;attribute name="isOpaque" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ExtrinsicObjectType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ContentVersionInfo" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}VersionInfoType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="mimeType" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName" default="application/octet-stream" /&gt;
+ *       &lt;attribute name="isOpaque" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -50,7 +50,7 @@ public class ExtrinsicObjectType
     /**
      * Gets the value of the contentVersionInfo property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link VersionInfoType }
      *     
@@ -62,7 +62,7 @@ public class ExtrinsicObjectType
     /**
      * Sets the value of the contentVersionInfo property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link VersionInfoType }
      *     
@@ -74,7 +74,7 @@ public class ExtrinsicObjectType
     /**
      * Gets the value of the mimeType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -90,7 +90,7 @@ public class ExtrinsicObjectType
     /**
      * Sets the value of the mimeType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -102,7 +102,7 @@ public class ExtrinsicObjectType
     /**
      * Gets the value of the isOpaque property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Boolean }
      *     
@@ -118,7 +118,7 @@ public class ExtrinsicObjectType
     /**
      * Sets the value of the isOpaque property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Boolean }
      *     

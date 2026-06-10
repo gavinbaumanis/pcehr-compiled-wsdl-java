@@ -16,24 +16,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="documentID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="reasonForRemoval">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="Withdrawn"/>
- *               &lt;enumeration value="ElectToRemove"/>
- *               &lt;enumeration value="IncorrectIdentity"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="documentID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="reasonForRemoval"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="Withdrawn"/&gt;
+ *               &lt;enumeration value="ElectToRemove"/&gt;
+ *               &lt;enumeration value="IncorrectIdentity"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -54,7 +54,7 @@ public class RemoveDocument {
     /**
      * Gets the value of the documentID property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -66,7 +66,7 @@ public class RemoveDocument {
     /**
      * Sets the value of the documentID property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -78,7 +78,7 @@ public class RemoveDocument {
     /**
      * Gets the value of the reasonForRemoval property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RemoveDocument.DocumentRemovalReason }
      *     
@@ -90,7 +90,7 @@ public class RemoveDocument {
     /**
      * Sets the value of the reasonForRemoval property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RemoveDocument.DocumentRemovalReason }
      *     
@@ -104,15 +104,14 @@ public class RemoveDocument {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="Withdrawn"/>
-     *     &lt;enumeration value="ElectToRemove"/>
-     *     &lt;enumeration value="IncorrectIdentity"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="Withdrawn"/&gt;
+     *     &lt;enumeration value="ElectToRemove"/&gt;
+     *     &lt;enumeration value="IncorrectIdentity"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */

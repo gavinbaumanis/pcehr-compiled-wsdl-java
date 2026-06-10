@@ -19,20 +19,20 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ReferenceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}Transforms" minOccurs="0"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}DigestMethod"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}DigestValue"/>
- *       &lt;/sequence>
- *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" />
- *       &lt;attribute name="URI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="Type" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ReferenceType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}Transforms" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}DigestMethod"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}DigestValue"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" /&gt;
+ *       &lt;attribute name="URI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="Type" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -67,7 +67,7 @@ public class Reference {
     /**
      * Gets the value of the transforms property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Transforms }
      *     
@@ -79,7 +79,7 @@ public class Reference {
     /**
      * Sets the value of the transforms property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Transforms }
      *     
@@ -91,7 +91,7 @@ public class Reference {
     /**
      * Gets the value of the digestMethod property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link DigestMethod }
      *     
@@ -103,7 +103,7 @@ public class Reference {
     /**
      * Sets the value of the digestMethod property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link DigestMethod }
      *     
@@ -115,7 +115,7 @@ public class Reference {
     /**
      * Gets the value of the digestValue property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -126,7 +126,7 @@ public class Reference {
     /**
      * Sets the value of the digestValue property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -137,7 +137,7 @@ public class Reference {
     /**
      * Gets the value of the id property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -149,7 +149,7 @@ public class Reference {
     /**
      * Sets the value of the id property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -161,7 +161,7 @@ public class Reference {
     /**
      * Gets the value of the uri property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -173,7 +173,7 @@ public class Reference {
     /**
      * Sets the value of the uri property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -185,7 +185,7 @@ public class Reference {
     /**
      * Gets the value of the type property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -197,7 +197,7 @@ public class Reference {
     /**
      * Sets the value of the type property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

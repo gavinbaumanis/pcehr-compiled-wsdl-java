@@ -13,26 +13,26 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="providerInformationDT">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="healthcareProviderOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="healthcareProviderOrganisationIdentifier">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="16"/>
- *               &lt;maxLength value="16"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="healthcareProviderName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}nameTypeDT"/>
- *         &lt;element name="healthcareProviderIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="healthcareProviderRole" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="providerInformationDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="healthcareProviderOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="healthcareProviderOrganisationIdentifier"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="16"/&gt;
+ *               &lt;maxLength value="16"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="healthcareProviderName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}nameTypeDT"/&gt;
+ *         &lt;element name="healthcareProviderIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="healthcareProviderRole" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -59,7 +59,7 @@ public class ProviderInformationDT {
     /**
      * Gets the value of the healthcareProviderOrganisationName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -71,7 +71,7 @@ public class ProviderInformationDT {
     /**
      * Sets the value of the healthcareProviderOrganisationName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -83,7 +83,7 @@ public class ProviderInformationDT {
     /**
      * Gets the value of the healthcareProviderOrganisationIdentifier property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -95,7 +95,7 @@ public class ProviderInformationDT {
     /**
      * Sets the value of the healthcareProviderOrganisationIdentifier property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -107,7 +107,7 @@ public class ProviderInformationDT {
     /**
      * Gets the value of the healthcareProviderName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link NameTypeDT }
      *     
@@ -119,7 +119,7 @@ public class ProviderInformationDT {
     /**
      * Sets the value of the healthcareProviderName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link NameTypeDT }
      *     
@@ -131,7 +131,7 @@ public class ProviderInformationDT {
     /**
      * Gets the value of the healthcareProviderIdentifier property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -143,7 +143,7 @@ public class ProviderInformationDT {
     /**
      * Sets the value of the healthcareProviderIdentifier property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -155,7 +155,7 @@ public class ProviderInformationDT {
     /**
      * Gets the value of the healthcareProviderRole property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -167,7 +167,7 @@ public class ProviderInformationDT {
     /**
      * Sets the value of the healthcareProviderRole property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

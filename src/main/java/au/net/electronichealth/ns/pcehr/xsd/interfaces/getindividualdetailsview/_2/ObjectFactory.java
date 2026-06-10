@@ -36,6 +36,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIndividualDetailsViewResponse }
      * 
+     * @return newly created instance
      */
     public GetIndividualDetailsViewResponse createGetIndividualDetailsViewResponse() {
         return new GetIndividualDetailsViewResponse();
@@ -44,6 +45,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIndividualDetailsViewResponse.Individual }
      * 
+     * @return newly created instance
      */
     public GetIndividualDetailsViewResponse.Individual createGetIndividualDetailsViewResponseIndividual() {
         return new GetIndividualDetailsViewResponse.Individual();
@@ -52,14 +54,17 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIndividualDetailsViewResponse.Individual.ContactPersons }
      * 
+     * @return newly created instance
      */
     public GetIndividualDetailsViewResponse.Individual.ContactPersons createGetIndividualDetailsViewResponseIndividualContactPersons() {
         return new GetIndividualDetailsViewResponse.Individual.ContactPersons();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Object }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/interfaces/GetIndividualDetailsView/2.0", name = "getIndividualDetailsView")
     public JAXBElement<Object> createGetIndividualDetailsView(Object value) {

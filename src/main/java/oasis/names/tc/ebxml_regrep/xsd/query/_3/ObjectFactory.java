@@ -38,6 +38,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DateTimeFilter }
      * 
+     * @return newly created instance
      */
     public DateTimeFilter createDateTimeFilter() {
         return new DateTimeFilter();
@@ -46,6 +47,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FilterType }
      * 
+     * @return newly created instance
      */
     public FilterType createFilterType() {
         return new FilterType();
@@ -54,6 +56,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserQuery }
      * 
+     * @return newly created instance
      */
     public UserQuery createUserQuery() {
         return new UserQuery();
@@ -62,6 +65,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PersonQueryType }
      * 
+     * @return newly created instance
      */
     public PersonQueryType createPersonQueryType() {
         return new PersonQueryType();
@@ -70,6 +74,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegistryObjectQueryType }
      * 
+     * @return newly created instance
      */
     public RegistryObjectQueryType createRegistryObjectQueryType() {
         return new RegistryObjectQueryType();
@@ -78,6 +83,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SlotBranchType }
      * 
+     * @return newly created instance
      */
     public SlotBranchType createSlotBranchType() {
         return new SlotBranchType();
@@ -86,6 +92,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link InternationalStringBranchType }
      * 
+     * @return newly created instance
      */
     public InternationalStringBranchType createInternationalStringBranchType() {
         return new InternationalStringBranchType();
@@ -94,6 +101,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClassificationQuery }
      * 
+     * @return newly created instance
      */
     public ClassificationQuery createClassificationQuery() {
         return new ClassificationQuery();
@@ -102,6 +110,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClassificationSchemeQuery }
      * 
+     * @return newly created instance
      */
     public ClassificationSchemeQuery createClassificationSchemeQuery() {
         return new ClassificationSchemeQuery();
@@ -110,6 +119,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClassificationNodeQuery }
      * 
+     * @return newly created instance
      */
     public ClassificationNodeQuery createClassificationNodeQuery() {
         return new ClassificationNodeQuery();
@@ -118,6 +128,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExternalIdentifierQuery }
      * 
+     * @return newly created instance
      */
     public ExternalIdentifierQuery createExternalIdentifierQuery() {
         return new ExternalIdentifierQuery();
@@ -126,6 +137,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AssociationQuery }
      * 
+     * @return newly created instance
      */
     public AssociationQuery createAssociationQuery() {
         return new AssociationQuery();
@@ -134,6 +146,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BooleanFilter }
      * 
+     * @return newly created instance
      */
     public BooleanFilter createBooleanFilter() {
         return new BooleanFilter();
@@ -142,6 +155,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExternalLinkQuery }
      * 
+     * @return newly created instance
      */
     public ExternalLinkQuery createExternalLinkQuery() {
         return new ExternalLinkQuery();
@@ -150,6 +164,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResponseOption }
      * 
+     * @return newly created instance
      */
     public ResponseOption createResponseOption() {
         return new ResponseOption();
@@ -158,6 +173,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SpecificationLinkQuery }
      * 
+     * @return newly created instance
      */
     public SpecificationLinkQuery createSpecificationLinkQuery() {
         return new SpecificationLinkQuery();
@@ -166,6 +182,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ServiceBindingQuery }
      * 
+     * @return newly created instance
      */
     public ServiceBindingQuery createServiceBindingQuery() {
         return new ServiceBindingQuery();
@@ -174,6 +191,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ServiceQuery }
      * 
+     * @return newly created instance
      */
     public ServiceQuery createServiceQuery() {
         return new ServiceQuery();
@@ -182,6 +200,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AuditableEventQuery }
      * 
+     * @return newly created instance
      */
     public AuditableEventQuery createAuditableEventQuery() {
         return new AuditableEventQuery();
@@ -190,6 +209,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExtrinsicObjectQuery }
      * 
+     * @return newly created instance
      */
     public ExtrinsicObjectQuery createExtrinsicObjectQuery() {
         return new ExtrinsicObjectQuery();
@@ -198,6 +218,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IntegerFilter }
      * 
+     * @return newly created instance
      */
     public IntegerFilter createIntegerFilter() {
         return new IntegerFilter();
@@ -206,6 +227,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegistryPackageQuery }
      * 
+     * @return newly created instance
      */
     public RegistryPackageQuery createRegistryPackageQuery() {
         return new RegistryPackageQuery();
@@ -214,6 +236,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AdhocQueryResponse }
      * 
+     * @return newly created instance
      */
     public AdhocQueryResponse createAdhocQueryResponse() {
         return new AdhocQueryResponse();
@@ -222,6 +245,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegistryQuery }
      * 
+     * @return newly created instance
      */
     public RegistryQuery createRegistryQuery() {
         return new RegistryQuery();
@@ -230,6 +254,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganizationQuery }
      * 
+     * @return newly created instance
      */
     public OrganizationQuery createOrganizationQuery() {
         return new OrganizationQuery();
@@ -238,6 +263,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AdhocQueryQuery }
      * 
+     * @return newly created instance
      */
     public AdhocQueryQuery createAdhocQueryQuery() {
         return new AdhocQueryQuery();
@@ -246,6 +272,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link QueryExpressionBranchType }
      * 
+     * @return newly created instance
      */
     public QueryExpressionBranchType createQueryExpressionBranchType() {
         return new QueryExpressionBranchType();
@@ -254,6 +281,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FederationQuery }
      * 
+     * @return newly created instance
      */
     public FederationQuery createFederationQuery() {
         return new FederationQuery();
@@ -262,6 +290,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NotificationQuery }
      * 
+     * @return newly created instance
      */
     public NotificationQuery createNotificationQuery() {
         return new NotificationQuery();
@@ -270,6 +299,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StringFilter }
      * 
+     * @return newly created instance
      */
     public StringFilter createStringFilter() {
         return new StringFilter();
@@ -278,6 +308,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FloatFilter }
      * 
+     * @return newly created instance
      */
     public FloatFilter createFloatFilter() {
         return new FloatFilter();
@@ -286,6 +317,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CompoundFilter }
      * 
+     * @return newly created instance
      */
     public CompoundFilter createCompoundFilter() {
         return new CompoundFilter();
@@ -294,6 +326,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SubscriptionQuery }
      * 
+     * @return newly created instance
      */
     public SubscriptionQuery createSubscriptionQuery() {
         return new SubscriptionQuery();
@@ -302,14 +335,17 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AdhocQueryRequest }
      * 
+     * @return newly created instance
      */
     public AdhocQueryRequest createAdhocQueryRequest() {
         return new AdhocQueryRequest();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FilterType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link FilterType }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0", name = "Filter")
     public JAXBElement<FilterType> createFilter(FilterType value) {
@@ -317,8 +353,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonQueryType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link PersonQueryType }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0", name = "PersonQuery")
     public JAXBElement<PersonQueryType> createPersonQuery(PersonQueryType value) {
@@ -326,8 +364,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link RegistryObjectQueryType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegistryObjectQueryType }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0", name = "RegistryObjectQuery")
     public JAXBElement<RegistryObjectQueryType> createRegistryObjectQuery(RegistryObjectQueryType value) {

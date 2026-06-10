@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchTemplateResponse }
      * 
+     * @return newly created instance
      */
     public SearchTemplateResponse createSearchTemplateResponse() {
         return new SearchTemplateResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchTemplateResponse.Template }
      * 
+     * @return newly created instance
      */
     public SearchTemplateResponse.Template createSearchTemplateResponseTemplate() {
         return new SearchTemplateResponse.Template();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchTemplate }
      * 
+     * @return newly created instance
      */
     public SearchTemplate createSearchTemplate() {
         return new SearchTemplate();

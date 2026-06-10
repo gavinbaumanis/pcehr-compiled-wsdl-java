@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTemplateResponse }
      * 
+     * @return newly created instance
      */
     public GetTemplateResponse createGetTemplateResponse() {
         return new GetTemplateResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTemplate }
      * 
+     * @return newly created instance
      */
     public GetTemplate createGetTemplate() {
         return new GetTemplate();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTemplateResponse.Template }
      * 
+     * @return newly created instance
      */
     public GetTemplateResponse.Template createGetTemplateResponseTemplate() {
         return new GetTemplateResponse.Template();

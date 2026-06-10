@@ -13,15 +13,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="QueryExpressionBranchType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}BranchType">
- *       &lt;sequence>
- *         &lt;element name="QueryLanguageQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="QueryExpressionBranchType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}BranchType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="QueryLanguageQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,7 +40,7 @@ public class QueryExpressionBranchType
     /**
      * Gets the value of the queryLanguageQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -52,7 +52,7 @@ public class QueryExpressionBranchType
     /**
      * Sets the value of the queryLanguageQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationNodeQuery }
      *     

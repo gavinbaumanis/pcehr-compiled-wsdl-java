@@ -18,17 +18,17 @@ import au.gov.nehta.schema.DateAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="individualTypeSupp">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/>
- *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/>
- *         &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="individualTypeSupp"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/&gt;
+ *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}sex"/&gt;
+ *         &lt;element name="dateOfBirth" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -58,7 +58,7 @@ public class IndividualTypeSupp {
     /**
      * Gets the value of the name property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link NameTypeSupp }
      *     
@@ -70,7 +70,7 @@ public class IndividualTypeSupp {
     /**
      * Sets the value of the name property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link NameTypeSupp }
      *     
@@ -82,7 +82,7 @@ public class IndividualTypeSupp {
     /**
      * Gets the value of the sex property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Sex }
      *     
@@ -94,7 +94,7 @@ public class IndividualTypeSupp {
     /**
      * Sets the value of the sex property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Sex }
      *     
@@ -106,7 +106,7 @@ public class IndividualTypeSupp {
     /**
      * Gets the value of the dateOfBirth property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -118,7 +118,7 @@ public class IndividualTypeSupp {
     /**
      * Sets the value of the dateOfBirth property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

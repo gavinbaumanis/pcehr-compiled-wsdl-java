@@ -17,19 +17,19 @@ import oasis.names.tc.ebxml_regrep.xsd.rs._3.RegistryRequestType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryRequestType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}AdhocQuery"/>
- *         &lt;element name="SourceRegistry" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/>
- *         &lt;element name="DestinationRegistry" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/>
- *         &lt;element name="OwnerAtSource" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/>
- *         &lt;element name="OwnerAtDestination" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryRequestType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}AdhocQuery"/&gt;
+ *         &lt;element name="SourceRegistry" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/&gt;
+ *         &lt;element name="DestinationRegistry" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/&gt;
+ *         &lt;element name="OwnerAtSource" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/&gt;
+ *         &lt;element name="OwnerAtDestination" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ObjectRefType"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -61,7 +61,7 @@ public class RelocateObjectsRequest
     /**
      * Gets the value of the adhocQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AdhocQueryType }
      *     
@@ -73,7 +73,7 @@ public class RelocateObjectsRequest
     /**
      * Sets the value of the adhocQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AdhocQueryType }
      *     
@@ -85,7 +85,7 @@ public class RelocateObjectsRequest
     /**
      * Gets the value of the sourceRegistry property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ObjectRefType }
      *     
@@ -97,7 +97,7 @@ public class RelocateObjectsRequest
     /**
      * Sets the value of the sourceRegistry property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ObjectRefType }
      *     
@@ -109,7 +109,7 @@ public class RelocateObjectsRequest
     /**
      * Gets the value of the destinationRegistry property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ObjectRefType }
      *     
@@ -121,7 +121,7 @@ public class RelocateObjectsRequest
     /**
      * Sets the value of the destinationRegistry property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ObjectRefType }
      *     
@@ -133,7 +133,7 @@ public class RelocateObjectsRequest
     /**
      * Gets the value of the ownerAtSource property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ObjectRefType }
      *     
@@ -145,7 +145,7 @@ public class RelocateObjectsRequest
     /**
      * Sets the value of the ownerAtSource property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ObjectRefType }
      *     
@@ -157,7 +157,7 @@ public class RelocateObjectsRequest
     /**
      * Gets the value of the ownerAtDestination property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ObjectRefType }
      *     
@@ -169,7 +169,7 @@ public class RelocateObjectsRequest
     /**
      * Sets the value of the ownerAtDestination property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ObjectRefType }
      *     

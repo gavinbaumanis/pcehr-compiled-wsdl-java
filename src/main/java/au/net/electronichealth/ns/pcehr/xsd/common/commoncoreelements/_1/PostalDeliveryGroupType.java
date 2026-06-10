@@ -13,16 +13,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="postalDeliveryGroupType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="postalDeliveryType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postalDeliveryType"/>
- *         &lt;element name="postalDeliveryNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postalDeliveryNumberType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="postalDeliveryGroupType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="postalDeliveryType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postalDeliveryType"/&gt;
+ *         &lt;element name="postalDeliveryNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postalDeliveryNumberType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class PostalDeliveryGroupType {
     /**
      * Gets the value of the postalDeliveryType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PostalDeliveryType }
      *     
@@ -53,7 +53,7 @@ public class PostalDeliveryGroupType {
     /**
      * Sets the value of the postalDeliveryType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PostalDeliveryType }
      *     
@@ -65,7 +65,7 @@ public class PostalDeliveryGroupType {
     /**
      * Gets the value of the postalDeliveryNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -77,7 +77,7 @@ public class PostalDeliveryGroupType {
     /**
      * Sets the value of the postalDeliveryNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

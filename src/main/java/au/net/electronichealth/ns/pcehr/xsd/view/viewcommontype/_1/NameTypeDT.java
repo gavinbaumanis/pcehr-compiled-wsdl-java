@@ -15,19 +15,19 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="nameTypeDT">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="nameTitle" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="familyName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="givenName" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="nameSuffix" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="usage" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}usage" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="nameTypeDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="nameTitle" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="familyName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="givenName" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="nameSuffix" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="usage" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}usage" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -55,24 +55,22 @@ public class NameTypeDT {
     /**
      * Gets the value of the nameTitles property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the nameTitles property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getNameTitles().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link String }
      * 
      * 
+     * @return field value
      */
     public List<String> getNameTitles() {
         if (nameTitles == null) {
@@ -84,7 +82,7 @@ public class NameTypeDT {
     /**
      * Gets the value of the familyName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -96,7 +94,7 @@ public class NameTypeDT {
     /**
      * Sets the value of the familyName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -108,24 +106,22 @@ public class NameTypeDT {
     /**
      * Gets the value of the givenNames property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the givenNames property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getGivenNames().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link String }
      * 
      * 
+     * @return field value
      */
     public List<String> getGivenNames() {
         if (givenNames == null) {
@@ -137,24 +133,22 @@ public class NameTypeDT {
     /**
      * Gets the value of the nameSuffixes property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the nameSuffixes property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getNameSuffixes().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link String }
      * 
      * 
+     * @return field value
      */
     public List<String> getNameSuffixes() {
         if (nameSuffixes == null) {
@@ -166,7 +160,7 @@ public class NameTypeDT {
     /**
      * Gets the value of the usage property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Usage }
      *     
@@ -178,7 +172,7 @@ public class NameTypeDT {
     /**
      * Sets the value of the usage property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Usage }
      *     

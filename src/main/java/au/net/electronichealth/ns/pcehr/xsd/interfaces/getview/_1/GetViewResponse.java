@@ -15,27 +15,27 @@ import au.net.electronichealth.ns.pcehr.xsd.common.commoncoreelements._1.Respons
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *         &lt;element name="view" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="templateID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="data" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *         &lt;element name="view" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="templateID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="data" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -55,7 +55,7 @@ public class GetViewResponse {
     /**
      * Gets the value of the responseStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseStatusType }
      *     
@@ -67,7 +67,7 @@ public class GetViewResponse {
     /**
      * Sets the value of the responseStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseStatusType }
      *     
@@ -79,7 +79,7 @@ public class GetViewResponse {
     /**
      * Gets the value of the view property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link GetViewResponse.View }
      *     
@@ -91,7 +91,7 @@ public class GetViewResponse {
     /**
      * Sets the value of the view property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link GetViewResponse.View }
      *     
@@ -107,16 +107,16 @@ public class GetViewResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="templateID" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="data" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="templateID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="data" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -136,7 +136,7 @@ public class GetViewResponse {
         /**
          * Gets the value of the templateID property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -148,7 +148,7 @@ public class GetViewResponse {
         /**
          * Sets the value of the templateID property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -160,7 +160,7 @@ public class GetViewResponse {
         /**
          * Gets the value of the data property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     byte[]
          */
@@ -171,7 +171,7 @@ public class GetViewResponse {
         /**
          * Sets the value of the data property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     byte[]
          */

@@ -13,16 +13,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="unitGroupType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="unitType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}unitType"/>
- *         &lt;element name="unitNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}unitNumberType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="unitGroupType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="unitType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}unitType"/&gt;
+ *         &lt;element name="unitNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}unitNumberType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class UnitGroupType {
     /**
      * Gets the value of the unitType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link UnitType }
      *     
@@ -53,7 +53,7 @@ public class UnitGroupType {
     /**
      * Sets the value of the unitType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link UnitType }
      *     
@@ -65,7 +65,7 @@ public class UnitGroupType {
     /**
      * Gets the value of the unitNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -77,7 +77,7 @@ public class UnitGroupType {
     /**
      * Sets the value of the unitNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

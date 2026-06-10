@@ -14,17 +14,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SpecificationLinkQueryType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType">
- *       &lt;sequence>
- *         &lt;element name="UsageDescriptionBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}InternationalStringBranchType" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ServiceBindingQuery" minOccurs="0"/>
- *         &lt;element name="SpecificationObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SpecificationLinkQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="UsageDescriptionBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}InternationalStringBranchType" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ServiceBindingQuery" minOccurs="0"/&gt;
+ *         &lt;element name="SpecificationObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -50,7 +50,7 @@ public class SpecificationLinkQuery
     /**
      * Gets the value of the usageDescriptionBranch property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link InternationalStringBranchType }
      *     
@@ -62,7 +62,7 @@ public class SpecificationLinkQuery
     /**
      * Sets the value of the usageDescriptionBranch property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link InternationalStringBranchType }
      *     
@@ -74,7 +74,7 @@ public class SpecificationLinkQuery
     /**
      * Gets the value of the serviceBindingQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ServiceBindingQuery }
      *     
@@ -86,7 +86,7 @@ public class SpecificationLinkQuery
     /**
      * Sets the value of the serviceBindingQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ServiceBindingQuery }
      *     
@@ -98,7 +98,7 @@ public class SpecificationLinkQuery
     /**
      * Gets the value of the specificationObjectQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegistryObjectQueryType }
      *     
@@ -110,7 +110,7 @@ public class SpecificationLinkQuery
     /**
      * Sets the value of the specificationObjectQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegistryObjectQueryType }
      *     

@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StandardError }
      * 
+     * @return newly created instance
      */
     public StandardError createStandardError() {
         return new StandardError();

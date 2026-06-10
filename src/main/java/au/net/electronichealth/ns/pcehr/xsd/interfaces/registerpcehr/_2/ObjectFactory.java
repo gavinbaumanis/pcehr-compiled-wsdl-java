@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHRResponse }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHRResponse createRegisterPCEHRResponse() {
         return new RegisterPCEHRResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR createRegisterPCEHR() {
         return new RegisterPCEHR();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Assertions }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Assertions createRegisterPCEHRAssertions() {
         return new RegisterPCEHR.Assertions();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Assertions.DocumentConsent }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Assertions.DocumentConsent createRegisterPCEHRAssertionsDocumentConsent() {
         return new RegisterPCEHR.Assertions.DocumentConsent();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Assertions.Identity }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Assertions.Identity createRegisterPCEHRAssertionsIdentity() {
         return new RegisterPCEHR.Assertions.Identity();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Individual }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Individual createRegisterPCEHRIndividual() {
         return new RegisterPCEHR.Individual();
@@ -80,6 +86,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Representative }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Representative createRegisterPCEHRRepresentative() {
         return new RegisterPCEHR.Representative();
@@ -88,6 +95,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHRResponse.Individual }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHRResponse.Individual createRegisterPCEHRResponseIndividual() {
         return new RegisterPCEHRResponse.Individual();
@@ -96,6 +104,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHRResponse.IvcDetails }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHRResponse.IvcDetails createRegisterPCEHRResponseIvcDetails() {
         return new RegisterPCEHRResponse.IvcDetails();
@@ -104,6 +113,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Assertions.IvcCorrespondence }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Assertions.IvcCorrespondence createRegisterPCEHRAssertionsIvcCorrespondence() {
         return new RegisterPCEHR.Assertions.IvcCorrespondence();
@@ -112,6 +122,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Assertions.DocumentConsent.Document }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Assertions.DocumentConsent.Document createRegisterPCEHRAssertionsDocumentConsentDocument() {
         return new RegisterPCEHR.Assertions.DocumentConsent.Document();
@@ -120,6 +131,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Assertions.Identity.EvidenceOfIdentity }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Assertions.Identity.EvidenceOfIdentity createRegisterPCEHRAssertionsIdentityEvidenceOfIdentity() {
         return new RegisterPCEHR.Assertions.Identity.EvidenceOfIdentity();
@@ -128,6 +140,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Individual.Demographics }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Individual.Demographics createRegisterPCEHRIndividualDemographics() {
         return new RegisterPCEHR.Individual.Demographics();
@@ -136,6 +149,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHR.Representative.Demographics }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHR.Representative.Demographics createRegisterPCEHRRepresentativeDemographics() {
         return new RegisterPCEHR.Representative.Demographics();
@@ -144,6 +158,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RegisterPCEHRResponse.Individual.Demographics }
      * 
+     * @return newly created instance
      */
     public RegisterPCEHRResponse.Individual.Demographics createRegisterPCEHRResponseIndividualDemographics() {
         return new RegisterPCEHRResponse.Individual.Demographics();

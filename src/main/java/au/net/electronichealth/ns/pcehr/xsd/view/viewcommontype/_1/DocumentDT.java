@@ -14,31 +14,31 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="documentDT">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="effectiveDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="documentLink" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
- *         &lt;element name="documentTypeName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="documentTypeCode" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *         &lt;element name="documentAuthorPersonName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}nameTypeDT"/>
- *         &lt;element name="documentAuthorPersonIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="documentAuthorRole" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="documentAuthorOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="documentAuthorOrganisationIdentifier">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="16"/>
- *               &lt;maxLength value="16"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="clinicalSynopsis" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="documentDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="effectiveDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="documentLink" type="{http://www.w3.org/2001/XMLSchema}anyURI"/&gt;
+ *         &lt;element name="documentTypeName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="documentTypeCode" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *         &lt;element name="documentAuthorPersonName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}nameTypeDT"/&gt;
+ *         &lt;element name="documentAuthorPersonIdentifier" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="documentAuthorRole" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="documentAuthorOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="documentAuthorOrganisationIdentifier"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="16"/&gt;
+ *               &lt;maxLength value="16"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="clinicalSynopsis" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -82,7 +82,7 @@ public class DocumentDT {
     /**
      * Gets the value of the effectiveDateTime property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -94,7 +94,7 @@ public class DocumentDT {
     /**
      * Sets the value of the effectiveDateTime property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -106,7 +106,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentLink property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -118,7 +118,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentLink property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -130,7 +130,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentTypeName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -142,7 +142,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentTypeName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -154,7 +154,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentTypeCode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link CodedType }
      *     
@@ -166,7 +166,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentTypeCode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link CodedType }
      *     
@@ -178,7 +178,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentAuthorPersonName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link NameTypeDT }
      *     
@@ -190,7 +190,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentAuthorPersonName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link NameTypeDT }
      *     
@@ -202,7 +202,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentAuthorPersonIdentifier property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -214,7 +214,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentAuthorPersonIdentifier property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -226,7 +226,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentAuthorRole property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -238,7 +238,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentAuthorRole property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -250,7 +250,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentAuthorOrganisationName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -262,7 +262,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentAuthorOrganisationName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -274,7 +274,7 @@ public class DocumentDT {
     /**
      * Gets the value of the documentAuthorOrganisationIdentifier property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -286,7 +286,7 @@ public class DocumentDT {
     /**
      * Sets the value of the documentAuthorOrganisationIdentifier property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -298,7 +298,7 @@ public class DocumentDT {
     /**
      * Gets the value of the clinicalSynopsis property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -310,7 +310,7 @@ public class DocumentDT {
     /**
      * Sets the value of the clinicalSynopsis property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

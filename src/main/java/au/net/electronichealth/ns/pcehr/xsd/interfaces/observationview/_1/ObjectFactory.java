@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ObservationView }
      * 
+     * @return newly created instance
      */
     public ObservationView createObservationView() {
         return new ObservationView();
