@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fix wsimport-generated Javadoc so doclint=all passes on Java 8."""
+"""Fix wsimport-generated Javadoc so doclint=all passes (Java 8 / 11)."""
 from __future__ import annotations
 
 import re

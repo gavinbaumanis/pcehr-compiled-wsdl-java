@@ -1,0 +1,6 @@
+# Copy to local.properties (gitignored) for maintainer-only wsimport regeneration.
+# Default build does not read this file.
+
+# Optional root for an ADHA MHR B2B contract pack (same layout as src/main/java/wsdls/).
+# When unset, regeneration uses the committed tree under src/main/java/wsdls/.
+# pcehr.wsdl.root=

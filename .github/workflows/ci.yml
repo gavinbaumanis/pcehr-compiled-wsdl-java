@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master, main, java-8-javax-full-wsdl ]
+    branches: [ master, main, java-11-jakarta-full-wsdl ]
   pull_request:
-    branches: [ master, main, java-8-javax-full-wsdl ]
+    branches: [ master, main, java-11-jakarta-full-wsdl ]
 
 permissions:
   contents: read
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: temurin
-          java-version: "8"
+          java-version: "11"
           cache: maven
       - name: Build and test
         run: mvn -B "-Dgpg.skip=true" clean verify

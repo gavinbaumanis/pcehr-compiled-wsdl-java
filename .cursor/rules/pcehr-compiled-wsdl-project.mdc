@@ -14,24 +14,25 @@ Follow **`documentation-standards.mdc`**. Integrator docs use **version numbers*
 | Version | Java | XML stack | `Service` stubs |
 | ------- | ---- | --------- | ----------------- |
 | **1.6.3** | 8 | **javax** / EE4J **`jaxws-rt` 2.3.x** in consumers | **12** (MHR B2B) |
+| **1.7.0** | 11 | **Jakarta** / EE4J **`jaxws-rt` 4.0.x** in consumers | **12** (MHR B2B) |
 
 **Git branch mapping (maintainers only — never in integrator docs):**
 
 | Version | Git branch |
 | ------- | ---------- |
 | **1.6.3** | `java-8-javax` or `java-8-javax-full-wsdl` |
-| Java **11** / Jakarta types line | `java-11-jakarta-full-wsdl` (separate checkout; MHR facade clients on **mhr-b2b-client-java** **`java-11-jakarta`**) |
+| **1.7.0** | `java-11-jakarta-full-wsdl` |
 
 ## This checkout
 
-**`1.6.3-SNAPSHOT`**: Java **8**, **`javax`** committed types, **12** MHR B2B **`@WebServiceClient`** services. WSDL under **`src/main/resources/wsdl/`** and legacy tree **`src/main/java/wsdls/`** — **committed** (not separately licensed like HI WSDL). **`pcehr_override/`** xmldsig package. Sources **frozen** — no **`wsimport`** in this POM.
+**`1.7.0-SNAPSHOT`**: Java **11**, **Jakarta** committed types, **12** MHR B2B **`@WebServiceClient`** services. WSDL under **`src/main/resources/wsdl/`** and full tree **`src/main/java/wsdls/`** — **committed** (not separately licensed like HI WSDL). **`pcehr_override/`** xmldsig package. Sources **frozen** — no default **`wsimport`** in this POM.
 
 ## Build
 
-- JDK **8+**, from repo root: `mvn -B "-Dgpg.skip=true" clean verify` (quote `-D` on PowerShell).
+- JDK **11+**, from repo root: `mvn -B "-Dgpg.skip=true" clean verify` (quote `-D` on PowerShell).
 - Default build uses **committed** `src/main/java` — no wsimport.
 - After wsimport regeneration: **`python scripts/fix-javadoc.py`** then **`mvn verify`** (**`doclint=all`**, **`failOnWarnings=true`**).
-- Consumers add Eclipse EE4J **`com.sun.xml.ws:jaxws-rt` 2.3.7** at runtime — **not** Metro **`webservices-*`**.
+- Consumers add Eclipse EE4J **`com.sun.xml.ws:jaxws-rt` 4.0.4** at runtime — **not** Metro **`webservices-*`**.
 
 ## vs mhr-b2b-client-java
 
@@ -39,9 +40,9 @@ Follow **`documentation-standards.mdc`**. Integrator docs use **version numbers*
 |---|---|---|
 | Delivers | WSDL on classpath + generated types | Facade clients, TLS, signing |
 | Artifact | `pcehr-compiled-wsdl` | `mhr-b2b-client` |
-| Java **11** / Jakarta | Separate branch here; facades in **mhr-b2b-client-java** | In-repo **`wsimport`** on **`java-11-jakarta`** |
+| Java **11** / Jakarta | This branch | **`java-11-jakarta`** |
 
-Align **`pcehr-compiled-wsdl`** and **`mhr-b2b-client`** at the **same version** on the Java **8** line (**`1.6.3`**). **`mvn install`** this types JAR before unpublished **`mhr-b2b-client`** **`verify`**.
+Align **`pcehr-compiled-wsdl`** and **`mhr-b2b-client`** at the **same version** on each release line (**`1.6.3`** javax, **`1.7.0`** Jakarta).
 
 ## Doc split
 
