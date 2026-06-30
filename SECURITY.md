@@ -14,6 +14,6 @@ For **security vulnerabilities in this library** (not routine support):
 ## This repository
 
 - **Do not commit secrets to git.** That includes passwords, API tokens, private keys, mutual-TLS keystores, and vendor registration material — even in comments, tests, or documentation tracked in this repository.
-- **Do not commit** populated **`local.properties`** or a repo-root **`settings.xml`** containing credentials.
+- **Do not commit** populated **`local.properties`** or a repo-root **`settings.xml`** containing credentials. Use **`settings.xml.example`** as the maintainer template (server id **`central`**).
 - **B2B WSDL and XSD** under **`src/main/resources/wsdl/`** and **`src/main/java/wsdls/`** are part of this open-source MHR types artifact (not separately licensed like **HI** WSDL). Confirm redistribution terms with ADHA before mirroring to a public fork.
 - Generated Java under **`src/main/java/`** is safe to commit; it contains no credentials.
