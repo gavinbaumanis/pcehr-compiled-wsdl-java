@@ -45,9 +45,38 @@ There is **no** in-repo **`wsimport`** profile. Offline unit tests under **`src/
 
 ## Release
 
-1. Update **CHANGELOG.md** and **`pom.xml`** **`<version>`** / SCM **`<tag>`**.
-2. **`mvn -B "-Dgpg.skip=false" clean verify`** (with signing credentials).
-3. Deploy via Sonatype staging (**`distributionManagement`** in **`pom.xml`**).
+Publishing uses **`central-publishing-maven-plugin`** (Sonatype Central Portal). Copy **`settings.xml.example`** → **`settings.xml`**, server id **`central`**.
+
+**Parallel release lines (maintainers only):** each Git branch publishes a **different Maven version** — integrators choose by coordinate, not branch name.
+
+| Branch | Java | types / client version | `Service` stubs |
+| ------ | ---- | ---------------------- | --------------- |
+| **`java-8-javax-full-wsdl`** | 8 / javax | **1.6.3** | 12 |
+| **`java-11-jakarta-full-wsdl`** | 11 / Jakarta | **1.7.0** | 12 |
+
+Release **`pcehr-compiled-wsdl`** and **`mhr-b2b-client`** at the **same GA version** on the matching branch pair before integrators upgrade.
+
+### SNAPSHOT or manual GA
+
+1. Update **CHANGELOG.md** (and **`pom.xml`** / SCM **`<tag>`** for manual GA).
+2. **`mvn -B "-Prelease" clean verify`**
+3. **`mvn -B "-Prelease" deploy`**
+
+Git/SCM settings for **`maven-release-plugin`** live in **`pom.xml`** properties (**`scm.repo.url`**, **`release.*`**). Tags default to **`{artifactId}-{version}`** (e.g. **`pcehr-compiled-wsdl-1.7.0`**).
+
+### Automated GA (`maven-release-plugin`)
+
+Run on the **target branch** with a **clean** working tree. The plugin commits version bumps, creates the release tag, deploys from the tag checkout, bumps to the next **`-SNAPSHOT`**, and **pushes branch + tag** (**`pushChanges`** / **`remoteTagging`** in **`pom.xml`**). Git remote credentials (SSH or HTTPS) must work non-interactively.
+
+```text
+mvn -B "-Prelease" release:prepare release:perform -DreleaseVersion=1.7.0 -DdevelopmentVersion=1.7.1-SNAPSHOT -Dtag=pcehr-compiled-wsdl-1.7.0
+```
+
+Replace versions and **`-Dtag`** for the branch you are on (**`mhr-b2b-client-1.6.3`**, **`pcehr-compiled-wsdl-1.6.3`**, etc.). Omit **`-D…`** only if you accept interactive prompts.
+
+**After success:** confirm the artifact on Central; repeat on the paired types/client repo. No extra Git steps unless push failed (then **`git push origin <branch>`** and **`git push origin <tag>`**).
+
+**`-Dgpg.skip=false`** is equivalent to **`-Prelease`** for signing.
 
 ## Public commit checklist
 
