@@ -13,25 +13,25 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="australianStreetAddressType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/>
- *         &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/>
- *         &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/>
- *         &lt;element name="addressSiteName" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressSiteNameType" minOccurs="0"/>
- *         &lt;element name="unitGroup" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}unitGroupType" minOccurs="0"/>
- *         &lt;element name="levelGroup" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}levelGroupType" minOccurs="0"/>
- *         &lt;element name="lotNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}lotNumberType" minOccurs="0"/>
- *         &lt;element name="streetNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetNumberType" minOccurs="0"/>
- *         &lt;element name="streetName" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetNameType"/>
- *         &lt;element name="streetType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetType" minOccurs="0"/>
- *         &lt;element name="streetSuffix" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetSuffixType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="australianStreetAddressType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/&gt;
+ *         &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/&gt;
+ *         &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/&gt;
+ *         &lt;element name="addressSiteName" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressSiteNameType" minOccurs="0"/&gt;
+ *         &lt;element name="unitGroup" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}unitGroupType" minOccurs="0"/&gt;
+ *         &lt;element name="levelGroup" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}levelGroupType" minOccurs="0"/&gt;
+ *         &lt;element name="lotNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}lotNumberType" minOccurs="0"/&gt;
+ *         &lt;element name="streetNumber" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetNumberType" minOccurs="0"/&gt;
+ *         &lt;element name="streetName" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetNameType"/&gt;
+ *         &lt;element name="streetType" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetType" minOccurs="0"/&gt;
+ *         &lt;element name="streetSuffix" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}streetSuffixType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -71,7 +71,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the state property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link StateType }
      *     
@@ -83,7 +83,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the state property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link StateType }
      *     
@@ -95,7 +95,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the postcode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -107,7 +107,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the postcode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -119,7 +119,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the suburb property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -131,7 +131,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the suburb property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -143,7 +143,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the addressSiteName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -155,7 +155,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the addressSiteName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -167,7 +167,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the unitGroup property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link UnitGroupType }
      *     
@@ -179,7 +179,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the unitGroup property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link UnitGroupType }
      *     
@@ -191,7 +191,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the levelGroup property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link LevelGroupType }
      *     
@@ -203,7 +203,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the levelGroup property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link LevelGroupType }
      *     
@@ -215,7 +215,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the lotNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -227,7 +227,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the lotNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -239,7 +239,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the streetNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -251,7 +251,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the streetNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -263,7 +263,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the streetName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -275,7 +275,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the streetName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -287,7 +287,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the streetType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link StreetType }
      *     
@@ -299,7 +299,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the streetType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link StreetType }
      *     
@@ -311,7 +311,7 @@ public class AustralianStreetAddressType {
     /**
      * Gets the value of the streetSuffix property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link StreetSuffixType }
      *     
@@ -323,7 +323,7 @@ public class AustralianStreetAddressType {
     /**
      * Sets the value of the streetSuffix property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link StreetSuffixType }
      *     

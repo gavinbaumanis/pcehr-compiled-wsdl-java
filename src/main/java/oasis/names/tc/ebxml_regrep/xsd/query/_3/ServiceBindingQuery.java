@@ -16,17 +16,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ServiceBindingQueryType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ServiceQuery" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}SpecificationLinkQuery" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="TargetBindingQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ServiceBindingQueryType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ServiceBindingQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ServiceQuery" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}SpecificationLinkQuery" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="TargetBindingQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ServiceBindingQueryType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,7 +52,7 @@ public class ServiceBindingQuery
     /**
      * Gets the value of the serviceQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ServiceQuery }
      *     
@@ -64,7 +64,7 @@ public class ServiceBindingQuery
     /**
      * Sets the value of the serviceQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ServiceQuery }
      *     
@@ -76,24 +76,22 @@ public class ServiceBindingQuery
     /**
      * Gets the value of the specificationLinkQueries property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the specificationLinkQueries property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getSpecificationLinkQueries().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link SpecificationLinkQuery }
      * 
      * 
+     * @return field value
      */
     public List<SpecificationLinkQuery> getSpecificationLinkQueries() {
         if (specificationLinkQueries == null) {
@@ -105,7 +103,7 @@ public class ServiceBindingQuery
     /**
      * Gets the value of the targetBindingQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ServiceBindingQuery }
      *     
@@ -117,7 +115,7 @@ public class ServiceBindingQuery
     /**
      * Sets the value of the targetBindingQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ServiceBindingQuery }
      *     

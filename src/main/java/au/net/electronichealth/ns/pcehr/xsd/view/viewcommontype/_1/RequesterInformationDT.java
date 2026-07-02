@@ -13,27 +13,27 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="requesterInformationDT">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="testRequestId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="dateTimeRequested" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="providerOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="providerOrganisationIdentifier" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="16"/>
- *               &lt;maxLength value="16"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="providerName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}nameTypeDT"/>
- *         &lt;element name="providerIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="requesterInformationDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="testRequestId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="dateTimeRequested" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="providerOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="providerOrganisationIdentifier" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="16"/&gt;
+ *               &lt;maxLength value="16"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="providerName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}nameTypeDT"/&gt;
+ *         &lt;element name="providerIdentifier" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -61,7 +61,7 @@ public class RequesterInformationDT {
     /**
      * Gets the value of the testRequestId property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -73,7 +73,7 @@ public class RequesterInformationDT {
     /**
      * Sets the value of the testRequestId property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -85,7 +85,7 @@ public class RequesterInformationDT {
     /**
      * Gets the value of the dateTimeRequested property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -97,7 +97,7 @@ public class RequesterInformationDT {
     /**
      * Sets the value of the dateTimeRequested property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -109,7 +109,7 @@ public class RequesterInformationDT {
     /**
      * Gets the value of the providerOrganisationName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -121,7 +121,7 @@ public class RequesterInformationDT {
     /**
      * Sets the value of the providerOrganisationName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -133,7 +133,7 @@ public class RequesterInformationDT {
     /**
      * Gets the value of the providerOrganisationIdentifier property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -145,7 +145,7 @@ public class RequesterInformationDT {
     /**
      * Sets the value of the providerOrganisationIdentifier property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -157,7 +157,7 @@ public class RequesterInformationDT {
     /**
      * Gets the value of the providerName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link NameTypeDT }
      *     
@@ -169,7 +169,7 @@ public class RequesterInformationDT {
     /**
      * Sets the value of the providerName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link NameTypeDT }
      *     
@@ -181,7 +181,7 @@ public class RequesterInformationDT {
     /**
      * Gets the value of the providerIdentifier property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -193,7 +193,7 @@ public class RequesterInformationDT {
     /**
      * Sets the value of the providerIdentifier property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

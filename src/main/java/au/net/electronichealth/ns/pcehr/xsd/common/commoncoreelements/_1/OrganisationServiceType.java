@@ -21,62 +21,62 @@ import au.gov.nehta.schema.DateAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="organisationServiceType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="organisationType">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="7"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="organisationServiceType">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="7"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="organisationServiceUnit" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="1000"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="serviceComments" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="250"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="complexDate" maxOccurs="unbounded">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="type">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;enumeration value="StartDate"/>
- *                         &lt;enumeration value="EndDate"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                   &lt;element name="accuracyIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="organisationServiceType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="organisationType"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="7"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="organisationServiceType"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="7"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="organisationServiceUnit" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="1000"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="serviceComments" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="250"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="complexDate" maxOccurs="unbounded"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="type"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;enumeration value="StartDate"/&gt;
+ *                         &lt;enumeration value="EndDate"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                   &lt;element name="accuracyIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -103,7 +103,7 @@ public class OrganisationServiceType {
     /**
      * Gets the value of the organisationType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -115,7 +115,7 @@ public class OrganisationServiceType {
     /**
      * Sets the value of the organisationType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -127,7 +127,7 @@ public class OrganisationServiceType {
     /**
      * Gets the value of the organisationServiceType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -139,7 +139,7 @@ public class OrganisationServiceType {
     /**
      * Sets the value of the organisationServiceType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -151,7 +151,7 @@ public class OrganisationServiceType {
     /**
      * Gets the value of the organisationServiceUnit property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -163,7 +163,7 @@ public class OrganisationServiceType {
     /**
      * Sets the value of the organisationServiceUnit property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -175,7 +175,7 @@ public class OrganisationServiceType {
     /**
      * Gets the value of the serviceComments property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -187,7 +187,7 @@ public class OrganisationServiceType {
     /**
      * Sets the value of the serviceComments property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -199,24 +199,22 @@ public class OrganisationServiceType {
     /**
      * Gets the value of the complexDates property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the complexDates property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getComplexDates().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link OrganisationServiceType.ComplexDate }
      * 
      * 
+     * @return field value
      */
     public List<OrganisationServiceType.ComplexDate> getComplexDates() {
         if (complexDates == null) {
@@ -232,24 +230,24 @@ public class OrganisationServiceType {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="type">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;enumeration value="StartDate"/>
-     *               &lt;enumeration value="EndDate"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *         &lt;element name="accuracyIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="type"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;enumeration value="StartDate"/&gt;
+     *               &lt;enumeration value="EndDate"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *         &lt;element name="accuracyIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -274,7 +272,7 @@ public class OrganisationServiceType {
         /**
          * Gets the value of the type property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link OrganisationServiceType.ComplexDate.Type }
          *     
@@ -286,7 +284,7 @@ public class OrganisationServiceType {
         /**
          * Sets the value of the type property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link OrganisationServiceType.ComplexDate.Type }
          *     
@@ -298,7 +296,7 @@ public class OrganisationServiceType {
         /**
          * Gets the value of the date property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -310,7 +308,7 @@ public class OrganisationServiceType {
         /**
          * Sets the value of the date property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -322,7 +320,7 @@ public class OrganisationServiceType {
         /**
          * Gets the value of the accuracyIndicator property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -334,7 +332,7 @@ public class OrganisationServiceType {
         /**
          * Sets the value of the accuracyIndicator property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -348,14 +346,13 @@ public class OrganisationServiceType {
          * <p>Java class for null.
          * 
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * <p>
          * <pre>
-         * &lt;simpleType>
-         *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-         *     &lt;enumeration value="StartDate"/>
-         *     &lt;enumeration value="EndDate"/>
-         *   &lt;/restriction>
-         * &lt;/simpleType>
+         * &lt;simpleType&gt;
+         *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+         *     &lt;enumeration value="StartDate"/&gt;
+         *     &lt;enumeration value="EndDate"/&gt;
+         *   &lt;/restriction&gt;
+         * &lt;/simpleType&gt;
          * </pre>
          * 
          */

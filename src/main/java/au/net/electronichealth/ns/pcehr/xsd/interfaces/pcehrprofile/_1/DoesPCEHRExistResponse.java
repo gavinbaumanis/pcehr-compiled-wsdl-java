@@ -16,24 +16,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="PCEHRExists" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="accessCodeRequired" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="WithCode"/>
- *               &lt;enumeration value="WithoutCode"/>
- *               &lt;enumeration value="AccessGranted"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="PCEHRExists" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="accessCodeRequired" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="WithCode"/&gt;
+ *               &lt;enumeration value="WithoutCode"/&gt;
+ *               &lt;enumeration value="AccessGranted"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -53,6 +53,7 @@ public class DoesPCEHRExistResponse {
     /**
      * Gets the value of the pcehrExists property.
      * 
+     * @return field value
      */
     public boolean isPCEHRExists() {
         return pcehrExists;
@@ -61,6 +62,7 @@ public class DoesPCEHRExistResponse {
     /**
      * Sets the value of the pcehrExists property.
      * 
+     * @param value field value
      */
     public void setPCEHRExists(boolean value) {
         this.pcehrExists = value;
@@ -69,7 +71,7 @@ public class DoesPCEHRExistResponse {
     /**
      * Gets the value of the accessCodeRequired property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link DoesPCEHRExistResponse.AccessCodeRequired }
      *     
@@ -81,7 +83,7 @@ public class DoesPCEHRExistResponse {
     /**
      * Sets the value of the accessCodeRequired property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link DoesPCEHRExistResponse.AccessCodeRequired }
      *     
@@ -95,15 +97,14 @@ public class DoesPCEHRExistResponse {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="WithCode"/>
-     *     &lt;enumeration value="WithoutCode"/>
-     *     &lt;enumeration value="AccessGranted"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="WithCode"/&gt;
+     *     &lt;enumeration value="WithoutCode"/&gt;
+     *     &lt;enumeration value="AccessGranted"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */

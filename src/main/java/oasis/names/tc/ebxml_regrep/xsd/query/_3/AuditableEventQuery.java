@@ -16,17 +16,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AuditableEventQueryType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType">
- *       &lt;sequence>
- *         &lt;element name="AffectedObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="EventTypeQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/>
- *         &lt;element name="UserQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}UserQueryType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AuditableEventQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AffectedObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="EventTypeQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/&gt;
+ *         &lt;element name="UserQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}UserQueryType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,24 +52,22 @@ public class AuditableEventQuery
     /**
      * Gets the value of the affectedObjectQueries property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the affectedObjectQueries property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getAffectedObjectQueries().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link RegistryObjectQueryType }
      * 
      * 
+     * @return field value
      */
     public List<RegistryObjectQueryType> getAffectedObjectQueries() {
         if (affectedObjectQueries == null) {
@@ -81,7 +79,7 @@ public class AuditableEventQuery
     /**
      * Gets the value of the eventTypeQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -93,7 +91,7 @@ public class AuditableEventQuery
     /**
      * Sets the value of the eventTypeQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -105,7 +103,7 @@ public class AuditableEventQuery
     /**
      * Gets the value of the userQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link UserQuery }
      *     
@@ -117,7 +115,7 @@ public class AuditableEventQuery
     /**
      * Sets the value of the userQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link UserQuery }
      *     

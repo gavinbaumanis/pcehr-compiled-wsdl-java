@@ -29,17 +29,17 @@ import oasis.names.tc.ebxml_regrep.xsd.rim._3.SlotList;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RegistryRequestType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="RequestSlotList" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}SlotListType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="comment" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RegistryRequestType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="RequestSlotList" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}SlotListType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="comment" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -72,7 +72,7 @@ public class RegistryRequestType {
     /**
      * Gets the value of the requestSlotList property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link SlotList }
      *     
@@ -84,7 +84,7 @@ public class RegistryRequestType {
     /**
      * Sets the value of the requestSlotList property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link SlotList }
      *     
@@ -96,7 +96,7 @@ public class RegistryRequestType {
     /**
      * Gets the value of the id property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -108,7 +108,7 @@ public class RegistryRequestType {
     /**
      * Sets the value of the id property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -120,7 +120,7 @@ public class RegistryRequestType {
     /**
      * Gets the value of the comment property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -132,7 +132,7 @@ public class RegistryRequestType {
     /**
      * Sets the value of the comment property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

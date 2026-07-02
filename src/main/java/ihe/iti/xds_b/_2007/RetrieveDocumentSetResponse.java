@@ -17,31 +17,31 @@ import oasis.names.tc.ebxml_regrep.xsd.rs._3.RegistryResponseType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RetrieveDocumentSetResponseType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryResponse"/>
- *         &lt;sequence minOccurs="0">
- *           &lt;element name="DocumentResponse" maxOccurs="unbounded">
- *             &lt;complexType>
- *               &lt;complexContent>
- *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                   &lt;sequence>
- *                     &lt;element name="RepositoryUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/>
- *                     &lt;element name="DocumentUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/>
- *                     &lt;element name="mimeType" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/>
- *                     &lt;element name="Document" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/>
- *                   &lt;/sequence>
- *                 &lt;/restriction>
- *               &lt;/complexContent>
- *             &lt;/complexType>
- *           &lt;/element>
- *         &lt;/sequence>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RetrieveDocumentSetResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0}RegistryResponse"/&gt;
+ *         &lt;sequence minOccurs="0"&gt;
+ *           &lt;element name="DocumentResponse" maxOccurs="unbounded"&gt;
+ *             &lt;complexType&gt;
+ *               &lt;complexContent&gt;
+ *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                   &lt;sequence&gt;
+ *                     &lt;element name="RepositoryUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/&gt;
+ *                     &lt;element name="DocumentUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/&gt;
+ *                     &lt;element name="mimeType" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/&gt;
+ *                     &lt;element name="Document" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/&gt;
+ *                   &lt;/sequence&gt;
+ *                 &lt;/restriction&gt;
+ *               &lt;/complexContent&gt;
+ *             &lt;/complexType&gt;
+ *           &lt;/element&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -62,7 +62,7 @@ public class RetrieveDocumentSetResponse {
     /**
      * Gets the value of the registryResponse property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegistryResponseType }
      *     
@@ -74,7 +74,7 @@ public class RetrieveDocumentSetResponse {
     /**
      * Sets the value of the registryResponse property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegistryResponseType }
      *     
@@ -86,24 +86,22 @@ public class RetrieveDocumentSetResponse {
     /**
      * Gets the value of the documentResponses property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the documentResponses property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getDocumentResponses().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link RetrieveDocumentSetResponse.DocumentResponse }
      * 
      * 
+     * @return field value
      */
     public List<RetrieveDocumentSetResponse.DocumentResponse> getDocumentResponses() {
         if (documentResponses == null) {
@@ -119,18 +117,18 @@ public class RetrieveDocumentSetResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="RepositoryUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/>
-     *         &lt;element name="DocumentUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/>
-     *         &lt;element name="mimeType" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/>
-     *         &lt;element name="Document" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="RepositoryUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/&gt;
+     *         &lt;element name="DocumentUniqueId" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/&gt;
+     *         &lt;element name="mimeType" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}LongName"/&gt;
+     *         &lt;element name="Document" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -156,7 +154,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Gets the value of the repositoryUniqueId property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -168,7 +166,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Sets the value of the repositoryUniqueId property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -180,7 +178,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Gets the value of the documentUniqueId property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -192,7 +190,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Sets the value of the documentUniqueId property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -204,7 +202,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Gets the value of the mimeType property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -216,7 +214,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Sets the value of the mimeType property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -228,7 +226,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Gets the value of the document property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     byte[]
          */
@@ -239,7 +237,7 @@ public class RetrieveDocumentSetResponse {
         /**
          * Sets the value of the document property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     byte[]
          */

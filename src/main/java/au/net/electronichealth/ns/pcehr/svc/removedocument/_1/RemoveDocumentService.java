@@ -60,7 +60,7 @@ public class RemoveDocumentService
 
     /**
      * 
-     * @return
+     * @return the result
      *     returns RemoveDocumentPortType
      */
     @WebEndpoint(name = "removeDocumentSOAP12Port")
@@ -70,9 +70,9 @@ public class RemoveDocumentService
 
     /**
      * 
-     * @param features
+     * @param features web service features
      *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
-     * @return
+     * @return the result
      *     returns RemoveDocumentPortType
      */
     @WebEndpoint(name = "removeDocumentSOAP12Port")

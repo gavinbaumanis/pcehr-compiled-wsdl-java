@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SubmitObjectsRequest }
      * 
+     * @return newly created instance
      */
     public SubmitObjectsRequest createSubmitObjectsRequest() {
         return new SubmitObjectsRequest();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UndeprecateObjectsRequest }
      * 
+     * @return newly created instance
      */
     public UndeprecateObjectsRequest createUndeprecateObjectsRequest() {
         return new UndeprecateObjectsRequest();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcceptObjectsRequest }
      * 
+     * @return newly created instance
      */
     public AcceptObjectsRequest createAcceptObjectsRequest() {
         return new AcceptObjectsRequest();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveObjectsRequest }
      * 
+     * @return newly created instance
      */
     public RemoveObjectsRequest createRemoveObjectsRequest() {
         return new RemoveObjectsRequest();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeprecateObjectsRequest }
      * 
+     * @return newly created instance
      */
     public DeprecateObjectsRequest createDeprecateObjectsRequest() {
         return new DeprecateObjectsRequest();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RelocateObjectsRequest }
      * 
+     * @return newly created instance
      */
     public RelocateObjectsRequest createRelocateObjectsRequest() {
         return new RelocateObjectsRequest();
@@ -80,6 +86,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateObjectsRequest }
      * 
+     * @return newly created instance
      */
     public UpdateObjectsRequest createUpdateObjectsRequest() {
         return new UpdateObjectsRequest();
@@ -88,6 +95,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ApproveObjectsRequest }
      * 
+     * @return newly created instance
      */
     public ApproveObjectsRequest createApproveObjectsRequest() {
         return new ApproveObjectsRequest();

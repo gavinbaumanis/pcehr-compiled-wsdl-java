@@ -15,139 +15,139 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="addressType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="type">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="International"/>
- *               &lt;enumeration value="AustralianStreet"/>
- *               &lt;enumeration value="AustralianPostal"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="postCode" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="4"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="suburb" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="30"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="postalDeliveryGroup" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="postalDeliveryType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="postalDeliveryNumber" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;minLength value="1"/>
- *                         &lt;maxLength value="11"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="addressSiteName" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="30"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="unitGroup" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="unitType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="unitNumber" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;minLength value="1"/>
- *                         &lt;maxLength value="6"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="levelGroup" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="levelType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="levelNumber" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;minLength value="1"/>
- *                         &lt;maxLength value="4"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="lotNumber" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="15"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="streetNumber" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="12"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="streetName" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="30"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="streetType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="streetSuffix" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="internationalAddressLine" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;minLength value="1"/>
- *               &lt;maxLength value="120"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="addressType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="type"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="International"/&gt;
+ *               &lt;enumeration value="AustralianStreet"/&gt;
+ *               &lt;enumeration value="AustralianPostal"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="postCode" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="1"/&gt;
+ *               &lt;maxLength value="4"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="suburb" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="1"/&gt;
+ *               &lt;maxLength value="30"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="postalDeliveryGroup" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="postalDeliveryType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="postalDeliveryNumber" minOccurs="0"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;minLength value="1"/&gt;
+ *                         &lt;maxLength value="11"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="addressSiteName" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="30"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="unitGroup" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="unitType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="unitNumber" minOccurs="0"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;minLength value="1"/&gt;
+ *                         &lt;maxLength value="6"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="levelGroup" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="levelType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="levelNumber" minOccurs="0"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;minLength value="1"/&gt;
+ *                         &lt;maxLength value="4"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="lotNumber" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="1"/&gt;
+ *               &lt;maxLength value="15"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="streetNumber" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="1"/&gt;
+ *               &lt;maxLength value="12"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="streetName" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="1"/&gt;
+ *               &lt;maxLength value="30"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="streetType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="streetSuffix" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="internationalAddressLine" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;minLength value="1"/&gt;
+ *               &lt;maxLength value="120"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -193,7 +193,7 @@ public class AddressType {
     /**
      * Gets the value of the type property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AddressType.Type }
      *     
@@ -205,7 +205,7 @@ public class AddressType {
     /**
      * Sets the value of the type property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AddressType.Type }
      *     
@@ -217,7 +217,7 @@ public class AddressType {
     /**
      * Gets the value of the state property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -229,7 +229,7 @@ public class AddressType {
     /**
      * Sets the value of the state property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -241,7 +241,7 @@ public class AddressType {
     /**
      * Gets the value of the postCode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -253,7 +253,7 @@ public class AddressType {
     /**
      * Sets the value of the postCode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -265,7 +265,7 @@ public class AddressType {
     /**
      * Gets the value of the suburb property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -277,7 +277,7 @@ public class AddressType {
     /**
      * Sets the value of the suburb property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -289,7 +289,7 @@ public class AddressType {
     /**
      * Gets the value of the postalDeliveryGroup property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AddressType.PostalDeliveryGroup }
      *     
@@ -301,7 +301,7 @@ public class AddressType {
     /**
      * Sets the value of the postalDeliveryGroup property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AddressType.PostalDeliveryGroup }
      *     
@@ -313,7 +313,7 @@ public class AddressType {
     /**
      * Gets the value of the addressSiteName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -325,7 +325,7 @@ public class AddressType {
     /**
      * Sets the value of the addressSiteName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -337,7 +337,7 @@ public class AddressType {
     /**
      * Gets the value of the unitGroup property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AddressType.UnitGroup }
      *     
@@ -349,7 +349,7 @@ public class AddressType {
     /**
      * Sets the value of the unitGroup property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AddressType.UnitGroup }
      *     
@@ -361,7 +361,7 @@ public class AddressType {
     /**
      * Gets the value of the levelGroup property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AddressType.LevelGroup }
      *     
@@ -373,7 +373,7 @@ public class AddressType {
     /**
      * Sets the value of the levelGroup property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AddressType.LevelGroup }
      *     
@@ -385,7 +385,7 @@ public class AddressType {
     /**
      * Gets the value of the lotNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -397,7 +397,7 @@ public class AddressType {
     /**
      * Sets the value of the lotNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -409,7 +409,7 @@ public class AddressType {
     /**
      * Gets the value of the streetNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -421,7 +421,7 @@ public class AddressType {
     /**
      * Sets the value of the streetNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -433,7 +433,7 @@ public class AddressType {
     /**
      * Gets the value of the streetName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -445,7 +445,7 @@ public class AddressType {
     /**
      * Sets the value of the streetName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -457,7 +457,7 @@ public class AddressType {
     /**
      * Gets the value of the streetType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -469,7 +469,7 @@ public class AddressType {
     /**
      * Sets the value of the streetType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -481,7 +481,7 @@ public class AddressType {
     /**
      * Gets the value of the streetSuffix property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -493,7 +493,7 @@ public class AddressType {
     /**
      * Sets the value of the streetSuffix property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -505,7 +505,7 @@ public class AddressType {
     /**
      * Gets the value of the country property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -517,7 +517,7 @@ public class AddressType {
     /**
      * Sets the value of the country property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -529,7 +529,7 @@ public class AddressType {
     /**
      * Gets the value of the internationalAddressLine property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -541,7 +541,7 @@ public class AddressType {
     /**
      * Sets the value of the internationalAddressLine property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -557,23 +557,23 @@ public class AddressType {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="levelType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="levelNumber" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;minLength value="1"/>
-     *               &lt;maxLength value="4"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="levelType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="levelNumber" minOccurs="0"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;minLength value="1"/&gt;
+     *               &lt;maxLength value="4"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -591,7 +591,7 @@ public class AddressType {
         /**
          * Gets the value of the levelType property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -603,7 +603,7 @@ public class AddressType {
         /**
          * Sets the value of the levelType property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -615,7 +615,7 @@ public class AddressType {
         /**
          * Gets the value of the levelNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -627,7 +627,7 @@ public class AddressType {
         /**
          * Sets the value of the levelNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -645,23 +645,23 @@ public class AddressType {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="postalDeliveryType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="postalDeliveryNumber" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;minLength value="1"/>
-     *               &lt;maxLength value="11"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="postalDeliveryType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="postalDeliveryNumber" minOccurs="0"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;minLength value="1"/&gt;
+     *               &lt;maxLength value="11"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -679,7 +679,7 @@ public class AddressType {
         /**
          * Gets the value of the postalDeliveryType property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -691,7 +691,7 @@ public class AddressType {
         /**
          * Sets the value of the postalDeliveryType property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -703,7 +703,7 @@ public class AddressType {
         /**
          * Gets the value of the postalDeliveryNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -715,7 +715,7 @@ public class AddressType {
         /**
          * Sets the value of the postalDeliveryNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -731,15 +731,14 @@ public class AddressType {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="International"/>
-     *     &lt;enumeration value="AustralianStreet"/>
-     *     &lt;enumeration value="AustralianPostal"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="International"/&gt;
+     *     &lt;enumeration value="AustralianStreet"/&gt;
+     *     &lt;enumeration value="AustralianPostal"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -781,23 +780,23 @@ public class AddressType {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="unitType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="unitNumber" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;minLength value="1"/>
-     *               &lt;maxLength value="6"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="unitType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="unitNumber" minOccurs="0"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;minLength value="1"/&gt;
+     *               &lt;maxLength value="6"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -815,7 +814,7 @@ public class AddressType {
         /**
          * Gets the value of the unitType property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -827,7 +826,7 @@ public class AddressType {
         /**
          * Sets the value of the unitType property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -839,7 +838,7 @@ public class AddressType {
         /**
          * Gets the value of the unitNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -851,7 +850,7 @@ public class AddressType {
         /**
          * Sets the value of the unitNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     

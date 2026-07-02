@@ -19,17 +19,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ClassificationSchemeType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ClassificationNode" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="isInternal" use="required" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       &lt;attribute name="nodeType" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ClassificationSchemeType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}ClassificationNode" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="isInternal" use="required" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+ *       &lt;attribute name="nodeType" use="required" type="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}referenceURI" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,24 +52,22 @@ public class ClassificationSchemeType
     /**
      * Gets the value of the classificationNodes property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the classificationNodes property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getClassificationNodes().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link ClassificationNodeType }
      * 
      * 
+     * @return field value
      */
     public List<ClassificationNodeType> getClassificationNodes() {
         if (classificationNodes == null) {
@@ -81,6 +79,7 @@ public class ClassificationSchemeType
     /**
      * Gets the value of the isInternal property.
      * 
+     * @return field value
      */
     public boolean isIsInternal() {
         return isInternal;
@@ -89,6 +88,7 @@ public class ClassificationSchemeType
     /**
      * Sets the value of the isInternal property.
      * 
+     * @param value field value
      */
     public void setIsInternal(boolean value) {
         this.isInternal = value;
@@ -97,7 +97,7 @@ public class ClassificationSchemeType
     /**
      * Gets the value of the nodeType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -109,7 +109,7 @@ public class ClassificationSchemeType
     /**
      * Sets the value of the nodeType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

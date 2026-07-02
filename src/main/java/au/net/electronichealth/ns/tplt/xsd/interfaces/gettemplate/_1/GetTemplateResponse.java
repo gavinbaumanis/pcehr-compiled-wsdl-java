@@ -18,39 +18,39 @@ import au.net.electronichealth.ns.tplt.xsd.common.templatescoreelements._1.Templ
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *         &lt;element name="template" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="templateMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateMetadataType"/>
- *                   &lt;element name="usageMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateUsageMetadataType" minOccurs="0"/>
- *                   &lt;element name="package">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}base64Binary">
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="persistInCacheExpiry" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}dateTime">
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *         &lt;element name="template" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="templateMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateMetadataType"/&gt;
+ *                   &lt;element name="usageMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateUsageMetadataType" minOccurs="0"/&gt;
+ *                   &lt;element name="package"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}base64Binary"&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="persistInCacheExpiry" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}dateTime"&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -72,7 +72,7 @@ public class GetTemplateResponse {
     /**
      * Gets the value of the responseStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseStatusType }
      *     
@@ -84,7 +84,7 @@ public class GetTemplateResponse {
     /**
      * Sets the value of the responseStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseStatusType }
      *     
@@ -96,7 +96,7 @@ public class GetTemplateResponse {
     /**
      * Gets the value of the template property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link GetTemplateResponse.Template }
      *     
@@ -108,7 +108,7 @@ public class GetTemplateResponse {
     /**
      * Sets the value of the template property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link GetTemplateResponse.Template }
      *     
@@ -120,7 +120,7 @@ public class GetTemplateResponse {
     /**
      * Gets the value of the persistInCacheExpiry property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -132,7 +132,7 @@ public class GetTemplateResponse {
     /**
      * Sets the value of the persistInCacheExpiry property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -148,22 +148,22 @@ public class GetTemplateResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="templateMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateMetadataType"/>
-     *         &lt;element name="usageMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateUsageMetadataType" minOccurs="0"/>
-     *         &lt;element name="package">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}base64Binary">
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="templateMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateMetadataType"/&gt;
+     *         &lt;element name="usageMetadata" type="{http://ns.electronichealth.net.au/tplt/xsd/common/TemplatesCoreElements/1.0}templateUsageMetadataType" minOccurs="0"/&gt;
+     *         &lt;element name="package"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}base64Binary"&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -185,7 +185,7 @@ public class GetTemplateResponse {
         /**
          * Gets the value of the templateMetadata property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link TemplateMetadataType }
          *     
@@ -197,7 +197,7 @@ public class GetTemplateResponse {
         /**
          * Sets the value of the templateMetadata property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link TemplateMetadataType }
          *     
@@ -209,7 +209,7 @@ public class GetTemplateResponse {
         /**
          * Gets the value of the usageMetadata property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link TemplateUsageMetadataType }
          *     
@@ -221,7 +221,7 @@ public class GetTemplateResponse {
         /**
          * Sets the value of the usageMetadata property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link TemplateUsageMetadataType }
          *     
@@ -233,7 +233,7 @@ public class GetTemplateResponse {
         /**
          * Gets the value of the package property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     byte[]
          */
@@ -244,7 +244,7 @@ public class GetTemplateResponse {
         /**
          * Sets the value of the package property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     byte[]
          */

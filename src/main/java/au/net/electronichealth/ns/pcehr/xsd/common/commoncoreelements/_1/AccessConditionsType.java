@@ -14,48 +14,48 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="accessConditionsType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="accessLevel" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="Self"/>
- *               &lt;enumeration value="General"/>
- *               &lt;enumeration value="Limited"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="accessPermission" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="Permit"/>
- *               &lt;enumeration value="Deny"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="accessConditions" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="OpenAccess"/>
- *               &lt;enumeration value="AccessRevoked"/>
- *               &lt;enumeration value="PACAccess"/>
- *               &lt;enumeration value="PACXAccess"/>
- *               &lt;enumeration value="EmergencyAccess"/>
- *               &lt;enumeration value="LocalConsentAccess"/>
- *               &lt;enumeration value="AuthorisedRepresentativeAccess"/>
- *               &lt;enumeration value="NominatedRepresentativeAccess"/>
- *               &lt;enumeration value="IncorrectCode"/>
- *               &lt;enumeration value="LocalConsentAccessDenied"/>
- *               &lt;enumeration value="AccessRevoked"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="accessConditionsType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="accessLevel" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="Self"/&gt;
+ *               &lt;enumeration value="General"/&gt;
+ *               &lt;enumeration value="Limited"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="accessPermission" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="Permit"/&gt;
+ *               &lt;enumeration value="Deny"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="accessConditions" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="OpenAccess"/&gt;
+ *               &lt;enumeration value="AccessRevoked"/&gt;
+ *               &lt;enumeration value="PACAccess"/&gt;
+ *               &lt;enumeration value="PACXAccess"/&gt;
+ *               &lt;enumeration value="EmergencyAccess"/&gt;
+ *               &lt;enumeration value="LocalConsentAccess"/&gt;
+ *               &lt;enumeration value="AuthorisedRepresentativeAccess"/&gt;
+ *               &lt;enumeration value="NominatedRepresentativeAccess"/&gt;
+ *               &lt;enumeration value="IncorrectCode"/&gt;
+ *               &lt;enumeration value="LocalConsentAccessDenied"/&gt;
+ *               &lt;enumeration value="AccessRevoked"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -75,7 +75,7 @@ public class AccessConditionsType {
     /**
      * Gets the value of the accessLevel property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AccessConditionsType.AccessLevel }
      *     
@@ -87,7 +87,7 @@ public class AccessConditionsType {
     /**
      * Sets the value of the accessLevel property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AccessConditionsType.AccessLevel }
      *     
@@ -99,7 +99,7 @@ public class AccessConditionsType {
     /**
      * Gets the value of the accessPermission property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AccessConditionsType.AccessPermission }
      *     
@@ -111,7 +111,7 @@ public class AccessConditionsType {
     /**
      * Sets the value of the accessPermission property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AccessConditionsType.AccessPermission }
      *     
@@ -123,7 +123,7 @@ public class AccessConditionsType {
     /**
      * Gets the value of the accessConditions property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AccessConditionsType.AccessConditions }
      *     
@@ -135,7 +135,7 @@ public class AccessConditionsType {
     /**
      * Sets the value of the accessConditions property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AccessConditionsType.AccessConditions }
      *     
@@ -149,23 +149,22 @@ public class AccessConditionsType {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="OpenAccess"/>
-     *     &lt;enumeration value="AccessRevoked"/>
-     *     &lt;enumeration value="PACAccess"/>
-     *     &lt;enumeration value="PACXAccess"/>
-     *     &lt;enumeration value="EmergencyAccess"/>
-     *     &lt;enumeration value="LocalConsentAccess"/>
-     *     &lt;enumeration value="AuthorisedRepresentativeAccess"/>
-     *     &lt;enumeration value="NominatedRepresentativeAccess"/>
-     *     &lt;enumeration value="IncorrectCode"/>
-     *     &lt;enumeration value="LocalConsentAccessDenied"/>
-     *     &lt;enumeration value="AccessRevoked"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="OpenAccess"/&gt;
+     *     &lt;enumeration value="AccessRevoked"/&gt;
+     *     &lt;enumeration value="PACAccess"/&gt;
+     *     &lt;enumeration value="PACXAccess"/&gt;
+     *     &lt;enumeration value="EmergencyAccess"/&gt;
+     *     &lt;enumeration value="LocalConsentAccess"/&gt;
+     *     &lt;enumeration value="AuthorisedRepresentativeAccess"/&gt;
+     *     &lt;enumeration value="NominatedRepresentativeAccess"/&gt;
+     *     &lt;enumeration value="IncorrectCode"/&gt;
+     *     &lt;enumeration value="LocalConsentAccessDenied"/&gt;
+     *     &lt;enumeration value="AccessRevoked"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -219,15 +218,14 @@ public class AccessConditionsType {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="Self"/>
-     *     &lt;enumeration value="General"/>
-     *     &lt;enumeration value="Limited"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="Self"/&gt;
+     *     &lt;enumeration value="General"/&gt;
+     *     &lt;enumeration value="Limited"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -267,14 +265,13 @@ public class AccessConditionsType {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="Permit"/>
-     *     &lt;enumeration value="Deny"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="Permit"/&gt;
+     *     &lt;enumeration value="Deny"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */

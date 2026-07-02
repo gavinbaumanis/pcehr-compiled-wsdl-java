@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAuditViewResponse }
      * 
+     * @return newly created instance
      */
     public GetAuditViewResponse createGetAuditViewResponse() {
         return new GetAuditViewResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAuditViewResponse.AuditView }
      * 
+     * @return newly created instance
      */
     public GetAuditViewResponse.AuditView createGetAuditViewResponseAuditView() {
         return new GetAuditViewResponse.AuditView();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAuditViewResponse.AuditView.EventTrail }
      * 
+     * @return newly created instance
      */
     public GetAuditViewResponse.AuditView.EventTrail createGetAuditViewResponseAuditViewEventTrail() {
         return new GetAuditViewResponse.AuditView.EventTrail();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAuditViewResponse.AuditView.EventTrail.LogEvent }
      * 
+     * @return newly created instance
      */
     public GetAuditViewResponse.AuditView.EventTrail.LogEvent createGetAuditViewResponseAuditViewEventTrailLogEvent() {
         return new GetAuditViewResponse.AuditView.EventTrail.LogEvent();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAuditView }
      * 
+     * @return newly created instance
      */
     public GetAuditView createGetAuditView() {
         return new GetAuditView();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAuditViewResponse.AuditView.EventTrail.AuditEvent }
      * 
+     * @return newly created instance
      */
     public GetAuditViewResponse.AuditView.EventTrail.AuditEvent createGetAuditViewResponseAuditViewEventTrailAuditEvent() {
         return new GetAuditViewResponse.AuditView.EventTrail.AuditEvent();

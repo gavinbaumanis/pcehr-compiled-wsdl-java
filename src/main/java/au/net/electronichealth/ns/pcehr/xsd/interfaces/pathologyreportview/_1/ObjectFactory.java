@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportViewResponse }
      * 
+     * @return newly created instance
      */
     public PathologyReportViewResponse createPathologyReportViewResponse() {
         return new PathologyReportViewResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportViewResponse.PathologyReport }
      * 
+     * @return newly created instance
      */
     public PathologyReportViewResponse.PathologyReport createPathologyReportViewResponsePathologyReport() {
         return new PathologyReportViewResponse.PathologyReport();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportViewResponse.ViewMetadata }
      * 
+     * @return newly created instance
      */
     public PathologyReportViewResponse.ViewMetadata createPathologyReportViewResponseViewMetadata() {
         return new PathologyReportViewResponse.ViewMetadata();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportView }
      * 
+     * @return newly created instance
      */
     public PathologyReportView createPathologyReportView() {
         return new PathologyReportView();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportViewResponse.PathologyReport.PathologyTestResult }
      * 
+     * @return newly created instance
      */
     public PathologyReportViewResponse.PathologyReport.PathologyTestResult createPathologyReportViewResponsePathologyReportPathologyTestResult() {
         return new PathologyReportViewResponse.PathologyReport.PathologyTestResult();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportViewResponse.ViewMetadata.IndividualProfile }
      * 
+     * @return newly created instance
      */
     public PathologyReportViewResponse.ViewMetadata.IndividualProfile createPathologyReportViewResponseViewMetadataIndividualProfile() {
         return new PathologyReportViewResponse.ViewMetadata.IndividualProfile();
@@ -80,6 +86,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportViewResponse.ViewMetadata.ViewParameters }
      * 
+     * @return newly created instance
      */
     public PathologyReportViewResponse.ViewMetadata.ViewParameters createPathologyReportViewResponseViewMetadataViewParameters() {
         return new PathologyReportViewResponse.ViewMetadata.ViewParameters();

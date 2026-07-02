@@ -16,46 +16,46 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="participantActionType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="actionType" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="Create"/>
- *               &lt;enumeration value="Read"/>
- *               &lt;enumeration value="Update"/>
- *               &lt;enumeration value="Delete"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="operationPerformed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="reason" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="IncorrectIdentity"/>
- *               &lt;enumeration value="MedicalInaccuracy"/>
- *               &lt;enumeration value="ElectToRemove"/>
- *               &lt;enumeration value="IHIStatusIsDeceased"/>
- *               &lt;enumeration value="NoLegallyAppointmentAuthorised"/>
- *               &lt;enumeration value="NoOwnershipOfPCEHR"/>
- *               &lt;enumeration value="IHINotActive"/>
- *               &lt;enumeration value="IHINotVerified"/>
- *               &lt;enumeration value="TermsAndConditionsWereNotAccepted"/>
- *               &lt;enumeration value="Death"/>
- *               &lt;enumeration value="WithdrawalFromParticipation"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="approvalDateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="approvalRole" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="approvalName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="statusPriorDeactivation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="participantActionType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="actionType" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="Create"/&gt;
+ *               &lt;enumeration value="Read"/&gt;
+ *               &lt;enumeration value="Update"/&gt;
+ *               &lt;enumeration value="Delete"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="operationPerformed" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="reason" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="IncorrectIdentity"/&gt;
+ *               &lt;enumeration value="MedicalInaccuracy"/&gt;
+ *               &lt;enumeration value="ElectToRemove"/&gt;
+ *               &lt;enumeration value="IHIStatusIsDeceased"/&gt;
+ *               &lt;enumeration value="NoLegallyAppointmentAuthorised"/&gt;
+ *               &lt;enumeration value="NoOwnershipOfPCEHR"/&gt;
+ *               &lt;enumeration value="IHINotActive"/&gt;
+ *               &lt;enumeration value="IHINotVerified"/&gt;
+ *               &lt;enumeration value="TermsAndConditionsWereNotAccepted"/&gt;
+ *               &lt;enumeration value="Death"/&gt;
+ *               &lt;enumeration value="WithdrawalFromParticipation"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="approvalDateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="approvalRole" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="approvalName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="statusPriorDeactivation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -84,7 +84,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the actionType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ParticipantActionType.ActionType }
      *     
@@ -96,7 +96,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the actionType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ParticipantActionType.ActionType }
      *     
@@ -108,7 +108,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the operationPerformed property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -120,7 +120,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the operationPerformed property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -132,7 +132,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the reason property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ParticipantActionType.Reason }
      *     
@@ -144,7 +144,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the reason property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ParticipantActionType.Reason }
      *     
@@ -156,7 +156,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the approvalDateTime property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -168,7 +168,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the approvalDateTime property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
      *     
@@ -180,7 +180,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the approvalRole property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -192,7 +192,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the approvalRole property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -204,7 +204,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the approvalName property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -216,7 +216,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the approvalName property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -228,7 +228,7 @@ public class ParticipantActionType {
     /**
      * Gets the value of the statusPriorDeactivation property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -240,7 +240,7 @@ public class ParticipantActionType {
     /**
      * Sets the value of the statusPriorDeactivation property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -254,16 +254,15 @@ public class ParticipantActionType {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="Create"/>
-     *     &lt;enumeration value="Read"/>
-     *     &lt;enumeration value="Update"/>
-     *     &lt;enumeration value="Delete"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="Create"/&gt;
+     *     &lt;enumeration value="Read"/&gt;
+     *     &lt;enumeration value="Update"/&gt;
+     *     &lt;enumeration value="Delete"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -305,23 +304,22 @@ public class ParticipantActionType {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="IncorrectIdentity"/>
-     *     &lt;enumeration value="MedicalInaccuracy"/>
-     *     &lt;enumeration value="ElectToRemove"/>
-     *     &lt;enumeration value="IHIStatusIsDeceased"/>
-     *     &lt;enumeration value="NoLegallyAppointmentAuthorised"/>
-     *     &lt;enumeration value="NoOwnershipOfPCEHR"/>
-     *     &lt;enumeration value="IHINotActive"/>
-     *     &lt;enumeration value="IHINotVerified"/>
-     *     &lt;enumeration value="TermsAndConditionsWereNotAccepted"/>
-     *     &lt;enumeration value="Death"/>
-     *     &lt;enumeration value="WithdrawalFromParticipation"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="IncorrectIdentity"/&gt;
+     *     &lt;enumeration value="MedicalInaccuracy"/&gt;
+     *     &lt;enumeration value="ElectToRemove"/&gt;
+     *     &lt;enumeration value="IHIStatusIsDeceased"/&gt;
+     *     &lt;enumeration value="NoLegallyAppointmentAuthorised"/&gt;
+     *     &lt;enumeration value="NoOwnershipOfPCEHR"/&gt;
+     *     &lt;enumeration value="IHINotActive"/&gt;
+     *     &lt;enumeration value="IHINotVerified"/&gt;
+     *     &lt;enumeration value="TermsAndConditionsWereNotAccepted"/&gt;
+     *     &lt;enumeration value="Death"/&gt;
+     *     &lt;enumeration value="WithdrawalFromParticipation"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */

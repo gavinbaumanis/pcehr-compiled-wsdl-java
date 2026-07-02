@@ -36,12 +36,12 @@ public interface PCEHRProfilePortType {
 
     /**
      * 
-     * @param pcehrHeader
-     * @param parameters0
-     * @param timestampHeader
-     * @param parameters
-     * @param signatureHeader
-     * @throws StandardErrorMsg
+     * @param pcehrHeader PCEHR request header
+     * @param parameters0 SOAP response holder
+     * @param timestampHeader timestamp SOAP header
+     * @param parameters request payload
+     * @param signatureHeader signature SOAP header holder
+     * @throws StandardErrorMsg if the service returns a StandardErrorMsg fault
      */
     @WebMethod
     @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
@@ -64,13 +64,13 @@ public interface PCEHRProfilePortType {
 
     /**
      * 
-     * @param individual
-     * @param pcehrHeader
-     * @param responseStatus
-     * @param pcehrRecord
-     * @param timestampHeader
-     * @param signatureHeader
-     * @throws StandardErrorMsg
+     * @param individual individual parameter
+     * @param pcehrHeader PCEHR request header
+     * @param responseStatus response status parameter
+     * @param pcehrRecord pcehr record parameter
+     * @param timestampHeader timestamp SOAP header
+     * @param signatureHeader signature SOAP header holder
+     * @throws StandardErrorMsg if the service returns a StandardErrorMsg fault
      */
     @WebMethod
     @RequestWrapper(localName = "gainPCEHRAccess", targetNamespace = "http://ns.electronichealth.net.au/pcehr/xsd/interfaces/PCEHRProfile/1.0", className = "au.net.electronichealth.ns.pcehr.xsd.interfaces.pcehrprofile._1.GainPCEHRAccess")

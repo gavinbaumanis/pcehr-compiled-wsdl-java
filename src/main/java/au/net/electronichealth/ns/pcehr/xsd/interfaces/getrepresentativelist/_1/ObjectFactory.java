@@ -36,6 +36,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRepresentativeListResponse }
      * 
+     * @return newly created instance
      */
     public GetRepresentativeListResponse createGetRepresentativeListResponse() {
         return new GetRepresentativeListResponse();
@@ -44,6 +45,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRepresentativeListResponse.PCEHRRecord }
      * 
+     * @return newly created instance
      */
     public GetRepresentativeListResponse.PCEHRRecord createGetRepresentativeListResponsePCEHRRecord() {
         return new GetRepresentativeListResponse.PCEHRRecord();
@@ -52,6 +54,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRepresentativeListResponse.PCEHRRecord.RepresentativeList }
      * 
+     * @return newly created instance
      */
     public GetRepresentativeListResponse.PCEHRRecord.RepresentativeList createGetRepresentativeListResponsePCEHRRecordRepresentativeList() {
         return new GetRepresentativeListResponse.PCEHRRecord.RepresentativeList();
@@ -60,14 +63,17 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRepresentativeListResponse.PCEHRRecord.RepresentativeList.Representative }
      * 
+     * @return newly created instance
      */
     public GetRepresentativeListResponse.PCEHRRecord.RepresentativeList.Representative createGetRepresentativeListResponsePCEHRRecordRepresentativeListRepresentative() {
         return new GetRepresentativeListResponse.PCEHRRecord.RepresentativeList.Representative();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Object }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Object }&gt;}
      * 
+     * @param value field value
+     * @return newly created instance
      */
     @XmlElementDecl(namespace = "http://ns.electronichealth.net.au/pcehr/xsd/interfaces/GetRepresentativeList/1.1", name = "getRepresentativeList")
     public JAXBElement<Object> createGetRepresentativeList(Object value) {

@@ -24,8 +24,8 @@ public class StandardErrorMsg
 
     /**
      * 
-     * @param message
-     * @param faultInfo
+     * @param message exception message
+     * @param faultInfo SOAP fault detail
      */
     public StandardErrorMsg(String message, StandardError faultInfo) {
         super(message);
@@ -34,9 +34,9 @@ public class StandardErrorMsg
 
     /**
      * 
-     * @param message
-     * @param faultInfo
-     * @param cause
+     * @param message exception message
+     * @param faultInfo SOAP fault detail
+     * @param cause underlying cause
      */
     public StandardErrorMsg(String message, StandardError faultInfo, Throwable cause) {
         super(message, cause);
@@ -45,8 +45,7 @@ public class StandardErrorMsg
 
     /**
      * 
-     * @return
-     *     returns fault bean: au.net.electronichealth.ns.wsp.xsd.standarderror._2010.StandardError
+     * @return SOAP fault detail bean: au.net.electronichealth.ns.wsp.xsd.standarderror._2010.StandardError
      */
     public StandardError getFaultInfo() {
         return faultInfo;

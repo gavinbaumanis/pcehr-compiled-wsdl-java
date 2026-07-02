@@ -16,24 +16,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RegistryObjectQueryType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterQueryType">
- *       &lt;sequence>
- *         &lt;element name="SlotBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}SlotBranchType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="NameBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}InternationalStringBranchType" minOccurs="0"/>
- *         &lt;element name="DescriptionBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}InternationalStringBranchType" minOccurs="0"/>
- *         &lt;element name="VersionInfoFilter" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationQuery" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ExternalIdentifierQuery" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="ObjectTypeQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/>
- *         &lt;element name="StatusQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/>
- *         &lt;element name="SourceAssociationQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}AssociationQueryType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="TargetAssociationQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}AssociationQueryType" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RegistryObjectQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterQueryType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="SlotBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}SlotBranchType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="NameBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}InternationalStringBranchType" minOccurs="0"/&gt;
+ *         &lt;element name="DescriptionBranch" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}InternationalStringBranchType" minOccurs="0"/&gt;
+ *         &lt;element name="VersionInfoFilter" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}FilterType" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationQuery" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ExternalIdentifierQuery" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="ObjectTypeQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/&gt;
+ *         &lt;element name="StatusQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/&gt;
+ *         &lt;element name="SourceAssociationQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}AssociationQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="TargetAssociationQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}AssociationQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -100,24 +100,22 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the slotBranches property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the slotBranches property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getSlotBranches().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link SlotBranchType }
      * 
      * 
+     * @return field value
      */
     public List<SlotBranchType> getSlotBranches() {
         if (slotBranches == null) {
@@ -129,7 +127,7 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the nameBranch property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link InternationalStringBranchType }
      *     
@@ -141,7 +139,7 @@ public class RegistryObjectQueryType
     /**
      * Sets the value of the nameBranch property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link InternationalStringBranchType }
      *     
@@ -153,7 +151,7 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the descriptionBranch property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link InternationalStringBranchType }
      *     
@@ -165,7 +163,7 @@ public class RegistryObjectQueryType
     /**
      * Sets the value of the descriptionBranch property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link InternationalStringBranchType }
      *     
@@ -177,7 +175,7 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the versionInfoFilter property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link FilterType }
      *     
@@ -189,7 +187,7 @@ public class RegistryObjectQueryType
     /**
      * Sets the value of the versionInfoFilter property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link FilterType }
      *     
@@ -201,24 +199,22 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the classificationQueries property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the classificationQueries property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getClassificationQueries().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link ClassificationQuery }
      * 
      * 
+     * @return field value
      */
     public List<ClassificationQuery> getClassificationQueries() {
         if (classificationQueries == null) {
@@ -230,24 +226,22 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the externalIdentifierQueries property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the externalIdentifierQueries property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getExternalIdentifierQueries().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link ExternalIdentifierQuery }
      * 
      * 
+     * @return field value
      */
     public List<ExternalIdentifierQuery> getExternalIdentifierQueries() {
         if (externalIdentifierQueries == null) {
@@ -259,7 +253,7 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the objectTypeQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -271,7 +265,7 @@ public class RegistryObjectQueryType
     /**
      * Sets the value of the objectTypeQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -283,7 +277,7 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the statusQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -295,7 +289,7 @@ public class RegistryObjectQueryType
     /**
      * Sets the value of the statusQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -307,24 +301,22 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the sourceAssociationQueries property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the sourceAssociationQueries property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getSourceAssociationQueries().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link AssociationQuery }
      * 
      * 
+     * @return field value
      */
     public List<AssociationQuery> getSourceAssociationQueries() {
         if (sourceAssociationQueries == null) {
@@ -336,24 +328,22 @@ public class RegistryObjectQueryType
     /**
      * Gets the value of the targetAssociationQueries property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the targetAssociationQueries property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getTargetAssociationQueries().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link AssociationQuery }
      * 
      * 
+     * @return field value
      */
     public List<AssociationQuery> getTargetAssociationQueries() {
         if (targetAssociationQueries == null) {

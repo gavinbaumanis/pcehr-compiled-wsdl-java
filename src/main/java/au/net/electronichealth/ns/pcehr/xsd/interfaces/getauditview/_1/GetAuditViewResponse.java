@@ -24,76 +24,76 @@ import au.net.electronichealth.ns.pcehr.xsd.common.commoncoreelements._1.Respons
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *         &lt;element name="auditView" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="eventTrail" maxOccurs="unbounded">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="businessEvent" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="eventTimeStamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *                             &lt;element name="auditEvent" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/>
- *                                       &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/>
- *                                       &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/>
- *                                       &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="logEvent" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="messageLogLevel">
- *                                         &lt;simpleType>
- *                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                                             &lt;enumeration value="WARN"/>
- *                                             &lt;enumeration value="ERROR"/>
- *                                             &lt;enumeration value="DEBUG"/>
- *                                             &lt;enumeration value="AUDIT"/>
- *                                             &lt;enumeration value="FATAL"/>
- *                                             &lt;enumeration value="INFO"/>
- *                                           &lt;/restriction>
- *                                         &lt;/simpleType>
- *                                       &lt;/element>
- *                                       &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *                                       &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *         &lt;element name="auditView" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="eventTrail" maxOccurs="unbounded"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="businessEvent" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                             &lt;element name="eventTimeStamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *                             &lt;element name="auditEvent" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/&gt;
+ *                                       &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/&gt;
+ *                                       &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/&gt;
+ *                                       &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="logEvent" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="messageLogLevel"&gt;
+ *                                         &lt;simpleType&gt;
+ *                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                                             &lt;enumeration value="WARN"/&gt;
+ *                                             &lt;enumeration value="ERROR"/&gt;
+ *                                             &lt;enumeration value="DEBUG"/&gt;
+ *                                             &lt;enumeration value="AUDIT"/&gt;
+ *                                             &lt;enumeration value="FATAL"/&gt;
+ *                                             &lt;enumeration value="INFO"/&gt;
+ *                                           &lt;/restriction&gt;
+ *                                         &lt;/simpleType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *                                       &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -113,7 +113,7 @@ public class GetAuditViewResponse {
     /**
      * Gets the value of the responseStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseStatusType }
      *     
@@ -125,7 +125,7 @@ public class GetAuditViewResponse {
     /**
      * Sets the value of the responseStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseStatusType }
      *     
@@ -137,7 +137,7 @@ public class GetAuditViewResponse {
     /**
      * Gets the value of the auditView property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link GetAuditViewResponse.AuditView }
      *     
@@ -149,7 +149,7 @@ public class GetAuditViewResponse {
     /**
      * Sets the value of the auditView property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link GetAuditViewResponse.AuditView }
      *     
@@ -165,65 +165,65 @@ public class GetAuditViewResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="eventTrail" maxOccurs="unbounded">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="businessEvent" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="eventTimeStamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
-     *                   &lt;element name="auditEvent" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/>
-     *                             &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/>
-     *                             &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/>
-     *                             &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="logEvent" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="messageLogLevel">
-     *                               &lt;simpleType>
-     *                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *                                   &lt;enumeration value="WARN"/>
-     *                                   &lt;enumeration value="ERROR"/>
-     *                                   &lt;enumeration value="DEBUG"/>
-     *                                   &lt;enumeration value="AUDIT"/>
-     *                                   &lt;enumeration value="FATAL"/>
-     *                                   &lt;enumeration value="INFO"/>
-     *                                 &lt;/restriction>
-     *                               &lt;/simpleType>
-     *                             &lt;/element>
-     *                             &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
-     *                             &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="eventTrail" maxOccurs="unbounded"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="businessEvent" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *                   &lt;element name="eventTimeStamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+     *                   &lt;element name="auditEvent" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/&gt;
+     *                             &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/&gt;
+     *                             &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/&gt;
+     *                             &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="logEvent" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="messageLogLevel"&gt;
+     *                               &lt;simpleType&gt;
+     *                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *                                   &lt;enumeration value="WARN"/&gt;
+     *                                   &lt;enumeration value="ERROR"/&gt;
+     *                                   &lt;enumeration value="DEBUG"/&gt;
+     *                                   &lt;enumeration value="AUDIT"/&gt;
+     *                                   &lt;enumeration value="FATAL"/&gt;
+     *                                   &lt;enumeration value="INFO"/&gt;
+     *                                 &lt;/restriction&gt;
+     *                               &lt;/simpleType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+     *                             &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -240,24 +240,22 @@ public class GetAuditViewResponse {
         /**
          * Gets the value of the eventTrails property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
+         * <p>This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
          * This is why there is not a <CODE>set</CODE> method for the eventTrails property.
          * 
-         * <p>
-         * For example, to add a new item, do as follows:
+         * <p>For example, to add a new item, do as follows:
          * <pre>
          *    getEventTrails().add(newItem);
          * </pre>
          * 
          * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
+         * <p>Objects of the following type(s) are allowed in the list
          * {@link GetAuditViewResponse.AuditView.EventTrail }
          * 
          * 
+         * @return field value
          */
         public List<GetAuditViewResponse.AuditView.EventTrail> getEventTrails() {
             if (eventTrails == null) {
@@ -273,55 +271,55 @@ public class GetAuditViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="businessEvent" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="eventTimeStamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
-         *         &lt;element name="auditEvent" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/>
-         *                   &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/>
-         *                   &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/>
-         *                   &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="logEvent" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="messageLogLevel">
-         *                     &lt;simpleType>
-         *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-         *                         &lt;enumeration value="WARN"/>
-         *                         &lt;enumeration value="ERROR"/>
-         *                         &lt;enumeration value="DEBUG"/>
-         *                         &lt;enumeration value="AUDIT"/>
-         *                         &lt;enumeration value="FATAL"/>
-         *                         &lt;enumeration value="INFO"/>
-         *                       &lt;/restriction>
-         *                     &lt;/simpleType>
-         *                   &lt;/element>
-         *                   &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
-         *                   &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="businessEvent" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+         *         &lt;element name="eventTimeStamp" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+         *         &lt;element name="auditEvent" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/&gt;
+         *                   &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/&gt;
+         *                   &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/&gt;
+         *                   &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="logEvent" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="messageLogLevel"&gt;
+         *                     &lt;simpleType&gt;
+         *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+         *                         &lt;enumeration value="WARN"/&gt;
+         *                         &lt;enumeration value="ERROR"/&gt;
+         *                         &lt;enumeration value="DEBUG"/&gt;
+         *                         &lt;enumeration value="AUDIT"/&gt;
+         *                         &lt;enumeration value="FATAL"/&gt;
+         *                         &lt;enumeration value="INFO"/&gt;
+         *                       &lt;/restriction&gt;
+         *                     &lt;/simpleType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+         *                   &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -346,7 +344,7 @@ public class GetAuditViewResponse {
             /**
              * Gets the value of the businessEvent property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -358,7 +356,7 @@ public class GetAuditViewResponse {
             /**
              * Sets the value of the businessEvent property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -370,7 +368,7 @@ public class GetAuditViewResponse {
             /**
              * Gets the value of the eventTimeStamp property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link XMLGregorianCalendar }
              *     
@@ -382,7 +380,7 @@ public class GetAuditViewResponse {
             /**
              * Sets the value of the eventTimeStamp property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link XMLGregorianCalendar }
              *     
@@ -394,7 +392,7 @@ public class GetAuditViewResponse {
             /**
              * Gets the value of the auditEvent property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link GetAuditViewResponse.AuditView.EventTrail.AuditEvent }
              *     
@@ -406,7 +404,7 @@ public class GetAuditViewResponse {
             /**
              * Sets the value of the auditEvent property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link GetAuditViewResponse.AuditView.EventTrail.AuditEvent }
              *     
@@ -418,7 +416,7 @@ public class GetAuditViewResponse {
             /**
              * Gets the value of the logEvent property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link GetAuditViewResponse.AuditView.EventTrail.LogEvent }
              *     
@@ -430,7 +428,7 @@ public class GetAuditViewResponse {
             /**
              * Sets the value of the logEvent property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link GetAuditViewResponse.AuditView.EventTrail.LogEvent }
              *     
@@ -446,19 +444,19 @@ public class GetAuditViewResponse {
              * <p>The following schema fragment specifies the expected content contained within this class.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/>
-             *         &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/>
-             *         &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/>
-             *         &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="auditEventID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="participantDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantDetailsType" minOccurs="0"/&gt;
+             *         &lt;element name="accessedEntity" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessedEntityType" minOccurs="0"/&gt;
+             *         &lt;element name="participantAction" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}participantActionType" minOccurs="0"/&gt;
+             *         &lt;element name="accessConditions" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}accessConditionsType" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -482,7 +480,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the auditEventID property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link String }
                  *     
@@ -494,7 +492,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the auditEventID property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link String }
                  *     
@@ -506,7 +504,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the participantDetails property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link ParticipantDetailsType }
                  *     
@@ -518,7 +516,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the participantDetails property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link ParticipantDetailsType }
                  *     
@@ -530,7 +528,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the accessedEntity property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link AccessedEntityType }
                  *     
@@ -542,7 +540,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the accessedEntity property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link AccessedEntityType }
                  *     
@@ -554,7 +552,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the participantAction property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link ParticipantActionType }
                  *     
@@ -566,7 +564,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the participantAction property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link ParticipantActionType }
                  *     
@@ -578,7 +576,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the accessConditions property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link AccessConditionsType }
                  *     
@@ -590,7 +588,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the accessConditions property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link AccessConditionsType }
                  *     
@@ -608,28 +606,28 @@ public class GetAuditViewResponse {
              * <p>The following schema fragment specifies the expected content contained within this class.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="messageLogLevel">
-             *           &lt;simpleType>
-             *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-             *               &lt;enumeration value="WARN"/>
-             *               &lt;enumeration value="ERROR"/>
-             *               &lt;enumeration value="DEBUG"/>
-             *               &lt;enumeration value="AUDIT"/>
-             *               &lt;enumeration value="FATAL"/>
-             *               &lt;enumeration value="INFO"/>
-             *             &lt;/restriction>
-             *           &lt;/simpleType>
-             *         &lt;/element>
-             *         &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
-             *         &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="messageLogLevel"&gt;
+             *           &lt;simpleType&gt;
+             *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+             *               &lt;enumeration value="WARN"/&gt;
+             *               &lt;enumeration value="ERROR"/&gt;
+             *               &lt;enumeration value="DEBUG"/&gt;
+             *               &lt;enumeration value="AUDIT"/&gt;
+             *               &lt;enumeration value="FATAL"/&gt;
+             *               &lt;enumeration value="INFO"/&gt;
+             *             &lt;/restriction&gt;
+             *           &lt;/simpleType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="statusDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+             *         &lt;element name="errorDetails" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -651,7 +649,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the messageLogLevel property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link GetAuditViewResponse.AuditView.EventTrail.LogEvent.MessageLogLevel }
                  *     
@@ -663,7 +661,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the messageLogLevel property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link GetAuditViewResponse.AuditView.EventTrail.LogEvent.MessageLogLevel }
                  *     
@@ -675,7 +673,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the statusDetails property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link ResponseStatusType }
                  *     
@@ -687,7 +685,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the statusDetails property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link ResponseStatusType }
                  *     
@@ -699,7 +697,7 @@ public class GetAuditViewResponse {
                 /**
                  * Gets the value of the errorDetails property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link ResponseStatusType }
                  *     
@@ -711,7 +709,7 @@ public class GetAuditViewResponse {
                 /**
                  * Sets the value of the errorDetails property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link ResponseStatusType }
                  *     
@@ -725,18 +723,17 @@ public class GetAuditViewResponse {
                  * <p>Java class for null.
                  * 
                  * <p>The following schema fragment specifies the expected content contained within this class.
-                 * <p>
                  * <pre>
-                 * &lt;simpleType>
-                 *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-                 *     &lt;enumeration value="WARN"/>
-                 *     &lt;enumeration value="ERROR"/>
-                 *     &lt;enumeration value="DEBUG"/>
-                 *     &lt;enumeration value="AUDIT"/>
-                 *     &lt;enumeration value="FATAL"/>
-                 *     &lt;enumeration value="INFO"/>
-                 *   &lt;/restriction>
-                 * &lt;/simpleType>
+                 * &lt;simpleType&gt;
+                 *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+                 *     &lt;enumeration value="WARN"/&gt;
+                 *     &lt;enumeration value="ERROR"/&gt;
+                 *     &lt;enumeration value="DEBUG"/&gt;
+                 *     &lt;enumeration value="AUDIT"/&gt;
+                 *     &lt;enumeration value="FATAL"/&gt;
+                 *     &lt;enumeration value="INFO"/&gt;
+                 *   &lt;/restriction&gt;
+                 * &lt;/simpleType&gt;
                  * </pre>
                  * 
                  */

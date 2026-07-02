@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CodedType }
      * 
+     * @return newly created instance
      */
     public CodedType createCodedType() {
         return new CodedType();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TimeStampDT }
      * 
+     * @return newly created instance
      */
     public TimeStampDT createTimeStampDT() {
         return new TimeStampDT();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ContactDetailsDT }
      * 
+     * @return newly created instance
      */
     public ContactDetailsDT createContactDetailsDT() {
         return new ContactDetailsDT();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProviderInformationDT }
      * 
+     * @return newly created instance
      */
     public ProviderInformationDT createProviderInformationDT() {
         return new ProviderInformationDT();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PathologyReportInformationDT }
      * 
+     * @return newly created instance
      */
     public PathologyReportInformationDT createPathologyReportInformationDT() {
         return new PathologyReportInformationDT();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddressTypeDT }
      * 
+     * @return newly created instance
      */
     public AddressTypeDT createAddressTypeDT() {
         return new AddressTypeDT();
@@ -80,6 +86,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DiagnosticReportInformationDT }
      * 
+     * @return newly created instance
      */
     public DiagnosticReportInformationDT createDiagnosticReportInformationDT() {
         return new DiagnosticReportInformationDT();
@@ -88,6 +95,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DocumentDT }
      * 
+     * @return newly created instance
      */
     public DocumentDT createDocumentDT() {
         return new DocumentDT();
@@ -96,6 +104,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NameTypeDT }
      * 
+     * @return newly created instance
      */
     public NameTypeDT createNameTypeDT() {
         return new NameTypeDT();
@@ -104,6 +113,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link InformationAvailableDT }
      * 
+     * @return newly created instance
      */
     public InformationAvailableDT createInformationAvailableDT() {
         return new InformationAvailableDT();
@@ -112,6 +122,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RequesterInformationDT }
      * 
+     * @return newly created instance
      */
     public RequesterInformationDT createRequesterInformationDT() {
         return new RequesterInformationDT();
@@ -120,6 +131,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ACICodedType }
      * 
+     * @return newly created instance
      */
     public ACICodedType createACICodedType() {
         return new ACICodedType();

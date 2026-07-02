@@ -13,22 +13,22 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="informationAvailableDT">
- *   &lt;complexContent>
- *     &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType">
- *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       &lt;attribute name="flavor">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="other"/>
- *             &lt;enumeration value="problem"/>
- *             &lt;enumeration value="procedure"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="informationAvailableDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"&gt;
+ *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+ *       &lt;attribute name="flavor"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="other"/&gt;
+ *             &lt;enumeration value="problem"/&gt;
+ *             &lt;enumeration value="procedure"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -47,6 +47,7 @@ public class InformationAvailableDT
     /**
      * Gets the value of the value property.
      * 
+     * @return field value
      */
     public boolean isValue() {
         return value;
@@ -55,6 +56,7 @@ public class InformationAvailableDT
     /**
      * Sets the value of the value property.
      * 
+     * @param value field value
      */
     public void setValue(boolean value) {
         this.value = value;
@@ -63,7 +65,7 @@ public class InformationAvailableDT
     /**
      * Gets the value of the flavor property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -75,7 +77,7 @@ public class InformationAvailableDT
     /**
      * Sets the value of the flavor property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

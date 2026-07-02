@@ -14,15 +14,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="signatureContainerType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}Signature"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="signatureContainerType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}Signature"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,7 +40,7 @@ public class Signature {
     /**
      * Gets the value of the signature property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link pcehr_override.org.w3.Signature }
      *     
@@ -52,7 +52,7 @@ public class Signature {
     /**
      * Sets the value of the signature property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link pcehr_override.org.w3.Signature }
      *     

@@ -16,79 +16,79 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="User">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="IDType">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;enumeration value="HPII"/>
- *                         &lt;enumeration value="PortalUserIdentifier"/>
- *                         &lt;enumeration value="LocalSystemIdentifier"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="role" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="useRoleForAudit" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber" minOccurs="0"/>
- *         &lt;element name="productType">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="vendor" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="productName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="productVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="platform" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="clientSystemType">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="CIS"/>
- *               &lt;enumeration value="CSP"/>
- *               &lt;enumeration value="CRP"/>
- *               &lt;enumeration value="HI"/>
- *               &lt;enumeration value="Medicare"/>
- *               &lt;enumeration value="CPP"/>
- *               &lt;enumeration value="CCP"/>
- *               &lt;enumeration value="Other"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="accessingOrganisation" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="organisationID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="organisationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="alternateOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="User"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="IDType"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;enumeration value="HPII"/&gt;
+ *                         &lt;enumeration value="PortalUserIdentifier"/&gt;
+ *                         &lt;enumeration value="LocalSystemIdentifier"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="role" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="useRoleForAudit" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber" minOccurs="0"/&gt;
+ *         &lt;element name="productType"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="vendor" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="productName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="productVersion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="platform" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="clientSystemType"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="CIS"/&gt;
+ *               &lt;enumeration value="CSP"/&gt;
+ *               &lt;enumeration value="CRP"/&gt;
+ *               &lt;enumeration value="HI"/&gt;
+ *               &lt;enumeration value="Medicare"/&gt;
+ *               &lt;enumeration value="CPP"/&gt;
+ *               &lt;enumeration value="CCP"/&gt;
+ *               &lt;enumeration value="Other"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="accessingOrganisation" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="organisationID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="organisationName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="alternateOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -116,7 +116,7 @@ public class PCEHRHeader {
     /**
      * Gets the value of the user property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PCEHRHeader.User }
      *     
@@ -128,7 +128,7 @@ public class PCEHRHeader {
     /**
      * Sets the value of the user property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PCEHRHeader.User }
      *     
@@ -140,7 +140,7 @@ public class PCEHRHeader {
     /**
      * Gets the value of the ihiNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -152,7 +152,7 @@ public class PCEHRHeader {
     /**
      * Sets the value of the ihiNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -164,7 +164,7 @@ public class PCEHRHeader {
     /**
      * Gets the value of the productType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PCEHRHeader.ProductType }
      *     
@@ -176,7 +176,7 @@ public class PCEHRHeader {
     /**
      * Sets the value of the productType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PCEHRHeader.ProductType }
      *     
@@ -188,7 +188,7 @@ public class PCEHRHeader {
     /**
      * Gets the value of the clientSystemType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PCEHRHeader.ClientSystemType }
      *     
@@ -200,7 +200,7 @@ public class PCEHRHeader {
     /**
      * Sets the value of the clientSystemType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PCEHRHeader.ClientSystemType }
      *     
@@ -212,7 +212,7 @@ public class PCEHRHeader {
     /**
      * Gets the value of the accessingOrganisation property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PCEHRHeader.AccessingOrganisation }
      *     
@@ -224,7 +224,7 @@ public class PCEHRHeader {
     /**
      * Sets the value of the accessingOrganisation property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PCEHRHeader.AccessingOrganisation }
      *     
@@ -240,17 +240,17 @@ public class PCEHRHeader {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="organisationID" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="organisationName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="alternateOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="organisationID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="organisationName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="alternateOrganisationName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -272,7 +272,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the organisationID property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -284,7 +284,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the organisationID property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -296,7 +296,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the organisationName property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -308,7 +308,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the organisationName property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -320,7 +320,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the alternateOrganisationName property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -332,7 +332,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the alternateOrganisationName property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -348,20 +348,19 @@ public class PCEHRHeader {
      * <p>Java class for null.
      * 
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;enumeration value="CIS"/>
-     *     &lt;enumeration value="CSP"/>
-     *     &lt;enumeration value="CRP"/>
-     *     &lt;enumeration value="HI"/>
-     *     &lt;enumeration value="Medicare"/>
-     *     &lt;enumeration value="CPP"/>
-     *     &lt;enumeration value="CCP"/>
-     *     &lt;enumeration value="Other"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;enumeration value="CIS"/&gt;
+     *     &lt;enumeration value="CSP"/&gt;
+     *     &lt;enumeration value="CRP"/&gt;
+     *     &lt;enumeration value="HI"/&gt;
+     *     &lt;enumeration value="Medicare"/&gt;
+     *     &lt;enumeration value="CPP"/&gt;
+     *     &lt;enumeration value="CCP"/&gt;
+     *     &lt;enumeration value="Other"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -407,18 +406,18 @@ public class PCEHRHeader {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="vendor" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="productName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="productVersion" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="platform" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="vendor" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="productName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="productVersion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="platform" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -444,7 +443,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the vendor property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -456,7 +455,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the vendor property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -468,7 +467,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the productName property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -480,7 +479,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the productName property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -492,7 +491,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the productVersion property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -504,7 +503,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the productVersion property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -516,7 +515,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the platform property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -528,7 +527,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the platform property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -546,27 +545,27 @@ public class PCEHRHeader {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="IDType">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;enumeration value="HPII"/>
-     *               &lt;enumeration value="PortalUserIdentifier"/>
-     *               &lt;enumeration value="LocalSystemIdentifier"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="role" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="useRoleForAudit" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="IDType"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;enumeration value="HPII"/&gt;
+     *               &lt;enumeration value="PortalUserIdentifier"/&gt;
+     *               &lt;enumeration value="LocalSystemIdentifier"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="role" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="useRoleForAudit" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -593,7 +592,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the idType property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link PCEHRHeader.User.IDType }
          *     
@@ -605,7 +604,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the idType property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link PCEHRHeader.User.IDType }
          *     
@@ -617,7 +616,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the id property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -629,7 +628,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the id property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -641,7 +640,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the role property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -653,7 +652,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the role property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -665,7 +664,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the userName property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -677,7 +676,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the userName property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -689,6 +688,7 @@ public class PCEHRHeader {
         /**
          * Gets the value of the useRoleForAudit property.
          * 
+         * @return field value
          */
         public boolean isUseRoleForAudit() {
             return useRoleForAudit;
@@ -697,6 +697,7 @@ public class PCEHRHeader {
         /**
          * Sets the value of the useRoleForAudit property.
          * 
+         * @param value field value
          */
         public void setUseRoleForAudit(boolean value) {
             this.useRoleForAudit = value;
@@ -707,15 +708,14 @@ public class PCEHRHeader {
          * <p>Java class for null.
          * 
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * <p>
          * <pre>
-         * &lt;simpleType>
-         *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-         *     &lt;enumeration value="HPII"/>
-         *     &lt;enumeration value="PortalUserIdentifier"/>
-         *     &lt;enumeration value="LocalSystemIdentifier"/>
-         *   &lt;/restriction>
-         * &lt;/simpleType>
+         * &lt;simpleType&gt;
+         *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+         *     &lt;enumeration value="HPII"/&gt;
+         *     &lt;enumeration value="PortalUserIdentifier"/&gt;
+         *     &lt;enumeration value="LocalSystemIdentifier"/&gt;
+         *   &lt;/restriction&gt;
+         * &lt;/simpleType&gt;
          * </pre>
          * 
          */

@@ -21,58 +21,58 @@ import au.net.electronichealth.ns.pcehr.xsd.common.commoncoreelements._1.Respons
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *         &lt;element name="individual" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
- *                   &lt;element name="demographics">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp">
- *                           &lt;sequence>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/extension>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="ivcDetails" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="code">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;minLength value="1"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="expiryDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *         &lt;element name="individual" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+ *                   &lt;element name="demographics"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/extension&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="ivcDetails" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="code"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;minLength value="1"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="expiryDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -94,7 +94,7 @@ public class RegisterPCEHRResponse {
     /**
      * Gets the value of the responseStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseStatusType }
      *     
@@ -106,7 +106,7 @@ public class RegisterPCEHRResponse {
     /**
      * Sets the value of the responseStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseStatusType }
      *     
@@ -118,7 +118,7 @@ public class RegisterPCEHRResponse {
     /**
      * Gets the value of the individual property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegisterPCEHRResponse.Individual }
      *     
@@ -130,7 +130,7 @@ public class RegisterPCEHRResponse {
     /**
      * Sets the value of the individual property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegisterPCEHRResponse.Individual }
      *     
@@ -142,7 +142,7 @@ public class RegisterPCEHRResponse {
     /**
      * Gets the value of the ivcDetails property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegisterPCEHRResponse.IvcDetails }
      *     
@@ -154,7 +154,7 @@ public class RegisterPCEHRResponse {
     /**
      * Sets the value of the ivcDetails property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegisterPCEHRResponse.IvcDetails }
      *     
@@ -170,29 +170,29 @@ public class RegisterPCEHRResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
-     *         &lt;element name="demographics">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp">
-     *                 &lt;sequence>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/extension>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+     *         &lt;element name="demographics"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/extension&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -212,7 +212,7 @@ public class RegisterPCEHRResponse {
         /**
          * Gets the value of the ihiNumber property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -224,7 +224,7 @@ public class RegisterPCEHRResponse {
         /**
          * Sets the value of the ihiNumber property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -236,7 +236,7 @@ public class RegisterPCEHRResponse {
         /**
          * Gets the value of the demographics property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link RegisterPCEHRResponse.Individual.Demographics }
          *     
@@ -248,7 +248,7 @@ public class RegisterPCEHRResponse {
         /**
          * Sets the value of the demographics property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link RegisterPCEHRResponse.Individual.Demographics }
          *     
@@ -264,18 +264,18 @@ public class RegisterPCEHRResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp">
-         *       &lt;sequence>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/extension>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;extension base="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareCardNumber" minOccurs="0"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}medicareIRN" minOccurs="0"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}dvaFileNumber" minOccurs="0"/&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}militaryHealthNumber" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/extension&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -305,7 +305,7 @@ public class RegisterPCEHRResponse {
             /**
              * Gets the value of the medicareCardNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -317,7 +317,7 @@ public class RegisterPCEHRResponse {
             /**
              * Sets the value of the medicareCardNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -329,7 +329,7 @@ public class RegisterPCEHRResponse {
             /**
              * Gets the value of the medicareIRN property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link Integer }
              *     
@@ -341,7 +341,7 @@ public class RegisterPCEHRResponse {
             /**
              * Sets the value of the medicareIRN property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link Integer }
              *     
@@ -353,7 +353,7 @@ public class RegisterPCEHRResponse {
             /**
              * Gets the value of the dvaFileNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -365,7 +365,7 @@ public class RegisterPCEHRResponse {
             /**
              * Sets the value of the dvaFileNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -377,7 +377,7 @@ public class RegisterPCEHRResponse {
             /**
              * Gets the value of the militaryHealthNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -389,7 +389,7 @@ public class RegisterPCEHRResponse {
             /**
              * Sets the value of the militaryHealthNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -409,22 +409,22 @@ public class RegisterPCEHRResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="code">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;minLength value="1"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="expiryDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="code"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;minLength value="1"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="expiryDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -446,7 +446,7 @@ public class RegisterPCEHRResponse {
         /**
          * Gets the value of the code property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -458,7 +458,7 @@ public class RegisterPCEHRResponse {
         /**
          * Sets the value of the code property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -470,7 +470,7 @@ public class RegisterPCEHRResponse {
         /**
          * Gets the value of the expiryDate property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -482,7 +482,7 @@ public class RegisterPCEHRResponse {
         /**
          * Sets the value of the expiryDate property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     

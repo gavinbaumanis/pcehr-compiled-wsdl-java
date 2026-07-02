@@ -13,18 +13,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="australianPostalAddressType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/>
- *         &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/>
- *         &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/>
- *         &lt;element name="postalDeliveryGroup" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postalDeliveryGroupType"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="australianPostalAddressType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/&gt;
+ *         &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/&gt;
+ *         &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/&gt;
+ *         &lt;element name="postalDeliveryGroup" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postalDeliveryGroupType"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -50,7 +50,7 @@ public class AustralianPostalAddressType {
     /**
      * Gets the value of the state property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link StateType }
      *     
@@ -62,7 +62,7 @@ public class AustralianPostalAddressType {
     /**
      * Sets the value of the state property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link StateType }
      *     
@@ -74,7 +74,7 @@ public class AustralianPostalAddressType {
     /**
      * Gets the value of the postcode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -86,7 +86,7 @@ public class AustralianPostalAddressType {
     /**
      * Sets the value of the postcode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -98,7 +98,7 @@ public class AustralianPostalAddressType {
     /**
      * Gets the value of the suburb property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -110,7 +110,7 @@ public class AustralianPostalAddressType {
     /**
      * Sets the value of the suburb property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -122,7 +122,7 @@ public class AustralianPostalAddressType {
     /**
      * Gets the value of the postalDeliveryGroup property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link PostalDeliveryGroupType }
      *     
@@ -134,7 +134,7 @@ public class AustralianPostalAddressType {
     /**
      * Sets the value of the postalDeliveryGroup property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link PostalDeliveryGroupType }
      *     

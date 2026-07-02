@@ -17,13 +17,13 @@ import javax.xml.datatype.Duration;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="FederationType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType">
- *       &lt;attribute name="replicationSyncLatency" type="{http://www.w3.org/2001/XMLSchema}duration" default="P1D" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="FederationType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0}RegistryObjectType"&gt;
+ *       &lt;attribute name="replicationSyncLatency" type="{http://www.w3.org/2001/XMLSchema}duration" default="P1D" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,7 +40,7 @@ public class FederationType
     /**
      * Gets the value of the replicationSyncLatency property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link Duration }
      *     
@@ -52,7 +52,7 @@ public class FederationType
     /**
      * Sets the value of the replicationSyncLatency property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link Duration }
      *     

@@ -14,17 +14,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AssociationQueryType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType">
- *       &lt;sequence>
- *         &lt;element name="AssociationTypeQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/>
- *         &lt;element name="SourceObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/>
- *         &lt;element name="TargetObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AssociationQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AssociationTypeQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQueryType" minOccurs="0"/&gt;
+ *         &lt;element name="SourceObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/&gt;
+ *         &lt;element name="TargetObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -50,7 +50,7 @@ public class AssociationQuery
     /**
      * Gets the value of the associationTypeQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -62,7 +62,7 @@ public class AssociationQuery
     /**
      * Sets the value of the associationTypeQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -74,7 +74,7 @@ public class AssociationQuery
     /**
      * Gets the value of the sourceObjectQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegistryObjectQueryType }
      *     
@@ -86,7 +86,7 @@ public class AssociationQuery
     /**
      * Sets the value of the sourceObjectQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegistryObjectQueryType }
      *     
@@ -98,7 +98,7 @@ public class AssociationQuery
     /**
      * Gets the value of the targetObjectQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegistryObjectQueryType }
      *     
@@ -110,7 +110,7 @@ public class AssociationQuery
     /**
      * Sets the value of the targetObjectQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegistryObjectQueryType }
      *     

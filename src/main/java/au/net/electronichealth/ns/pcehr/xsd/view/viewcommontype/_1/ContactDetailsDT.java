@@ -14,27 +14,27 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="contactDetailsDT">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="use">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="WP"/>
- *             &lt;enumeration value="H"/>
- *             &lt;enumeration value="HP"/>
- *             &lt;enumeration value="HV"/>
- *             &lt;enumeration value="AS"/>
- *             &lt;enumeration value="EC"/>
- *             &lt;enumeration value="MC"/>
- *             &lt;enumeration value="PG"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="contactDetailsDT"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;attribute name="use"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="WP"/&gt;
+ *             &lt;enumeration value="H"/&gt;
+ *             &lt;enumeration value="HP"/&gt;
+ *             &lt;enumeration value="HV"/&gt;
+ *             &lt;enumeration value="AS"/&gt;
+ *             &lt;enumeration value="EC"/&gt;
+ *             &lt;enumeration value="MC"/&gt;
+ *             &lt;enumeration value="PG"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,7 +52,7 @@ public class ContactDetailsDT {
     /**
      * Gets the value of the use property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -64,7 +64,7 @@ public class ContactDetailsDT {
     /**
      * Sets the value of the use property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -76,7 +76,7 @@ public class ContactDetailsDT {
     /**
      * Gets the value of the value property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -88,7 +88,7 @@ public class ContactDetailsDT {
     /**
      * Sets the value of the value property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

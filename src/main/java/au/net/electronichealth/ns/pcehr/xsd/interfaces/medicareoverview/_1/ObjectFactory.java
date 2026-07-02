@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MedicareOverview }
      * 
+     * @return newly created instance
      */
     public MedicareOverview createMedicareOverview() {
         return new MedicareOverview();

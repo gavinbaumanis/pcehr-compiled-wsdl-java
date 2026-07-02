@@ -19,59 +19,59 @@ import au.net.electronichealth.ns.pcehr.xsd.common.commoncoreelements._1.Respons
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/>
- *         &lt;element name="PCEHRRecord" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="representativeList">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="representative" maxOccurs="unbounded">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                                       &lt;element name="type">
- *                                         &lt;simpleType>
- *                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                                             &lt;enumeration value="Authorised Representative"/>
- *                                             &lt;enumeration value="Legally Appointed Authorised Representative"/>
- *                                             &lt;enumeration value="Parent"/>
- *                                             &lt;enumeration value="Guardian"/>
- *                                             &lt;enumeration value="Nominated Representative"/>
- *                                           &lt;/restriction>
- *                                         &lt;/simpleType>
- *                                       &lt;/element>
- *                                       &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/>
- *                                       &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="responseStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}responseStatusType"/&gt;
+ *         &lt;element name="PCEHRRecord" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="representativeList"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="representative" maxOccurs="unbounded"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                                       &lt;element name="type"&gt;
+ *                                         &lt;simpleType&gt;
+ *                                           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                                             &lt;enumeration value="Authorised Representative"/&gt;
+ *                                             &lt;enumeration value="Legally Appointed Authorised Representative"/&gt;
+ *                                             &lt;enumeration value="Parent"/&gt;
+ *                                             &lt;enumeration value="Guardian"/&gt;
+ *                                             &lt;enumeration value="Nominated Representative"/&gt;
+ *                                           &lt;/restriction&gt;
+ *                                         &lt;/simpleType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/&gt;
+ *                                       &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -92,7 +92,7 @@ public class GetRepresentativeListResponse {
     /**
      * Gets the value of the responseStatus property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ResponseStatusType }
      *     
@@ -104,7 +104,7 @@ public class GetRepresentativeListResponse {
     /**
      * Sets the value of the responseStatus property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ResponseStatusType }
      *     
@@ -116,7 +116,7 @@ public class GetRepresentativeListResponse {
     /**
      * Gets the value of the pcehrRecord property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link GetRepresentativeListResponse.PCEHRRecord }
      *     
@@ -128,7 +128,7 @@ public class GetRepresentativeListResponse {
     /**
      * Sets the value of the pcehrRecord property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link GetRepresentativeListResponse.PCEHRRecord }
      *     
@@ -144,48 +144,48 @@ public class GetRepresentativeListResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="representativeList">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="representative" maxOccurs="unbounded">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                             &lt;element name="type">
-     *                               &lt;simpleType>
-     *                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *                                   &lt;enumeration value="Authorised Representative"/>
-     *                                   &lt;enumeration value="Legally Appointed Authorised Representative"/>
-     *                                   &lt;enumeration value="Parent"/>
-     *                                   &lt;enumeration value="Guardian"/>
-     *                                   &lt;enumeration value="Nominated Representative"/>
-     *                                 &lt;/restriction>
-     *                               &lt;/simpleType>
-     *                             &lt;/element>
-     *                             &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/>
-     *                             &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="representativeList"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="representative" maxOccurs="unbounded"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *                             &lt;element name="type"&gt;
+     *                               &lt;simpleType&gt;
+     *                                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *                                   &lt;enumeration value="Authorised Representative"/&gt;
+     *                                   &lt;enumeration value="Legally Appointed Authorised Representative"/&gt;
+     *                                   &lt;enumeration value="Parent"/&gt;
+     *                                   &lt;enumeration value="Guardian"/&gt;
+     *                                   &lt;enumeration value="Nominated Representative"/&gt;
+     *                                 &lt;/restriction&gt;
+     *                               &lt;/simpleType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/&gt;
+     *                             &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -202,7 +202,7 @@ public class GetRepresentativeListResponse {
         /**
          * Gets the value of the representativeList property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link GetRepresentativeListResponse.PCEHRRecord.RepresentativeList }
          *     
@@ -214,7 +214,7 @@ public class GetRepresentativeListResponse {
         /**
          * Sets the value of the representativeList property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link GetRepresentativeListResponse.PCEHRRecord.RepresentativeList }
          *     
@@ -230,38 +230,38 @@ public class GetRepresentativeListResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="representative" maxOccurs="unbounded">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                   &lt;element name="type">
-         *                     &lt;simpleType>
-         *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-         *                         &lt;enumeration value="Authorised Representative"/>
-         *                         &lt;enumeration value="Legally Appointed Authorised Representative"/>
-         *                         &lt;enumeration value="Parent"/>
-         *                         &lt;enumeration value="Guardian"/>
-         *                         &lt;enumeration value="Nominated Representative"/>
-         *                       &lt;/restriction>
-         *                     &lt;/simpleType>
-         *                   &lt;/element>
-         *                   &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/>
-         *                   &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="representative" maxOccurs="unbounded"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+         *                   &lt;element name="type"&gt;
+         *                     &lt;simpleType&gt;
+         *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+         *                         &lt;enumeration value="Authorised Representative"/&gt;
+         *                         &lt;enumeration value="Legally Appointed Authorised Representative"/&gt;
+         *                         &lt;enumeration value="Parent"/&gt;
+         *                         &lt;enumeration value="Guardian"/&gt;
+         *                         &lt;enumeration value="Nominated Representative"/&gt;
+         *                       &lt;/restriction&gt;
+         *                     &lt;/simpleType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/&gt;
+         *                   &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -278,24 +278,22 @@ public class GetRepresentativeListResponse {
             /**
              * Gets the value of the representatives property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
+             * <p>This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
              * This is why there is not a <CODE>set</CODE> method for the representatives property.
              * 
-             * <p>
-             * For example, to add a new item, do as follows:
+             * <p>For example, to add a new item, do as follows:
              * <pre>
              *    getRepresentatives().add(newItem);
              * </pre>
              * 
              * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
+             * <p>Objects of the following type(s) are allowed in the list
              * {@link GetRepresentativeListResponse.PCEHRRecord.RepresentativeList.Representative }
              * 
              * 
+             * @return field value
              */
             public List<GetRepresentativeListResponse.PCEHRRecord.RepresentativeList.Representative> getRepresentatives() {
                 if (representatives == null) {
@@ -311,28 +309,28 @@ public class GetRepresentativeListResponse {
              * <p>The following schema fragment specifies the expected content contained within this class.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *         &lt;element name="type">
-             *           &lt;simpleType>
-             *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-             *               &lt;enumeration value="Authorised Representative"/>
-             *               &lt;enumeration value="Legally Appointed Authorised Representative"/>
-             *               &lt;enumeration value="Parent"/>
-             *               &lt;enumeration value="Guardian"/>
-             *               &lt;enumeration value="Nominated Representative"/>
-             *             &lt;/restriction>
-             *           &lt;/simpleType>
-             *         &lt;/element>
-             *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/>
-             *         &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="ID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+             *         &lt;element name="type"&gt;
+             *           &lt;simpleType&gt;
+             *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+             *               &lt;enumeration value="Authorised Representative"/&gt;
+             *               &lt;enumeration value="Legally Appointed Authorised Representative"/&gt;
+             *               &lt;enumeration value="Parent"/&gt;
+             *               &lt;enumeration value="Guardian"/&gt;
+             *               &lt;enumeration value="Nominated Representative"/&gt;
+             *             &lt;/restriction&gt;
+             *           &lt;/simpleType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="name" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}nameTypeSupp"/&gt;
+             *         &lt;element name="address" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}addressTypeSupp" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -357,7 +355,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Gets the value of the id property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link String }
                  *     
@@ -369,7 +367,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Sets the value of the id property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link String }
                  *     
@@ -381,7 +379,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Gets the value of the type property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link String }
                  *     
@@ -393,7 +391,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Sets the value of the type property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link String }
                  *     
@@ -405,7 +403,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Gets the value of the name property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link NameTypeSupp }
                  *     
@@ -417,7 +415,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Sets the value of the name property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link NameTypeSupp }
                  *     
@@ -429,7 +427,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Gets the value of the address property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link AddressTypeSupp }
                  *     
@@ -441,7 +439,7 @@ public class GetRepresentativeListResponse {
                 /**
                  * Sets the value of the address property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link AddressTypeSupp }
                  *     

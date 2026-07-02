@@ -14,17 +14,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ClassificationQueryType">
- *   &lt;complexContent>
- *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType">
- *       &lt;sequence>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationSchemeQuery" minOccurs="0"/>
- *         &lt;element name="ClassifiedObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/>
- *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQuery" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ClassificationQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationSchemeQuery" minOccurs="0"/&gt;
+ *         &lt;element name="ClassifiedObjectQuery" type="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}RegistryObjectQueryType" minOccurs="0"/&gt;
+ *         &lt;element ref="{urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0}ClassificationNodeQuery" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -50,7 +50,7 @@ public class ClassificationQuery
     /**
      * Gets the value of the classificationSchemeQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationSchemeQuery }
      *     
@@ -62,7 +62,7 @@ public class ClassificationQuery
     /**
      * Sets the value of the classificationSchemeQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationSchemeQuery }
      *     
@@ -74,7 +74,7 @@ public class ClassificationQuery
     /**
      * Gets the value of the classifiedObjectQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link RegistryObjectQueryType }
      *     
@@ -86,7 +86,7 @@ public class ClassificationQuery
     /**
      * Sets the value of the classifiedObjectQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link RegistryObjectQueryType }
      *     
@@ -98,7 +98,7 @@ public class ClassificationQuery
     /**
      * Gets the value of the classificationNodeQuery property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link ClassificationNodeQuery }
      *     
@@ -110,7 +110,7 @@ public class ClassificationQuery
     /**
      * Sets the value of the classificationNodeQuery property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link ClassificationNodeQuery }
      *     

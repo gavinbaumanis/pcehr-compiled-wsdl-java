@@ -20,17 +20,17 @@ import org.w3c.dom.Element;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="KeyValueType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}DSAKeyValue"/>
- *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}RSAKeyValue"/>
- *         &lt;any processContents='lax' namespace='##other'/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="KeyValueType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}DSAKeyValue"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}RSAKeyValue"/&gt;
+ *         &lt;any processContents='lax' namespace='##other'/&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -53,21 +53,18 @@ public class KeyValue {
     /**
      * Gets the value of the content property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the content property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getContent().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link RSAKeyValue }
      * {@link Element }
      * {@link java.lang.Object }
@@ -75,6 +72,7 @@ public class KeyValue {
      * {@link DSAKeyValue }
      * 
      * 
+     * @return field value
      */
     public List<java.lang.Object> getContent() {
         if (content == null) {

@@ -19,13 +19,13 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SignatureValueType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>base64Binary">
- *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="SignatureValueType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;base64Binary"&gt;
+ *       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -48,7 +48,7 @@ public class SignatureValue {
     /**
      * Gets the value of the value property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -59,7 +59,7 @@ public class SignatureValue {
     /**
      * Sets the value of the value property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -70,7 +70,7 @@ public class SignatureValue {
     /**
      * Gets the value of the id property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -82,7 +82,7 @@ public class SignatureValue {
     /**
      * Sets the value of the id property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

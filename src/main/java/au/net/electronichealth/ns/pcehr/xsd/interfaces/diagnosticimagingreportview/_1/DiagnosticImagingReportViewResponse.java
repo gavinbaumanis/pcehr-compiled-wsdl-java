@@ -25,103 +25,103 @@ import au.net.electronichealth.ns.pcehr.xsd.view.viewcommontype._1.RequesterInfo
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="diagnosticImagingReportViewResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="viewMetadata">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="individualProfile">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
- *                             &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="viewParameters">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                             &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *                             &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="diagnosticImagingReport" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}diagnosticReportInformationDT"/>
- *                   &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
- *                   &lt;element name="reportingRadiologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
- *                   &lt;element name="imagingRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/>
- *                   &lt;element name="imagingExaminationResult" maxOccurs="unbounded">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="imagingServiceDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="examinationResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *                             &lt;element name="modality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *                             &lt;element name="anatomicalSiteDetails" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
- *                                       &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
- *                                                 &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
- *                             &lt;element name="imageLocationInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="diagnosticImagingReportViewResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="viewMetadata"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="individualProfile"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+ *                             &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="viewParameters"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                             &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *                             &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="diagnosticImagingReport" maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                   &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}diagnosticReportInformationDT"/&gt;
+ *                   &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+ *                   &lt;element name="reportingRadiologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+ *                   &lt;element name="imagingRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/&gt;
+ *                   &lt;element name="imagingExaminationResult" maxOccurs="unbounded"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="imagingServiceDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *                             &lt;element name="examinationResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *                             &lt;element name="modality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *                             &lt;element name="anatomicalSiteDetails" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+ *                                       &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+ *                                                 &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+ *                             &lt;element name="imageLocationInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -142,7 +142,7 @@ public class DiagnosticImagingReportViewResponse {
     /**
      * Gets the value of the viewMetadata property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link DiagnosticImagingReportViewResponse.ViewMetadata }
      *     
@@ -154,7 +154,7 @@ public class DiagnosticImagingReportViewResponse {
     /**
      * Sets the value of the viewMetadata property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link DiagnosticImagingReportViewResponse.ViewMetadata }
      *     
@@ -166,24 +166,22 @@ public class DiagnosticImagingReportViewResponse {
     /**
      * Gets the value of the diagnosticImagingReports property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the diagnosticImagingReports property.
      * 
-     * <p>
-     * For example, to add a new item, do as follows:
+     * <p>For example, to add a new item, do as follows:
      * <pre>
      *    getDiagnosticImagingReports().add(newItem);
      * </pre>
      * 
      * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
+     * <p>Objects of the following type(s) are allowed in the list
      * {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport }
      * 
      * 
+     * @return field value
      */
     public List<DiagnosticImagingReportViewResponse.DiagnosticImagingReport> getDiagnosticImagingReports() {
         if (diagnosticImagingReports == null) {
@@ -199,57 +197,57 @@ public class DiagnosticImagingReportViewResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}diagnosticReportInformationDT"/>
-     *         &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
-     *         &lt;element name="reportingRadiologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/>
-     *         &lt;element name="imagingRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/>
-     *         &lt;element name="imagingExaminationResult" maxOccurs="unbounded">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="imagingServiceDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="examinationResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-     *                   &lt;element name="modality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-     *                   &lt;element name="anatomicalSiteDetails" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-     *                             &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-     *                                       &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-     *                   &lt;element name="imageLocationInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="dateAvailableToConsumer" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *         &lt;element name="reportInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}diagnosticReportInformationDT"/&gt;
+     *         &lt;element name="clinicalDocumentAuthor" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+     *         &lt;element name="reportingRadiologistInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}providerInformationDT"/&gt;
+     *         &lt;element name="imagingRequesterInformation" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}requesterInformationDT"/&gt;
+     *         &lt;element name="imagingExaminationResult" maxOccurs="unbounded"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="imagingServiceDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *                   &lt;element name="examinationResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+     *                   &lt;element name="modality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+     *                   &lt;element name="anatomicalSiteDetails" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+     *                             &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+     *                                       &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+     *                   &lt;element name="imageLocationInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -281,7 +279,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the dateAvailableToConsumer property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -293,7 +291,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the dateAvailableToConsumer property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -305,7 +303,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the reportInformation property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link DiagnosticReportInformationDT }
          *     
@@ -317,7 +315,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the reportInformation property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link DiagnosticReportInformationDT }
          *     
@@ -329,7 +327,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the clinicalDocumentAuthor property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link ProviderInformationDT }
          *     
@@ -341,7 +339,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the clinicalDocumentAuthor property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link ProviderInformationDT }
          *     
@@ -353,7 +351,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the reportingRadiologistInformation property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link ProviderInformationDT }
          *     
@@ -365,7 +363,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the reportingRadiologistInformation property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link ProviderInformationDT }
          *     
@@ -377,7 +375,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the imagingRequesterInformation property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link RequesterInformationDT }
          *     
@@ -389,7 +387,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the imagingRequesterInformation property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link RequesterInformationDT }
          *     
@@ -401,24 +399,22 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the imagingExaminationResults property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
+         * <p>This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
          * This is why there is not a <CODE>set</CODE> method for the imagingExaminationResults property.
          * 
-         * <p>
-         * For example, to add a new item, do as follows:
+         * <p>For example, to add a new item, do as follows:
          * <pre>
          *    getImagingExaminationResults().add(newItem);
          * </pre>
          * 
          * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
+         * <p>Objects of the following type(s) are allowed in the list
          * {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult }
          * 
          * 
+         * @return field value
          */
         public List<DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult> getImagingExaminationResults() {
             if (imagingExaminationResults == null) {
@@ -434,42 +430,42 @@ public class DiagnosticImagingReportViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="imagingServiceDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="examinationResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-         *         &lt;element name="modality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-         *         &lt;element name="anatomicalSiteDetails" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-         *                   &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-         *                             &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-         *         &lt;element name="imageLocationInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="imagingServiceDateTime" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+         *         &lt;element name="examinationResultName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+         *         &lt;element name="modality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+         *         &lt;element name="anatomicalSiteDetails" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+         *                   &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+         *                             &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="overallTestResultStatus" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+         *         &lt;element name="imageLocationInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -498,7 +494,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the imagingServiceDateTime property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -510,7 +506,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the imagingServiceDateTime property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -522,7 +518,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the examinationResultName property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link CodedType }
              *     
@@ -534,7 +530,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the examinationResultName property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link CodedType }
              *     
@@ -546,7 +542,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the modality property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link CodedType }
              *     
@@ -558,7 +554,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the modality property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link CodedType }
              *     
@@ -570,24 +566,22 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the anatomicalSiteDetails property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
+             * <p>This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
              * This is why there is not a <CODE>set</CODE> method for the anatomicalSiteDetails property.
              * 
-             * <p>
-             * For example, to add a new item, do as follows:
+             * <p>For example, to add a new item, do as follows:
              * <pre>
              *    getAnatomicalSiteDetails().add(newItem);
              * </pre>
              * 
              * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
+             * <p>Objects of the following type(s) are allowed in the list
              * {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails }
              * 
              * 
+             * @return field value
              */
             public List<DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails> getAnatomicalSiteDetails() {
                 if (anatomicalSiteDetails == null) {
@@ -599,7 +593,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the overallTestResultStatus property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link CodedType }
              *     
@@ -611,7 +605,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the overallTestResultStatus property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link CodedType }
              *     
@@ -623,7 +617,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the imageLocationInformation property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -635,7 +629,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the imageLocationInformation property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -651,27 +645,27 @@ public class DiagnosticImagingReportViewResponse {
              * <p>The following schema fragment specifies the expected content contained within this class.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-             *         &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-             *                   &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="anatomicalRegion" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+             *         &lt;element name="anatomicalLocation" maxOccurs="unbounded" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+             *                   &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -690,7 +684,7 @@ public class DiagnosticImagingReportViewResponse {
                 /**
                  * Gets the value of the anatomicalRegion property.
                  * 
-                 * @return
+                 * @return the result
                  *     possible object is
                  *     {@link CodedType }
                  *     
@@ -702,7 +696,7 @@ public class DiagnosticImagingReportViewResponse {
                 /**
                  * Sets the value of the anatomicalRegion property.
                  * 
-                 * @param value
+                 * @param value field value
                  *     allowed object is
                  *     {@link CodedType }
                  *     
@@ -714,24 +708,22 @@ public class DiagnosticImagingReportViewResponse {
                 /**
                  * Gets the value of the anatomicalLocations property.
                  * 
-                 * <p>
-                 * This accessor method returns a reference to the live list,
+                 * <p>This accessor method returns a reference to the live list,
                  * not a snapshot. Therefore any modification you make to the
                  * returned list will be present inside the JAXB object.
                  * This is why there is not a <CODE>set</CODE> method for the anatomicalLocations property.
                  * 
-                 * <p>
-                 * For example, to add a new item, do as follows:
+                 * <p>For example, to add a new item, do as follows:
                  * <pre>
                  *    getAnatomicalLocations().add(newItem);
                  * </pre>
                  * 
                  * 
-                 * <p>
-                 * Objects of the following type(s) are allowed in the list
+                 * <p>Objects of the following type(s) are allowed in the list
                  * {@link DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails.AnatomicalLocation }
                  * 
                  * 
+                 * @return field value
                  */
                 public List<DiagnosticImagingReportViewResponse.DiagnosticImagingReport.ImagingExaminationResult.AnatomicalSiteDetails.AnatomicalLocation> getAnatomicalLocations() {
                     if (anatomicalLocations == null) {
@@ -747,16 +739,16 @@ public class DiagnosticImagingReportViewResponse {
                  * <p>The following schema fragment specifies the expected content contained within this class.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/>
-                 *         &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="anatomicalLocationName" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType"/&gt;
+                 *         &lt;element name="laterality" type="{http://ns.electronichealth.net.au/pcehr/xsd/view/ViewCommonType/1.0}CodedType" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -775,7 +767,7 @@ public class DiagnosticImagingReportViewResponse {
                     /**
                      * Gets the value of the anatomicalLocationName property.
                      * 
-                     * @return
+                     * @return the result
                      *     possible object is
                      *     {@link CodedType }
                      *     
@@ -787,7 +779,7 @@ public class DiagnosticImagingReportViewResponse {
                     /**
                      * Sets the value of the anatomicalLocationName property.
                      * 
-                     * @param value
+                     * @param value field value
                      *     allowed object is
                      *     {@link CodedType }
                      *     
@@ -799,7 +791,7 @@ public class DiagnosticImagingReportViewResponse {
                     /**
                      * Gets the value of the laterality property.
                      * 
-                     * @return
+                     * @return the result
                      *     possible object is
                      *     {@link CodedType }
                      *     
@@ -811,7 +803,7 @@ public class DiagnosticImagingReportViewResponse {
                     /**
                      * Sets the value of the laterality property.
                      * 
-                     * @param value
+                     * @param value field value
                      *     allowed object is
                      *     {@link CodedType }
                      *     
@@ -835,40 +827,40 @@ public class DiagnosticImagingReportViewResponse {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="individualProfile">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
-     *                   &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="viewParameters">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *                   &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-     *                   &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="individualProfile"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+     *                   &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="viewParameters"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *                   &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+     *                   &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="informationAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -890,7 +882,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the individualProfile property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link DiagnosticImagingReportViewResponse.ViewMetadata.IndividualProfile }
          *     
@@ -902,7 +894,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the individualProfile property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link DiagnosticImagingReportViewResponse.ViewMetadata.IndividualProfile }
          *     
@@ -914,7 +906,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the viewParameters property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link DiagnosticImagingReportViewResponse.ViewMetadata.ViewParameters }
          *     
@@ -926,7 +918,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the viewParameters property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link DiagnosticImagingReportViewResponse.ViewMetadata.ViewParameters }
          *     
@@ -938,6 +930,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Gets the value of the informationAvailable property.
          * 
+         * @return field value
          */
         public boolean isInformationAvailable() {
             return informationAvailable;
@@ -946,6 +939,7 @@ public class DiagnosticImagingReportViewResponse {
         /**
          * Sets the value of the informationAvailable property.
          * 
+         * @param value field value
          */
         public void setInformationAvailable(boolean value) {
             this.informationAvailable = value;
@@ -958,16 +952,16 @@ public class DiagnosticImagingReportViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/>
-         *         &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element ref="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}ihiNumber"/&gt;
+         *         &lt;element name="individual" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}individualTypeSupp"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -987,7 +981,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the ihiNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -999,7 +993,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the ihiNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -1011,7 +1005,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the individual property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link IndividualTypeSupp }
              *     
@@ -1023,7 +1017,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the individual property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link IndividualTypeSupp }
              *     
@@ -1041,17 +1035,17 @@ public class DiagnosticImagingReportViewResponse {
          * <p>The following schema fragment specifies the expected content contained within this class.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-         *         &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/>
-         *         &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="dateFromFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+         *         &lt;element name="dateToFilter" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+         *         &lt;element name="viewVersionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -1078,7 +1072,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the dateFromFilter property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -1090,7 +1084,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the dateFromFilter property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -1102,7 +1096,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the dateToFilter property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -1114,7 +1108,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the dateToFilter property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     
@@ -1126,7 +1120,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Gets the value of the viewVersionNumber property.
              * 
-             * @return
+             * @return the result
              *     possible object is
              *     {@link String }
              *     
@@ -1138,7 +1132,7 @@ public class DiagnosticImagingReportViewResponse {
             /**
              * Sets the value of the viewVersionNumber property.
              * 
-             * @param value
+             * @param value field value
              *     allowed object is
              *     {@link String }
              *     

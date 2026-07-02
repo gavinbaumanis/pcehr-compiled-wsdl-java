@@ -18,44 +18,44 @@ import au.gov.nehta.schema.DateAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="observationView">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="versionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fromDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *         &lt;element name="toDate" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *         &lt;element name="observationType">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="HEADCIRCUMFERENCE"/>
- *               &lt;enumeration value="HEIGHT"/>
- *               &lt;enumeration value="WEIGHT"/>
- *               &lt;enumeration value="BMI"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="documentSource">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="PERSONAL"/>
- *               &lt;enumeration value="PROVIDER"/>
- *               &lt;enumeration value="ALL"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="referenceData">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="CDC"/>
- *               &lt;enumeration value="WHO"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="observationView"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="versionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="fromDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *         &lt;element name="toDate" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *         &lt;element name="observationType"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="HEADCIRCUMFERENCE"/&gt;
+ *               &lt;enumeration value="HEIGHT"/&gt;
+ *               &lt;enumeration value="WEIGHT"/&gt;
+ *               &lt;enumeration value="BMI"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="documentSource"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="PERSONAL"/&gt;
+ *               &lt;enumeration value="PROVIDER"/&gt;
+ *               &lt;enumeration value="ALL"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="referenceData"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="CDC"/&gt;
+ *               &lt;enumeration value="WHO"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -92,7 +92,7 @@ public class ObservationView {
     /**
      * Gets the value of the versionNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -104,7 +104,7 @@ public class ObservationView {
     /**
      * Sets the value of the versionNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -116,7 +116,7 @@ public class ObservationView {
     /**
      * Gets the value of the fromDate property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -128,7 +128,7 @@ public class ObservationView {
     /**
      * Sets the value of the fromDate property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -140,7 +140,7 @@ public class ObservationView {
     /**
      * Gets the value of the toDate property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -152,7 +152,7 @@ public class ObservationView {
     /**
      * Sets the value of the toDate property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -164,7 +164,7 @@ public class ObservationView {
     /**
      * Gets the value of the observationType property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -176,7 +176,7 @@ public class ObservationView {
     /**
      * Sets the value of the observationType property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -188,7 +188,7 @@ public class ObservationView {
     /**
      * Gets the value of the documentSource property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -200,7 +200,7 @@ public class ObservationView {
     /**
      * Sets the value of the documentSource property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -212,7 +212,7 @@ public class ObservationView {
     /**
      * Gets the value of the referenceData property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -224,7 +224,7 @@ public class ObservationView {
     /**
      * Sets the value of the referenceData property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

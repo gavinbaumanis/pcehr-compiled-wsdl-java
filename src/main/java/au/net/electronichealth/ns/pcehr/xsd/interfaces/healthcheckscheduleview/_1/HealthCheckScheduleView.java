@@ -14,29 +14,29 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="healthCheckScheduleView">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="versionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="jurisdiction">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="NSW"/>
- *               &lt;enumeration value="QLD"/>
- *               &lt;enumeration value="ACT"/>
- *               &lt;enumeration value="NT"/>
- *               &lt;enumeration value="VIC"/>
- *               &lt;enumeration value="WA"/>
- *               &lt;enumeration value="TAS"/>
- *               &lt;enumeration value="SA"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="healthCheckScheduleView"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="versionNumber" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="jurisdiction"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="NSW"/&gt;
+ *               &lt;enumeration value="QLD"/&gt;
+ *               &lt;enumeration value="ACT"/&gt;
+ *               &lt;enumeration value="NT"/&gt;
+ *               &lt;enumeration value="VIC"/&gt;
+ *               &lt;enumeration value="WA"/&gt;
+ *               &lt;enumeration value="TAS"/&gt;
+ *               &lt;enumeration value="SA"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,7 +57,7 @@ public class HealthCheckScheduleView {
     /**
      * Gets the value of the versionNumber property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -69,7 +69,7 @@ public class HealthCheckScheduleView {
     /**
      * Sets the value of the versionNumber property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -81,7 +81,7 @@ public class HealthCheckScheduleView {
     /**
      * Gets the value of the jurisdiction property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -93,7 +93,7 @@ public class HealthCheckScheduleView {
     /**
      * Sets the value of the jurisdiction property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

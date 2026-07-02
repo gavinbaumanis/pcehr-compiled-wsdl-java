@@ -13,37 +13,37 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="addressTypeSupp">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="unstructuredAddress" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="australianAddressLine" minOccurs="0">
- *                     &lt;simpleType>
- *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                         &lt;minLength value="1"/>
- *                         &lt;maxLength value="120"/>
- *                       &lt;/restriction>
- *                     &lt;/simpleType>
- *                   &lt;/element>
- *                   &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/>
- *                   &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/>
- *                   &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="australianStreetAddress" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}australianStreetAddressType" minOccurs="0"/>
- *         &lt;element name="australianPostalAddress" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}australianPostalAddressType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="addressTypeSupp"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="unstructuredAddress" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="australianAddressLine" minOccurs="0"&gt;
+ *                     &lt;simpleType&gt;
+ *                       &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                         &lt;minLength value="1"/&gt;
+ *                         &lt;maxLength value="120"/&gt;
+ *                       &lt;/restriction&gt;
+ *                     &lt;/simpleType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/&gt;
+ *                   &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/&gt;
+ *                   &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="australianStreetAddress" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}australianStreetAddressType" minOccurs="0"/&gt;
+ *         &lt;element name="australianPostalAddress" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}australianPostalAddressType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -63,7 +63,7 @@ public class AddressTypeSupp {
     /**
      * Gets the value of the unstructuredAddress property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AddressTypeSupp.UnstructuredAddress }
      *     
@@ -75,7 +75,7 @@ public class AddressTypeSupp {
     /**
      * Sets the value of the unstructuredAddress property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AddressTypeSupp.UnstructuredAddress }
      *     
@@ -87,7 +87,7 @@ public class AddressTypeSupp {
     /**
      * Gets the value of the australianStreetAddress property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AustralianStreetAddressType }
      *     
@@ -99,7 +99,7 @@ public class AddressTypeSupp {
     /**
      * Sets the value of the australianStreetAddress property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AustralianStreetAddressType }
      *     
@@ -111,7 +111,7 @@ public class AddressTypeSupp {
     /**
      * Gets the value of the australianPostalAddress property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link AustralianPostalAddressType }
      *     
@@ -123,7 +123,7 @@ public class AddressTypeSupp {
     /**
      * Sets the value of the australianPostalAddress property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link AustralianPostalAddressType }
      *     
@@ -139,25 +139,25 @@ public class AddressTypeSupp {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="australianAddressLine" minOccurs="0">
-     *           &lt;simpleType>
-     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *               &lt;minLength value="1"/>
-     *               &lt;maxLength value="120"/>
-     *             &lt;/restriction>
-     *           &lt;/simpleType>
-     *         &lt;/element>
-     *         &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/>
-     *         &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/>
-     *         &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="australianAddressLine" minOccurs="0"&gt;
+     *           &lt;simpleType&gt;
+     *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *               &lt;minLength value="1"/&gt;
+     *               &lt;maxLength value="120"/&gt;
+     *             &lt;/restriction&gt;
+     *           &lt;/simpleType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="postcode" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}postcodeType"/&gt;
+     *         &lt;element name="suburb" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}suburbType"/&gt;
+     *         &lt;element name="state" type="{http://ns.electronichealth.net.au/pcehr/xsd/common/CommonCoreElements/1.0}stateType"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -182,7 +182,7 @@ public class AddressTypeSupp {
         /**
          * Gets the value of the australianAddressLine property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -194,7 +194,7 @@ public class AddressTypeSupp {
         /**
          * Sets the value of the australianAddressLine property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -206,7 +206,7 @@ public class AddressTypeSupp {
         /**
          * Gets the value of the postcode property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -218,7 +218,7 @@ public class AddressTypeSupp {
         /**
          * Sets the value of the postcode property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -230,7 +230,7 @@ public class AddressTypeSupp {
         /**
          * Gets the value of the suburb property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link String }
          *     
@@ -242,7 +242,7 @@ public class AddressTypeSupp {
         /**
          * Sets the value of the suburb property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link String }
          *     
@@ -254,7 +254,7 @@ public class AddressTypeSupp {
         /**
          * Gets the value of the state property.
          * 
-         * @return
+         * @return the result
          *     possible object is
          *     {@link StateType }
          *     
@@ -266,7 +266,7 @@ public class AddressTypeSupp {
         /**
          * Sets the value of the state property.
          * 
-         * @param value
+         * @param value field value
          *     allowed object is
          *     {@link StateType }
          *     

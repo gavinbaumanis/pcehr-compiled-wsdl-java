@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetViewResponse }
      * 
+     * @return newly created instance
      */
     public GetViewResponse createGetViewResponse() {
         return new GetViewResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetViewResponse.View }
      * 
+     * @return newly created instance
      */
     public GetViewResponse.View createGetViewResponseView() {
         return new GetViewResponse.View();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetView }
      * 
+     * @return newly created instance
      */
     public GetView createGetView() {
         return new GetView();

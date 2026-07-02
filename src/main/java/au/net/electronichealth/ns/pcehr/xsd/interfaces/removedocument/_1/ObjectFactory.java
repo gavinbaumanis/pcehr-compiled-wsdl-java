@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDocument }
      * 
+     * @return newly created instance
      */
     public RemoveDocument createRemoveDocument() {
         return new RemoveDocument();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDocumentResponse }
      * 
+     * @return newly created instance
      */
     public RemoveDocumentResponse createRemoveDocumentResponse() {
         return new RemoveDocumentResponse();

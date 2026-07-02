@@ -34,12 +34,12 @@ public interface GetIndividualDetailsViewPortType {
 
     /**
      * 
-     * @param pcehrHeader
-     * @param parameters0
-     * @param timestampHeader
-     * @param parameters
-     * @param signatureHeader
-     * @throws StandardErrorMsg
+     * @param pcehrHeader PCEHR request header
+     * @param parameters0 SOAP response holder
+     * @param timestampHeader timestamp SOAP header
+     * @param parameters request payload
+     * @param signatureHeader signature SOAP header holder
+     * @throws StandardErrorMsg if the service returns a StandardErrorMsg fault
      */
     @WebMethod
     @Action(input = "http://ns.electronichealth.net.au/pcehr/svc/GetIndividualDetailsView/2.0/GetIndividualDetailsViewPortType/getIndividualDetailsViewRequest", output = "http://ns.electronichealth.net.au/pcehr/svc/GetIndividualDetailsView/2.0/GetIndividualDetailsViewPortType/getIndividualDetailsViewResponse", fault = {

@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetChangeHistoryViewResponse }
      * 
+     * @return newly created instance
      */
     public GetChangeHistoryViewResponse createGetChangeHistoryViewResponse() {
         return new GetChangeHistoryViewResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetChangeHistoryViewResponse.AdhocQueryResponse }
      * 
+     * @return newly created instance
      */
     public GetChangeHistoryViewResponse.AdhocQueryResponse createGetChangeHistoryViewResponseAdhocQueryResponse() {
         return new GetChangeHistoryViewResponse.AdhocQueryResponse();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetChangeHistoryView }
      * 
+     * @return newly created instance
      */
     public GetChangeHistoryView createGetChangeHistoryView() {
         return new GetChangeHistoryView();

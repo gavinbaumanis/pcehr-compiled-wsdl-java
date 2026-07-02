@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlValue;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="codeContext" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="errorCode" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="severity" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="location" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;string"&gt;
+ *       &lt;attribute name="codeContext" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="errorCode" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="severity" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="location" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -50,7 +50,7 @@ public class RegistryError {
     /**
      * Gets the value of the value property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -62,7 +62,7 @@ public class RegistryError {
     /**
      * Sets the value of the value property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -74,7 +74,7 @@ public class RegistryError {
     /**
      * Gets the value of the codeContext property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -86,7 +86,7 @@ public class RegistryError {
     /**
      * Sets the value of the codeContext property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -98,7 +98,7 @@ public class RegistryError {
     /**
      * Gets the value of the errorCode property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -110,7 +110,7 @@ public class RegistryError {
     /**
      * Sets the value of the errorCode property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -122,7 +122,7 @@ public class RegistryError {
     /**
      * Gets the value of the severity property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -134,7 +134,7 @@ public class RegistryError {
     /**
      * Sets the value of the severity property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     
@@ -146,7 +146,7 @@ public class RegistryError {
     /**
      * Gets the value of the location property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     {@link String }
      *     
@@ -158,7 +158,7 @@ public class RegistryError {
     /**
      * Sets the value of the location property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     {@link String }
      *     

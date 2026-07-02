@@ -32,6 +32,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RetrieveDocumentSetResponse }
      * 
+     * @return newly created instance
      */
     public RetrieveDocumentSetResponse createRetrieveDocumentSetResponse() {
         return new RetrieveDocumentSetResponse();
@@ -40,6 +41,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RetrieveDocumentSetRequest }
      * 
+     * @return newly created instance
      */
     public RetrieveDocumentSetRequest createRetrieveDocumentSetRequest() {
         return new RetrieveDocumentSetRequest();
@@ -48,6 +50,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProvideAndRegisterDocumentSetRequest }
      * 
+     * @return newly created instance
      */
     public ProvideAndRegisterDocumentSetRequest createProvideAndRegisterDocumentSetRequest() {
         return new ProvideAndRegisterDocumentSetRequest();
@@ -56,6 +59,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RetrieveDocumentSetResponse.DocumentResponse }
      * 
+     * @return newly created instance
      */
     public RetrieveDocumentSetResponse.DocumentResponse createRetrieveDocumentSetResponseDocumentResponse() {
         return new RetrieveDocumentSetResponse.DocumentResponse();
@@ -64,6 +68,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RetrieveDocumentSetRequest.DocumentRequest }
      * 
+     * @return newly created instance
      */
     public RetrieveDocumentSetRequest.DocumentRequest createRetrieveDocumentSetRequestDocumentRequest() {
         return new RetrieveDocumentSetRequest.DocumentRequest();
@@ -72,6 +77,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProvideAndRegisterDocumentSetRequest.Document }
      * 
+     * @return newly created instance
      */
     public ProvideAndRegisterDocumentSetRequest.Document createProvideAndRegisterDocumentSetRequestDocument() {
         return new ProvideAndRegisterDocumentSetRequest.Document();

@@ -14,25 +14,25 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="DSAKeyValueType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;sequence minOccurs="0">
- *           &lt;element name="P" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/>
- *           &lt;element name="Q" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/>
- *         &lt;/sequence>
- *         &lt;element name="G" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary" minOccurs="0"/>
- *         &lt;element name="Y" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/>
- *         &lt;element name="J" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary" minOccurs="0"/>
- *         &lt;sequence minOccurs="0">
- *           &lt;element name="Seed" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/>
- *           &lt;element name="PgenCounter" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/>
- *         &lt;/sequence>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="DSAKeyValueType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;sequence minOccurs="0"&gt;
+ *           &lt;element name="P" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/&gt;
+ *           &lt;element name="Q" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/&gt;
+ *         &lt;/sequence&gt;
+ *         &lt;element name="G" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary" minOccurs="0"/&gt;
+ *         &lt;element name="Y" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/&gt;
+ *         &lt;element name="J" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary" minOccurs="0"/&gt;
+ *         &lt;sequence minOccurs="0"&gt;
+ *           &lt;element name="Seed" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/&gt;
+ *           &lt;element name="PgenCounter" type="{http://www.w3.org/2000/09/xmldsig#}CryptoBinary"/&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -68,7 +68,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the p property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -79,7 +79,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the p property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -90,7 +90,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the q property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -101,7 +101,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the q property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -112,7 +112,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the g property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -123,7 +123,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the g property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -134,7 +134,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the y property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -145,7 +145,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the y property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -156,7 +156,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the j property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -167,7 +167,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the j property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -178,7 +178,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the seed property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -189,7 +189,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the seed property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
@@ -200,7 +200,7 @@ public class DSAKeyValue {
     /**
      * Gets the value of the pgenCounter property.
      * 
-     * @return
+     * @return the result
      *     possible object is
      *     byte[]
      */
@@ -211,7 +211,7 @@ public class DSAKeyValue {
     /**
      * Sets the value of the pgenCounter property.
      * 
-     * @param value
+     * @param value field value
      *     allowed object is
      *     byte[]
      */
